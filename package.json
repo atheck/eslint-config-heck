@@ -1,0 +1,32 @@
+{
+  "name": "eslint-config-heck",
+  "version": "0.0.1",
+  "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext '.ts,.tsx' .",
+    "test": "test"
+  },
+  "keywords": [
+    "ESLint",
+    "ES2015",
+    "TypeScript",
+    "React"
+  ],
+  "author": "atheck",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.31.2",
+    "@typescript-eslint/parser": "4.31.2",
+    "eslint": "7.32.0",
+    "eslint-plugin-jest": "24.4.2",
+    "eslint-plugin-react": "7.26.0",
+    "react": "17.0.2",
+    "typescript": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/react": "17.0.24",
+    "jest": "27.2.2"
+  }
+}
