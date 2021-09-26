@@ -557,9 +557,10 @@
             "assignment": "parens-new-line",
             "return": "parens-new-line",
             "arrow": "parens-new-line"
-        }]
+        }],
 
-        // TODO: deprecation
+        // Deprecation
+        "deprecation/deprecation": "error"
     },
     "overrides": [
         {
