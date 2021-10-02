@@ -49,3 +49,12 @@ type WithSemicolons = {
 interface T1 {
     func(arg: string): number;
 }
+
+// promise-function-async
+const promiseThrows = async function (): Promise<string> {
+    if (notThenable) {
+        throw new Error("");
+    }
+
+    return Promise.resolve("");
+};
