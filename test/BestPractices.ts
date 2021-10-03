@@ -34,7 +34,7 @@ const noConsistentReturn = function (): boolean {
     }
 
     return;
-}
+};
 
 // curly
 if (accessorPairsGetWithoutSet) new MethodsUseThis();

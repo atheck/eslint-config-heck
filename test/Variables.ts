@@ -44,10 +44,10 @@ useBeforeDefine(usedBeforeDefine);
 
 const useBeforeDefine = function (someVar: string) {
     usingFunc();
-}
+};
 
 const usingFunc = function () {
     // Blank
-}
+};
 
 const usedBeforeDefine = "";

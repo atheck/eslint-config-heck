@@ -1,3 +1,14 @@
+// "use strict";
+
+// consistent-return
+const noConsistentReturn = function () {
+    if (1 === 1) {
+        return true;
+    }
+
+    return;
+};
+
 // init-declarations
 let noInit;
 
@@ -21,10 +32,10 @@ function b() {
     var shadow = 10;
 }
 
-// no-shadow-restricted-names: off (typescript handles it)
+// no-shadow-restricted-names
 let eval = 1;
 
-// no-undef: off (typescript handles it)
+// no-undef
 let bar = a + 1;
 if (typeof a === "undefined") {
     // blank
@@ -33,13 +44,13 @@ if (typeof a === "undefined") {
 // no-undef-init
 let undef = undefined;
 
-// no-undefined: off (typescript handles it, duplicate of no-shadow-restricted-names)
+// no-undefined
 let undefined = 1;
 
 // no-unued-vars
 const unused = 1;
 
-// no-use-before-define: off (typescript handles it)
+// no-use-before-define
 useBeforeDefine(usedBeforeDefine);
 
 const useBeforeDefine = function (someVar) {
