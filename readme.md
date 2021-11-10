@@ -2,7 +2,32 @@
 
 eslint-config-heck contains an ESLint configuration for ES2015+, TypeScript, and React.
 
+## Installation
+
+~~~sh
+npm install --save-dev eslint eslint-config-heck
+~~~
+
+## Usage
+
+To use one of the included configurations, create a `.eslintrc.json` file and use the `extends` keyword.
+
+For a Node.js project use:
+
+~~~json
+{
+    "extends": "heck/node"
+}
+~~~
+
+If you are in the browser, use:
+
+~~~json
+{
+    "extends": "heck/browser"
+}
+~~~
+
 ## TODO
 
-- [ ] Rules für js aktivieren, in overrides für Typescript deaktivieren
-- [ ] In richtig eslint-config umbauen (js-Datei, siehe eslint-config-es)
+- [ ] object-curly-newline überdenken

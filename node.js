@@ -109,7 +109,7 @@ const rules = {
         "error",
         {
             allowImplicit: true,
-            checkForEach: true,
+            checkForEach: false,
         },
     ],
     "block-scoped-var": "error",
@@ -258,13 +258,7 @@ const rules = {
     "block-spacing": "error",
     "brace-style": "error",
     camelcase: "error",
-    "capitalized-comments": [
-        "error",
-        "always",
-        {
-            ignoreConsecutiveComments: true,
-        },
-    ],
+    "capitalized-comments": "off",
     "comma-dangle": ["error", "always-multiline"],
     "comma-spacing": "error",
     "comma-style": "error",
@@ -276,7 +270,7 @@ const rules = {
     "func-names": "off",
     "func-style": "error",
     "function-call-argument-newline": ["error", "consistent"],
-    "function-paren-newline": "error",
+    "function-paren-newline": ["error", "multiline-arguments"],
     "id-denylist": "off",
     "id-length": [
         "error",
@@ -375,7 +369,6 @@ const rules = {
     "object-curly-newline": [
         "error",
         {
-            minProperties: 2,
             consistent: true,
         },
     ],
@@ -780,7 +773,7 @@ const overrides = [
             ],
             "@typescript-eslint/no-base-to-string": "error",
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
-            "@typescript-eslint/no-confusing-void-expression": "error",
+            "@typescript-eslint/no-confusing-void-expression": "off",
             "@typescript-eslint/no-dynamic-delete": "error",
             "@typescript-eslint/no-explicit-any": "error",
             "@typescript-eslint/no-extra-non-null-assertion": "error",
@@ -867,7 +860,19 @@ const overrides = [
             "brace-style": "off",
             "@typescript-eslint/brace-style": "error",
             "comma-dangle": "off",
-            "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
+            "@typescript-eslint/comma-dangle": [
+                "error",
+                {
+                    arrays: "always-multiline",
+                    objects: "always-multiline",
+                    imports: "always-multiline",
+                    exports: "always-multiline",
+                    functions: "never",
+                    enums: "always-multiline",
+                    generics: "never",
+                    tuples: "always-multiline",
+                },
+            ],
             "comma-spacing": "off",
             "@typescript-eslint/comma-spacing": "error",
             "default-param-last": "off",
@@ -1001,6 +1006,7 @@ const overrides = [
             "deprecation/deprecation": "error",
 
             // Typescript handles itself
+            "consistent-return": "off",
             "no-shadow-restricted-names": "off",
             "no-undefined": "off",
             "no-undef": "off",
