@@ -20,7 +20,7 @@ const env = {
 
 const globals = {};
 
-const plugins = ["react"];
+const plugins = ["react", "unicorn"];
 const settings = {
     react: {
         version: "detect",
@@ -676,6 +676,35 @@ const rules = {
             arrow: "parens-new-line",
         },
     ],
+
+    // eslint-plugin-unicorn
+    "unicorn/better-regex": "error",
+    "unicorn/catch-error-name": [
+        "error", {
+            name: "ex",
+            ignore: ["^ex([A-Z0-9].*)?$"],
+        },
+    ],
+    "unicorn/consistent-destructuring": "error",
+    "unicorn/consistent-function-scoping": "error",
+    "unicorn/custom-error-definition": "off",
+    "unicorn/empty-brace-spaces": "off",
+    "unicorn/error-message": "error",
+    "unicorn/escape-case": "error",
+    "unicorn/expiring-todo-comments": "error",
+    "unicorn/explicit-length-check": "error",
+    "unicorn/filename-case": [
+        "error", {
+            cases: {
+                camelCase: true,
+                pascalCase: true,
+                kebabCase: false,
+                snakeCase: false,
+            },
+        },
+    ],
+    "unicorn/import-index": "error",
+    "unicorn/import-style": "error",
 };
 
 const overrides = [
