@@ -37,3 +37,19 @@ const isEmpty = !array.length;
 if (array.length !== 0) {
     // blank
 }
+
+// new-for-builtins
+const noNewArray = Array(2);
+
+// no-unused-property
+const usedObj = {
+    used: 1,
+    unused: 2,
+};
+
+console.log(usedObj.used);
+
+const { used } = usedObj;
+
+// numeric-separator-style
+const bigNumber = 1000;
