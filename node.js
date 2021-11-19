@@ -148,7 +148,7 @@ const rules = {
     "no-floating-decimal": "error",
     "no-global-assign": "error",
     "no-implicit-coercion": "error",
-    "no-implicit-globals": "error",
+    "no-implicit-globals": "off",
     "no-implied-eval": "error",
     "no-invalid-this": "error",
     "no-iterator": "error",
@@ -244,7 +244,7 @@ const rules = {
             caughtErrors: "all",
         },
     ],
-    "no-use-before-define": "error",
+    "no-use-before-define": ["error", "nofunc"],
 
     // Stylistic issues
     "array-bracket-newline": [
@@ -268,7 +268,7 @@ const rules = {
     "func-call-spacing": "error",
     "func-name-matching": "off",
     "func-names": "off",
-    "func-style": "error",
+    "func-style": ["error", "declaration", { allowArrowFunctions: true }],
     "function-call-argument-newline": ["error", "consistent"],
     "function-paren-newline": ["error", "multiline-arguments"],
     "id-denylist": "off",
@@ -292,22 +292,7 @@ const rules = {
     "keyword-spacing": "error",
     "line-comment-position": "error",
     "linebreak-style": ["error"],
-    "lines-around-comment": [
-        "error",
-        {
-            beforeBlockComment: true,
-            beforeLineComment: true,
-            allowBlockStart: true,
-            allowBlockEnd: false,
-            allowObjectStart: true,
-            allowObjectEnd: false,
-            allowArrayStart: true,
-            allowArrayEnd: false,
-            allowClassStart: true,
-            allowClassEnd: false,
-            applyDefaultIgnorePatterns: true,
-        },
-    ],
+    "lines-around-comment": "off",
     "lines-between-class-members": [
         "error",
         "always",
@@ -351,8 +336,7 @@ const rules = {
     ],
     "no-negated-condition": "off",
 
-    // Improved by unicorn/no-nested-ternary
-    "no-nested-ternary": "off",
+    "no-nested-ternary": "error",
     "no-new-object": "error",
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
@@ -525,8 +509,8 @@ const rules = {
     "react/function-component-definition": [
         "error",
         {
-            namedComponents: "function-expression",
-            unnamedComponents: "function-expression",
+            namedComponents: "function-declaration",
+            unnamedComponents: "arrow-function",
         },
     ],
     "react/no-access-state-in-setstate": "error",
@@ -634,7 +618,7 @@ const rules = {
     "react/jsx-max-depth": "off",
     "react/jsx-max-props-per-line": "error",
     "react/jsx-newline": "off",
-    "react/jsx-no-bind": "error",
+    "react/jsx-no-bind": ["error", { allowArrowFunctions: true }],
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-constructed-context-values": "error",
     "react/jsx-no-duplicate-props": "error",
@@ -688,7 +672,11 @@ const rules = {
         },
     ],
     "unicorn/consistent-destructuring": "error",
-    "unicorn/consistent-function-scoping": "error",
+    "unicorn/consistent-function-scoping": [
+        "error", {
+            checkArrowFunctions: false,
+        },
+    ],
     "unicorn/custom-error-definition": "off",
     "unicorn/empty-brace-spaces": "off",
     "unicorn/error-message": "error",
@@ -721,9 +709,9 @@ const rules = {
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-invalid-remove-event-listener": "error",
-    "unicorn/no-keyword-prefix": "error",
+    "unicorn/no-keyword-prefix": "off",
     "unicorn/no-lonely-if": "error",
-    "unicorn/no-nested-ternary": "error",
+    "unicorn/no-nested-ternary": "off",
     "unicorn/no-new-array": "error",
     "unicorn/no-new-buffer": "error",
     "unicorn/no-null": "off",
@@ -763,7 +751,7 @@ const rules = {
     "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-modern-dom-apis": "error",
-    "unicorn/prefer-module": "error",
+    "unicorn/prefer-module": "off",
     "unicorn/prefer-negative-index": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
@@ -835,7 +823,7 @@ const overrides = [
             "@typescript-eslint/class-literal-property-style": "error",
             "@typescript-eslint/consistent-indexed-object-style": "error",
             "@typescript-eslint/consistent-type-assertions": "error",
-            "@typescript-eslint/consistent-type-definitions": "off",
+            "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
             "@typescript-eslint/consistent-type-imports": [
                 "error",
                 {
@@ -879,6 +867,12 @@ const overrides = [
                     filter: {
                         regex: "^__html$", match: false,
                     },
+                },
+                {
+                    selector: ["parameter"],
+                    modifiers: ["unused"],
+                    format: ["strictCamelCase"],
+                    leadingUnderscore: "require",
                 },
                 {
                     selector: ["typeLike"],
@@ -1153,7 +1147,11 @@ const overrides = [
         rules: {
             // eslint-plugin-jest
             "jest/consistent-test-it": "error",
-            "jest/expect-expect": "error",
+            "jest/expect-expect": [
+                "error", {
+                    assertFunctionNames: ["expect*"],
+                },
+            ],
             "jest/max-nested-describe": "off",
             "jest/no-alias-methods": "error",
             "jest/no-commented-out-tests": "error",

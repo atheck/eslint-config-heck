@@ -43,7 +43,9 @@ const unused = 1;
 useBeforeDefine(usedBeforeDefine);
 
 const useBeforeDefine = function (someVar: string) {
+    console.log(myVar);
     usingFunc();
+    const myVar = "";
 };
 
 const usingFunc = function () {

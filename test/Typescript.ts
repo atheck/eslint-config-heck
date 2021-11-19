@@ -58,3 +58,7 @@ const promiseThrows = async function (): Promise<string> {
 
     return Promise.resolve("");
 };
+
+type SomeType = {
+    prop: number,
+};

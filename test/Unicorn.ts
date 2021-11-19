@@ -53,3 +53,6 @@ const { used } = usedObj;
 
 // numeric-separator-style
 const bigNumber = 1000;
+
+// no-nested-ternary
+const nestedTernary = true ? true ? 1 : 2 : 3;
