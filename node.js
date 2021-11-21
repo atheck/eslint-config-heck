@@ -358,14 +358,7 @@ const rules = {
             consistent: true,
         },
     ],
-    "object-curly-spacing": [
-        "error",
-        "always",
-        {
-            arraysInObjects: false,
-            objectsInObjects: false,
-        },
-    ],
+    "object-curly-spacing": ["error", "always"],
     "object-property-newline": [
         "error",
         {
@@ -1073,12 +1066,7 @@ const overrides = [
             "no-useless-constructor": "off",
             "@typescript-eslint/no-useless-constructor": "error",
             "object-curly-spacing": "off",
-            "@typescript-eslint/object-curly-spacing": [
-                "error", "always", {
-                    arraysInObjects: false,
-                    objectsInObjects: false,
-                },
-            ],
+            "@typescript-eslint/object-curly-spacing": ["error", "always"],
             "padding-line-between-statements": "off",
             "@typescript-eslint/padding-line-between-statements": [
                 "error",

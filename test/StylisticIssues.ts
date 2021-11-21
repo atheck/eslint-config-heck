@@ -198,6 +198,7 @@ if (a) {
 
 // no-mixed-operators
 const mixed = a && ternary || allowedTernary;
+const formulua = 1 + 2 * 3;
 
 // no-mixed-spaces-and-tabs
 
@@ -250,6 +251,9 @@ const objectCurly = {key1: "",
 const objectCurly2 = {
     key1: "",
 };
+
+const objWithArray = { arr: [] };
+const ojbWithObj = { obj: {} };
 
 // one-var
 const firstVar, secondVar = 1;
