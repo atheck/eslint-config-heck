@@ -11,12 +11,20 @@ const Component = function (props: Props): React.ReactElement {
 };
 
 class ClassComponent extends React.Component<{}, { actionName: string }> {
-    render (): React.ReactElement {
+    private renderBefore (): null {
+        return null;
+    }
+
+    public render (): React.ReactElement {
         this.setState({ actionName: this.state.actionName });
 
         return < div aria-checked={true}  color="black"
 
             className = "foo"/>;
+    }
+
+    private renderPart (): JSX.Element {
+        return <div />;
     }
 }
 

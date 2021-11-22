@@ -112,6 +112,7 @@ const renamedDestructureProp = destructureMe.destructureProp;
 
 const destructureArray = [1, 2, 3];
 const arrayValue = destructureArray[1];
+const [destructured1, destructured2] = destructureArray;
 
 // prefer-numeric-literals
 parseInt("1111", 2);

@@ -468,8 +468,14 @@ const rules = {
     "prefer-destructuring": [
         "error",
         {
-            object: true,
-            array: false,
+            VariableDeclarator: {
+                array: false,
+                object: true,
+            },
+            AssignmentExpression: {
+                array: false,
+                object: false,
+            },
         },
     ],
     "prefer-numeric-literals": "error",
@@ -551,7 +557,7 @@ const rules = {
         "error",
         {
             groups: {
-                rendering: ["/^render.+$/", "render"],
+                render: ["render", "/^render.+$/"],
             },
         },
     ],
@@ -893,7 +899,11 @@ const overrides = [
             "@typescript-eslint/no-for-in-array": "error",
             "@typescript-eslint/no-implicit-any-catch": "error",
             "@typescript-eslint/no-inferrable-types": "error",
-            "@typescript-eslint/no-invalid-void-type": "error",
+            "@typescript-eslint/no-invalid-void-type": [
+                "error", {
+                    allowAsThisParameter: true,
+                },
+            ],
             "@typescript-eslint/no-meaningless-void-operator": "error",
             "@typescript-eslint/no-misused-new": "error",
             "@typescript-eslint/no-misused-promises": "error",
