@@ -62,3 +62,14 @@ const promiseThrows = async function (): Promise<string> {
 type SomeType = {
     prop: number,
 };
+
+// no-redeclare
+interface Merge {
+    foo: () => void,
+}
+
+class Merge {
+    public foo (): void {
+        // blank
+    }
+}

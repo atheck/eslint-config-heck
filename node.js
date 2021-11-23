@@ -390,14 +390,7 @@ const rules = {
     ],
     "prefer-exponentiation-operator": "error",
     "prefer-object-spread": "error",
-    "quote-props": [
-        "error",
-        "as-needed",
-        {
-            keywords: true,
-            numbers: true,
-        },
-    ],
+    "quote-props": ["error", "as-needed"],
     quotes: ["error", "double"],
     semi: [
         "error",
