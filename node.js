@@ -650,7 +650,7 @@ const rules = {
         {
             declaration: "parens-new-line",
             assignment: "parens-new-line",
-            "return": "parens-new-line",
+            return: "parens-new-line",
             arrow: "parens-new-line",
         },
     ],
@@ -790,14 +790,14 @@ const overrides = [
             ...globals,
             NodeJS: true,
         },
-        plugins: [...plugins, "@typescript-eslint"/* , "deprecation" */],
+        plugins: [...plugins, "@typescript-eslint", "typescript-heck",/* , "deprecation" */],
         rules: {
             // Typescript
             "@typescript-eslint/adjacent-overload-signatures": "error",
             "@typescript-eslint/array-type": [
                 "error",
                 {
-                    "default": "array",
+                    default: "array",
                 },
             ],
             "@typescript-eslint/await-thenable": "error",
@@ -1130,6 +1130,9 @@ const overrides = [
             "no-unexpected-multiline": "off",
             "no-unsafe-negation": "off",
             "valid-typeof": "off",
+
+            // typescript-heck
+            "typescript-heck/array-type-spacing": ["error", "always"],
         },
     },
     {
