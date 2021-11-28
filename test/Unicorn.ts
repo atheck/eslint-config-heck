@@ -56,3 +56,15 @@ const bigNumber = 1000;
 
 // no-nested-ternary
 const nestedTernary = true ? true ? 1 : 2 : 3;
+
+// prefer-code-point
+const char = String.fromCharCode(0x1_F9_84);
+
+// no-await-expression-member
+async function doSomething (): Promise<string> {
+    return "";
+}
+
+async function awaitSomething (): Promise<number> {
+    return (await doSomething()).length;
+}
