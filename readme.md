@@ -27,7 +27,3 @@ If you are in the browser, use:
     "extends": "heck/browser"
 }
 ~~~
-
-## TODO
-
-- [ ] object-curly-newline überdenken
