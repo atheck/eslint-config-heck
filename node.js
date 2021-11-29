@@ -1134,7 +1134,7 @@ const overrides = [
             "valid-typeof": "off",
 
             // typescript-heck
-            "typescript-heck/array-type-spacing": ["error", "always"],
+            "typescript-heck/array-type-spacing": ["error", "always", { betweenDimensions: "never" }],
         },
     },
     {
