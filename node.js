@@ -391,7 +391,7 @@ const rules = {
     "prefer-exponentiation-operator": "error",
     "prefer-object-spread": "error",
     "quote-props": ["error", "as-needed"],
-    quotes: ["error", "double"],
+    quotes: ["error", "double", { avoidEscape: true }],
     semi: [
         "error",
         "always",
@@ -1092,7 +1092,7 @@ const overrides = [
                 },
             ],
             quotes: "off",
-            "@typescript-eslint/quotes": ["error", "double"],
+            "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
             "require-await": "off",
             "@typescript-eslint/require-await": "off",
             "no-return-await": "off",
