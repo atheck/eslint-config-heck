@@ -549,6 +549,14 @@ const rules = {
     "react/sort-comp": [
         "error",
         {
+            order: [
+                "static-variables",
+                "instance-variables",
+                "static-methods",
+                "lifecycle",
+                "render",
+                "everything-else",
+            ],
             groups: {
                 render: ["render", "/^render.+$/"],
             },
