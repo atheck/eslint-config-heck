@@ -68,3 +68,11 @@ async function doSomething (): Promise<string> {
 async function awaitSomething (): Promise<number> {
     return (await doSomething()).length;
 }
+
+// no-thenable
+function then (): void {}
+
+export { then };
+
+// relative-url-style
+const url = new URL("./foo", ".");
