@@ -37,7 +37,7 @@ let inconsistentTypeAssertion = <string>"hello";
 
 // explicit-function-return-type
 const noReturnType1 = () => "test";
-const noReturnType2 = [1, 2].map((i): number => i + 1);
+const noReturnType2 = [1, 2].map(i => i + 1);
 
 // member-delimiter-style
 type WithSemicolons = {

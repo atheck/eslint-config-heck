@@ -840,9 +840,9 @@ const overrides = [
                 "error",
                 {
                     allowExpressions: true,
-                    allowTypedFunctionExpressions: false,
-                    allowHigherOrderFunctions: false,
-                    allowDirectConstAssertionInArrowFunctions: false,
+                    allowTypedFunctionExpressions: true,
+                    allowHigherOrderFunctions: true,
+                    allowDirectConstAssertionInArrowFunctions: true,
                     allowConciseArrowFunctionExpressionsStartingWithVoid: false,
                 },
             ],
