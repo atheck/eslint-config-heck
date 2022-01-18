@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-heck",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
   "main": "index.js",
   "scripts": {
