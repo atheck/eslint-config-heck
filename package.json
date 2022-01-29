@@ -4,6 +4,7 @@
   "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
   "main": "index.js",
   "scripts": {
+    "install-peers": "npm install --no-save react",
     "lint": "eslint --ext '.ts,.tsx' ."
   },
   "keywords": [
@@ -16,19 +17,21 @@
   "license": "MIT",
   "dependencies": {
     "@delagen/eslint-plugin-deprecation": "1.3.2",
-    "@typescript-eslint/eslint-plugin": "5.10.0",
-    "@typescript-eslint/parser": "5.10.0",
-    "eslint": "8.7.0",
-    "eslint-plugin-jest": "25.7.0",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
+    "eslint": "8.8.0",
+    "eslint-plugin-jest": "26.0.0",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-typescript-heck": "1.2.0",
     "eslint-plugin-unicorn": "40.1.0",
-    "react": "17.0.2",
-    "typescript": "4.5.4"
+    "typescript": "4.5.5"
   },
   "devDependencies": {
     "@types/jest": "27.4.0",
     "@types/react": "17.0.38",
     "jest": "27.4.7"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
   }
 }
