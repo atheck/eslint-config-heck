@@ -506,6 +506,8 @@ const rules = {
             unnamedComponents: "arrow-function",
         },
     ],
+    "react/hook-use-state": "error",
+    "react/iframe-missing-sandbox": "error",
     "react/no-access-state-in-setstate": "error",
     "react/no-adjacent-inline-elements": "error",
     "react/no-array-index-key": "error",
@@ -770,8 +772,7 @@ const rules = {
     "unicorn/prefer-set-has": "error",
     "unicorn/prefer-spread": "error",
 
-    // TODO: only available in Node.js 15+, so enable it later
-    "unicorn/prefer-string-replace-all": "off",
+    "unicorn/prefer-string-replace-all": "error",
     "unicorn/prefer-string-slice": "error",
     "unicorn/prefer-string-starts-ends-with": "error",
     "unicorn/prefer-string-trim-start-end": "error",
@@ -788,6 +789,7 @@ const rules = {
     "unicorn/require-post-message-target-origin": "error",
     "unicorn/string-content": "off",
     "unicorn/template-indent": "off",
+    "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
 };
 
@@ -1170,6 +1172,7 @@ const overrides = [
             "jest/no-alias-methods": "error",
             "jest/no-commented-out-tests": "error",
             "jest/no-conditional-expect": "error",
+            "jest/no-conditional-in-test": "error",
             "jest/no-deprecated-functions": "error",
             "jest/no-disabled-tests": "warn",
             "jest/no-done-callback": "error",
@@ -1178,7 +1181,6 @@ const overrides = [
             "jest/no-focused-tests": "warn",
             "jest/no-hooks": "off",
             "jest/no-identical-title": "error",
-            "jest/no-if": "error",
             "jest/no-interpolation-in-snapshots": "error",
             "jest/no-jasmine-globals": "error",
             "jest/no-jest-import": "error",
@@ -1199,6 +1201,7 @@ const overrides = [
                     ignore: ["describe"],
                 },
             ],
+            "jest/prefer-snapshot-hint": "error",
             "jest/prefer-spy-on": "error",
             "jest/prefer-strict-equal": "error",
             "jest/prefer-to-be": "error",

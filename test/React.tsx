@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 type Props = {
     actionName: string,
@@ -26,6 +26,16 @@ class ClassComponent extends React.Component<{}, { actionName: string }> {
     private renderPart (): JSX.Element {
         return <div />;
     }
+}
+
+function FunctionComponent (): React.ReactElement {
+    const hook = useState(true);
+
+    return (
+        <iframe>
+            <div />
+        </iframe>
+    );
 }
 
 export { Component };

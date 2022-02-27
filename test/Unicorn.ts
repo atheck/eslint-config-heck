@@ -76,3 +76,6 @@ export { then };
 
 // relative-url-style
 const url = new URL("./foo", ".");
+
+// text-encoding-identifier-case
+const string = Buffer.toString("utf-8");

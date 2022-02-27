@@ -34,4 +34,9 @@ describe("Test", () => {
             expect(true).toBeTruthy();
         }
     });
+
+    it("snapshot", () => {
+        expect("value").toMatchSnapshot();
+        expect("value").toMatchSnapshot();
+    });
 });
