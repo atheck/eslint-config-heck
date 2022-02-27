@@ -1229,4 +1229,6 @@ module.exports = {
     settings,
     rules,
     overrides,
+
+    reportUnusedDisableDirectives: true,
 };
