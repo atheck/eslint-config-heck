@@ -73,3 +73,9 @@ class Merge {
         // blank
     }
 }
+
+// no-redundant-type-constituents
+export type Redundant = any | "string";
+
+// no-useless-empty-export
+export {};
