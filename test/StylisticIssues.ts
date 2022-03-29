@@ -51,6 +51,18 @@ const commaStyle = [
     ,
 ];
 
+function lotArgs (
+    valueA: string,
+    valueB: number
+): string {
+    return valueA + valueB.toString();
+}
+
+lotArgs(
+    "a",
+    2
+);
+
 // computed-property-spacing
 const computedPropertySpacing = { a: 1 };
 const someProp = "a";
