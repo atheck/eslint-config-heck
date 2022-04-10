@@ -79,3 +79,19 @@ const url = new URL("./foo", ".");
 
 // text-encoding-identifier-case
 const string = Buffer.toString("utf-8");
+
+// prefer-modern-math-apis
+const log = Math.log(2) * Math.LOG10E;
+
+// no-useless-switch-case
+switch (log) {
+    case 1_000:
+
+    // eslint-disable-next-line no-fallthrough
+    default:
+        scoping();
+        break;
+}
+
+// prefer-native-coercion-functions
+const toBoolean = (value: number): boolean => Boolean(value);
