@@ -1155,7 +1155,7 @@ const overrides = [
     },
     {
         files: ["*.spec.ts", "*.spec.tsx", "*.test.ts", "*.test.tsx", "*.spec.js", "*.spec.jsx", "*.test.js", "*.test.jsx"],
-        plugins: ["jest"],
+        plugins: ["jest", "testing-library"],
         rules: {
             // eslint-plugin-jest
             "jest/consistent-test-it": "error",
@@ -1213,6 +1213,34 @@ const overrides = [
             "jest/valid-title": "error",
             "@typescript-eslint/unbound-method": "off",
             "jest/unbound-method": "error",
+
+            // plugin-testing-library
+            "testing-library/await-async-query": "error",
+            "testing-library/await-async-utils": "error",
+            "testing-library/consistent-data-testid": "off",
+            "testing-library/no-await-sync-events": "off",
+            "testing-library/no-await-sync-query": "off",
+            "testing-library/no-container": "error",
+            "testing-library/no-debugging-utils": "error",
+            "testing-library/no-dom-import": ["error", "react"],
+            "testing-library/no-global-regexp-flag-in-query": "error",
+            "testing-library/no-manual-cleanup": "error",
+            "testing-library/no-node-access": "error",
+            "testing-library/no-promise-in-fire-event": "off",
+            "testing-library/no-render-in-setup": "error",
+            "testing-library/no-unnecessary-act": "error",
+            "testing-library/no-wait-for-empty-callback": "error",
+            "testing-library/no-wait-for-multiple-assertions": "error",
+            "testing-library/no-wait-for-side-effects": "error",
+            "testing-library/no-wait-for-snapshot": "error",
+            "testing-library/prefer-explicit-assert": "error",
+            "testing-library/prefer-find-by": "error",
+            "testing-library/prefer-presence-queries": "error",
+            "testing-library/prefer-query-by-disappearance": "error",
+            "testing-library/prefer-screen-queries": "error",
+            "testing-library/prefer-user-event": "error",
+            "testing-library/prefer-wait-for": "error",
+            "testing-library/render-result-naming-convention": "off",
         },
     },
 ];
