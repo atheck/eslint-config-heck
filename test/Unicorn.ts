@@ -87,7 +87,6 @@ const log = Math.log(2) * Math.LOG10E;
 switch (log) {
     case 1_000:
 
-    // eslint-disable-next-line no-fallthrough
     default:
         scoping();
         break;
