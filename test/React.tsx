@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 type Props = {
     actionName: string,
@@ -36,6 +36,21 @@ function FunctionComponent (): React.ReactElement {
             <div />
         </iframe>
     );
+}
+
+// Hooks
+function Hooks (): JSX.Element {
+    if (true) {
+        const [state, setState] = useState(true);
+    }
+
+    const [someVar, setSomeVar] = useState(true);
+
+    useCallback(() => {
+        if (someVar) {
+            setSomeVar(false);
+        }
+    }, []);
 }
 
 export { Component };

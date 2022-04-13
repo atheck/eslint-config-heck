@@ -20,7 +20,7 @@ const env = {
 
 const globals = {};
 
-const plugins = ["react", "unicorn"];
+const plugins = ["react", "react-hooks", "unicorn"];
 const settings = {
     react: {
         version: "detect",
@@ -665,6 +665,10 @@ const rules = {
             arrow: "parens-new-line",
         },
     ],
+
+    // eslint-plugin-react-hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
 
     // eslint-plugin-unicorn
     "unicorn/better-regex": "error",
