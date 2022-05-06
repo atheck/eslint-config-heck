@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { Fragment, useCallback, useState } from "react";
 
 type Props = {
     actionName: string,
@@ -25,6 +25,22 @@ class ClassComponent extends React.Component<{}, { actionName: string }> {
 
     private renderPart (): JSX.Element {
         return <div />;
+    }
+
+    private uselessFragment(): JSX.Element {
+        return (
+            <Fragment>
+                {"single"}
+            </Fragment>
+        );
+    }
+
+    private uselessFragment(): JSX.Element {
+        return (
+            <Fragment>
+                <div />
+            </Fragment>
+        );
     }
 }
 

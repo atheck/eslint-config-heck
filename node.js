@@ -641,7 +641,12 @@ const rules = {
             allowGlobals: false,
         },
     ],
-    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-no-useless-fragment": [
+        "error",
+        {
+            allowExpressions: true,
+        },
+    ],
     "react/jsx-one-expression-per-line": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-multi-spaces": "error",
