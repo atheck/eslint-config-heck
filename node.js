@@ -19,8 +19,8 @@ const env = {
 };
 
 const globals = {};
-
-const plugins = ["react", "react-hooks", "unicorn"];
+const extendConfigs = ["plugin:import/typescript"];
+const plugins = ["react", "react-hooks", "unicorn", "import"];
 const settings = {
     react: {
         version: "detect",
@@ -804,6 +804,59 @@ const rules = {
     "unicorn/template-indent": "off",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
+
+    // eslint-plugin-import
+    "import/no-unresolved": "off",
+    "import/name": "off",
+    "import/default": "off",
+    "import/namespace": "off",
+    "import/no-restricted-paths": "off",
+    "import/no-absolute-path": "error",
+    "import/no-dynamic-require": "off",
+    "import/no-internal-modules": "off",
+    "import/no-webpack-loader-syntax": "error",
+    "import/no-self-import": "error",
+    "import/no-cycle": [
+        "error",
+        {
+            ignoreExternal: true,
+        },
+    ],
+    "import/no-useless-path-segments": [
+        "error",
+        {
+            noUselessIndex: true,
+        },
+    ],
+    "import/no-relative-parent-imports": "off",
+    "import/no-relative-packages": "off",
+    "import/export": "off",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "off",
+    "import/no-deprecated": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-mutable-exports": "error",
+    "import/no-unused-modules": "off",
+    "import/unambiguous": "off",
+    "import/no-commonjs": "off",
+    "import/no-amd": "off",
+    "import/no-nodejs-modules": "off",
+    "import/first": "off",
+    "import/exports-last": "error",
+    "import/no-duplicates": "off",
+    "import/no-namespace": "off",
+    "import/extensions": "off",
+    "import/order": "off",
+    "import/newline-after-import": "off",
+    "import/prefer-default-export": "off",
+    "import/max-dependencies": "off",
+    "import/no-unassigned-import": "off",
+    "import/no-named-default": "off",
+    "import/no-default-export": "off",
+    "import/no-named-export": "off",
+    "import/no-anonymous-default-export": "error",
+    "import/group-exports": "error",
+    "import/dynamic-import-chunkname": "off",
 };
 
 const overrides = [
@@ -1255,6 +1308,7 @@ const overrides = [
 ];
 
 module.exports = {
+    extends: extendConfigs,
     parserOptions,
     env,
     globals,
