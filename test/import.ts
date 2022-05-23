@@ -23,3 +23,7 @@ export default defaultExport1;
 export default defaultExport2;
 
 import * as First from "./React";
+
+// no-duplicates
+import { AbstractKeyword } from "typescript";
+import { AccessExpression } from "typescript";

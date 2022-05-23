@@ -426,12 +426,7 @@ const rules = {
     "no-confusing-arrow": "off",
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
-    "no-duplicate-imports": [
-        "error",
-        {
-            includeExports: true,
-        },
-    ],
+    "no-duplicate-imports": "off",
     "no-new-symbol": "error",
     "no-restricted-imports": "off",
     "no-restricted-exports": "off",
@@ -844,7 +839,7 @@ const rules = {
     "import/no-nodejs-modules": "off",
     "import/first": "off",
     "import/exports-last": "error",
-    "import/no-duplicates": "off",
+    "import/no-duplicates": "error",
     "import/no-namespace": "off",
     "import/extensions": "off",
     "import/order": "off",
@@ -1090,12 +1085,7 @@ const overrides = [
             "no-dupe-class-members": "off",
             "@typescript-eslint/no-dupe-class-members": "off",
             "no-duplicate-imports": "off",
-            "@typescript-eslint/no-duplicate-imports": [
-                "error",
-                {
-                    includeExports: true,
-                },
-            ],
+            "@typescript-eslint/no-duplicate-imports": "off",
             "no-empty-function": "off",
             "@typescript-eslint/no-empty-function": "error",
             "no-extra-parens": "off",
