@@ -489,7 +489,11 @@ const rules = {
     "react/boolean-prop-naming": "off",
     "react/button-has-type": "error",
     "react/default-props-match-prop-types": "off",
-    "react/destructuring-assignment": ["error", "always"],
+    "react/destructuring-assignment": [
+        "error",
+        "always",
+        { destructureInSignature: "always" },
+    ],
     "react/display-name": "off",
     "react/forbid-component-props": "off",
     "react/forbid-dom-props": "off",
@@ -621,6 +625,7 @@ const rules = {
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-constructed-context-values": "error",
     "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-leaked-render": "error",
     "react/jsx-no-literals": "off",
     "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": [

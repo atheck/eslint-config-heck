@@ -55,7 +55,7 @@ function FunctionComponent (): React.ReactElement {
 }
 
 // Hooks
-function Hooks (): JSX.Element {
+function Hooks (props: Props): JSX.Element {
     if (true) {
         const [state, setState] = useState(true);
     }
@@ -67,6 +67,14 @@ function Hooks (): JSX.Element {
             setSomeVar(false);
         }
     }, []);
+
+    const { actionName } = props;
+
+    return (
+        <div>
+            {actionName}
+        </div>
+    );
 }
 
 export { Component };
