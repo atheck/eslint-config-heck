@@ -1210,6 +1210,10 @@ const overrides = [
 
             // typescript-heck
             "typescript-heck/array-type-spacing": ["error", "always", { betweenDimensions: "never" }],
+
+            // React
+            // If you are working in a typed-codebase which encourages you to always use boolean conditions, this rule can be disabled.
+            "react/jsx-no-leaked-render": "off",
         },
     },
     {
