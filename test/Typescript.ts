@@ -79,3 +79,17 @@ export type Redundant = any | "string";
 
 // no-useless-empty-export
 export {};
+
+// naming-convention
+// ignore destructured
+
+const WrongNaming = {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    toJSON () {
+        // blank
+    },
+};
+
+const { toJSON } = WrongNaming;
+
+toJSON();

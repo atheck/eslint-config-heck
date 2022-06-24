@@ -958,6 +958,11 @@ const overrides = [
                     format: ["StrictPascalCase"],
                     prefix: ["T"],
                 },
+                {
+                    selector: "variable",
+                    modifiers: ["destructured"],
+                    format: null,
+                },
             ],
             "@typescript-eslint/no-base-to-string": "error",
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
