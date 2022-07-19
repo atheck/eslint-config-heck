@@ -1,6 +1,6 @@
 "use strict";
 
-const path = require("path");
+const path = require("node:path");
 
 const parserOptions = {
     sourceType: "script",
@@ -1233,6 +1233,7 @@ const overrides = [
                     assertFunctionNames: ["expect*"],
                 },
             ],
+            "jest/max-expects": "off",
             "jest/max-nested-describe": "off",
             "jest/no-alias-methods": "error",
             "jest/no-commented-out-tests": "error",
