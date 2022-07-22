@@ -4,7 +4,6 @@
   "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
   "main": "index.js",
   "scripts": {
-    "install-peers": "npm install --no-save react",
     "update": "npx npm-check-updates -i",
     "lint": "eslint --ext '.ts,.tsx' .",
     "semantic-release": "semantic-release"
@@ -37,10 +36,8 @@
     "@types/jest": "28.1.6",
     "@types/react": "18.0.15",
     "jest": "28.1.3",
+    "react": ">=16.8.0",
     "semantic-release": "19.0.3"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0"
   },
   "repository": {
     "type": "git",
