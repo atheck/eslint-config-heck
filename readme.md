@@ -27,3 +27,11 @@ If you are in the browser, use:
     "extends": "heck/browser"
 }
 ~~~
+
+Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** or **browser** rules:
+
+~~~json
+{
+    "extends": ["heck/node", "heck/complexity"]
+}
+~~~
