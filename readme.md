@@ -28,10 +28,20 @@ If you are in the browser, use:
 }
 ~~~
 
+### Extensions
+
 Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** or **browser** rules:
 
 ~~~json
 {
     "extends": ["heck/node", "heck/complexity"]
+}
+~~~
+
+Optionally you switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** or **browser** rules:
+
+~~~json
+{
+    "extends": ["heck/node", "heck/groupImports"]
 }
 ~~~

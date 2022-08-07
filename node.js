@@ -809,7 +809,7 @@ const rules = {
 
     // eslint-plugin-import
     "import/no-unresolved": "off",
-    "import/name": "off",
+    "import/named": "off",
     "import/default": "off",
     "import/namespace": "off",
     "import/no-restricted-paths": "off",
@@ -843,7 +843,7 @@ const rules = {
     "import/no-commonjs": "off",
     "import/no-amd": "off",
     "import/no-nodejs-modules": "off",
-    "import/first": "off",
+    "import/first": "error",
     "import/exports-last": "error",
     "import/no-duplicates": "error",
     "import/no-namespace": "off",
