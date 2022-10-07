@@ -28,7 +28,7 @@ const settings = {
 };
 
 const rules = {
-    // Possible errors
+    // Possible problems
     "for-direction": "error",
     "getter-return": "error",
     "no-async-promise-executor": "error",
@@ -97,7 +97,7 @@ const rules = {
     "use-isnan": "error",
     "valid-typeof": "error",
 
-    // Best practices
+    // Suggestions
     "accessor-pairs": [
         "error",
         {
@@ -126,6 +126,7 @@ const rules = {
     eqeqeq: ["error", "always"],
     "grouped-accessor-pairs": ["error", "getBeforeSet"],
     "guard-for-in": "error",
+    "logical-assignment-operators": "error",
     "max-classes-per-file": "off",
     "no-alert": "error",
     "no-caller": "error",
@@ -248,7 +249,7 @@ const rules = {
     ],
     "no-use-before-define": ["error", "nofunc"],
 
-    // Stylistic issues
+    // Layout & Formatting
     "array-bracket-newline": [
         "error",
         {
@@ -733,6 +734,7 @@ const rules = {
     "unicorn/no-static-only-class": "error",
     "unicorn/no-thenable": "error",
     "unicorn/no-this-assignment": "error",
+    "unicorn/no-unnecessary-await": "error",
     "unicorn/no-unreadable-array-destructuring": "error",
     "unicorn/no-unreadable-iife": "error",
     "unicorn/no-unsafe-regex": "off",
@@ -751,7 +753,11 @@ const rules = {
         },
     ],
     "unicorn/prefer-add-event-listener": "error",
-    "unicorn/prefer-array-find": "error",
+    "unicorn/prefer-array-find": [
+        "error", {
+            checkFromLast: true,
+        },
+    ],
     "unicorn/prefer-array-flat": "error",
     "unicorn/prefer-array-flat-map": "error",
     "unicorn/prefer-array-index-of": "error",
@@ -803,6 +809,7 @@ const rules = {
     "unicorn/require-number-to-fixed-digits-argument": "error",
     "unicorn/require-post-message-target-origin": "error",
     "unicorn/string-content": "off",
+    "unicorn/switch-case-braces": ["error", "avoid"],
     "unicorn/template-indent": "off",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
