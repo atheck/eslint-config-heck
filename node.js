@@ -5,7 +5,7 @@ const path = require("node:path");
 const parserOptions = {
     sourceType: "script",
 
-    ecmaVersion: 12,
+    ecmaVersion: 13,
     ecmaFeatures: {
         globalReturn: false,
         impliedStrict: false,
@@ -14,7 +14,7 @@ const parserOptions = {
 };
 
 const env = {
-    es2021: true,
+    es2022: true,
     node: true,
 };
 
@@ -74,6 +74,7 @@ const rules = {
     ],
     "no-loss-of-precision": "error",
     "no-misleading-character-class": "error",
+    "no-new-native-nonconstructor": "error",
     "no-obj-calls": "error",
     "no-promise-executor-return": "error",
     "no-prototype-builtins": "error",
@@ -141,6 +142,7 @@ const rules = {
     ],
     "no-empty-function": "error",
     "no-empty-pattern": "error",
+    "no-empty-static-block": "error",
     "no-eq-null": "off",
     "no-eval": "error",
     "no-extend-native": "error",
