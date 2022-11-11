@@ -28,7 +28,9 @@ If you are in the browser, use:
 }
 ~~~
 
-### Extensions
+## Extensions
+
+### Complexity
 
 Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** or **browser** rules:
 
@@ -38,10 +40,22 @@ Optionally you can enable some complexity rules by using the **complexity** conf
 }
 ~~~
 
-Optionally you switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** or **browser** rules:
+### Group imports
+
+Optionally you can switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** or **browser** rules:
 
 ~~~json
 {
     "extends": ["heck/node", "heck/groupImports"]
+}
+~~~
+
+### React Native
+
+If you are using react-native, you can enable react-native specific rules:
+
+~~~json
+{
+    "extends": ["heck/node", "heck/reactNative"]
 }
 ~~~
