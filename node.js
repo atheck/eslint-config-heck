@@ -727,6 +727,7 @@ const rules = {
     "unicorn/no-invalid-remove-event-listener": "error",
     "unicorn/no-keyword-prefix": "off",
     "unicorn/no-lonely-if": "error",
+    "unicorn/no-negated-condition": "error",
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-new-array": "error",
     "unicorn/no-new-buffer": "error",
@@ -747,6 +748,7 @@ const rules = {
     "unicorn/no-useless-spread": "error",
     "unicorn/no-useless-switch-case": "error",
     "unicorn/no-useless-undefined": "error",
+    "unicorn/no-typeof-undefined": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/number-literal-case": "error",
     "unicorn/numeric-separators-style": [
@@ -793,6 +795,7 @@ const rules = {
     "unicorn/prefer-reflect-apply": "error",
     "unicorn/prefer-regexp-test": "error",
     "unicorn/prefer-set-has": "error",
+    "unicorn/prefer-set-size": "error",
     "unicorn/prefer-spread": "error",
 
     "unicorn/prefer-string-replace-all": "error",

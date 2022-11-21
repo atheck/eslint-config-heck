@@ -94,3 +94,22 @@ switch (log) {
 
 // prefer-native-coercion-functions
 const toBoolean = (value: number): boolean => Boolean(value);
+
+// no-negated-condition
+if (!log) {
+    console.log("false");
+} else {
+    console.log("true");
+}
+
+// no-typeof-undefined
+if (typeof log === "undefined") {
+    // blank
+}
+
+// prefer-set-size
+const uniqueNumbers = [1, 1, 2, 2];
+
+if ([...new Set(uniqueNumbers)].length === uniqueNumbers.length) {
+    // blank
+}
