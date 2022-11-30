@@ -1202,7 +1202,7 @@ const overrides = [
             "@typescript-eslint/space-infix-ops": "error",
 
             // Deprecation
-            "@delagen/deprecation/deprecation": "error",
+            "@delagen/deprecation/deprecation": "warn",
 
             // Typescript handles itself
             "consistent-return": "off",
