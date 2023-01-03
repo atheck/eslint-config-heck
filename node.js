@@ -916,6 +916,7 @@ const overrides = [
                 "error",
                 {
                     prefer: "no-type-imports",
+                    disallowTypeAnnotations: false,
                 },
             ],
             "@typescript-eslint/explicit-function-return-type": [
@@ -1325,6 +1326,14 @@ const overrides = [
             "testing-library/prefer-user-event": "error",
             "testing-library/prefer-wait-for": "error",
             "testing-library/render-result-naming-convention": "off",
+        },
+    },
+    {
+        files: ["*.spec.ts", "*.spec.tsx", "*.test.ts", "*.test.tsx"],
+        plugins: ["jest"],
+        rules: {
+            // eslint-plugin-jest
+            "jest/no-untyped-mock-factory": "error",
         },
     },
 ];

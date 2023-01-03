@@ -1,3 +1,6 @@
+// jest/no-untyped-mock-factory
+jest.mock("./React", () => ({}));
+
 describe("Test", () => {
     // jest/expect-expect
     it("works", () => {
