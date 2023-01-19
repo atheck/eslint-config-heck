@@ -27,3 +27,6 @@ import * as First from "./React";
 // no-duplicates
 import { AbstractKeyword } from "typescript";
 import { AccessExpression } from "typescript";
+
+// no-empty-named-blocks
+import {} from "eslint";
