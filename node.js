@@ -1107,6 +1107,8 @@ const overrides = [
             ],
             "init-declarations": "off",
             "@typescript-eslint/init-declarations": "off",
+            "key-spacing": "off",
+            "@typescript-eslint/key-spacing": "error",
             "keyword-spacing": "off",
             "@typescript-eslint/keyword-spacing": "error",
             "lines-between-class-members": "off",
