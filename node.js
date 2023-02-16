@@ -1008,6 +1008,7 @@ const overrides = [
             ],
             "@typescript-eslint/no-for-in-array": "error",
             "@typescript-eslint/no-implicit-any-catch": "error",
+            "@typescript-eslint/no-import-type-side-effects": "off",
             "@typescript-eslint/no-inferrable-types": "error",
             "@typescript-eslint/no-invalid-void-type": [
                 "error", {
@@ -1085,6 +1086,8 @@ const overrides = [
             "@typescript-eslint/unified-signatures": "error",
 
             // Extension rules
+            "block-spacing": "off",
+            "@typescript-eslint/block-spacing": "error",
             "brace-style": "off",
             "@typescript-eslint/brace-style": "error",
             "comma-dangle": "off",
