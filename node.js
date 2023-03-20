@@ -762,11 +762,7 @@ const rules = {
     "unicorn/no-typeof-undefined": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/number-literal-case": "error",
-    "unicorn/numeric-separators-style": [
-        "error", {
-            number: { minimumDigits: 0, groupLength: 3 },
-        },
-    ],
+    "unicorn/numeric-separators-style": "error",
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/prefer-array-find": [
         "error", {

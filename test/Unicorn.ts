@@ -52,7 +52,7 @@ console.log(usedObj.used);
 const { used } = usedObj;
 
 // numeric-separator-style
-const bigNumber = 1000;
+const bigNumber = 1_000;
 
 // no-nested-ternary
 const nestedTernary = true ? true ? 1 : 2 : 3;
