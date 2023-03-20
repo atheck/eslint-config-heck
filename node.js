@@ -896,7 +896,7 @@ const overrides = [
             ...globals,
             NodeJS: true,
         },
-        plugins: [...plugins, "@typescript-eslint", "typescript-heck", "@delagen/deprecation"],
+        plugins: [...plugins, "@typescript-eslint", "typescript-heck", "deprecation"],
         rules: {
             // Typescript
             "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -1219,7 +1219,7 @@ const overrides = [
             "@typescript-eslint/space-infix-ops": "error",
 
             // Deprecation
-            "@delagen/deprecation/deprecation": "warn",
+            "deprecation/deprecation": "warn",
 
             // Typescript handles itself
             "consistent-return": "off",
