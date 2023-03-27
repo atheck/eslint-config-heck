@@ -59,3 +59,13 @@ If you are using react-native, you can enable react-native specific rules:
     "extends": ["heck/node", "heck/reactNative"]
 }
 ~~~
+
+### No formatting
+
+To disable some of the formatting rules (when using a formatter like prettier or rome) you can use this configuration:
+
+~~~json
+{
+    "extends": ["heck/node", "heck/noFormatting"]
+}
+~~~
