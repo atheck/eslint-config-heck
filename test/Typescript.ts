@@ -93,3 +93,7 @@ const WrongNaming = {
 const { toJSON } = WrongNaming;
 
 toJSON();
+
+// no-duplicate-type-constituents
+type Union = "A" | "A";
+type Intersection = { a: string } & { a: string };

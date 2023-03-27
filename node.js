@@ -992,6 +992,7 @@ const overrides = [
             "@typescript-eslint/no-confusing-non-null-assertion": "error",
             "@typescript-eslint/no-confusing-void-expression": "off",
             "@typescript-eslint/no-duplicate-enum-values": "error",
+            "@typescript-eslint/no-duplicate-type-constituents": "error",
             "@typescript-eslint/no-dynamic-delete": "error",
             "@typescript-eslint/no-explicit-any": "error",
             "@typescript-eslint/no-extra-non-null-assertion": "error",
