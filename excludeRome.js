@@ -38,6 +38,7 @@ module.exports = {
         "prefer-numeric-literals": "off",
         "prefer-rest-params": "off",
         "prefer-template": "off",
+        "sort-imports": "off",
         "valid-typeof": "off",
 
         // Typescript
