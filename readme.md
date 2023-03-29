@@ -62,10 +62,20 @@ If you are using react-native, you can enable react-native specific rules:
 
 ### No formatting
 
-To disable some of the formatting rules (when using a formatter like prettier or rome) you can use this configuration:
+To disable some of the formatting rules (when using a formatter like prettier or Rome) you can use this configuration:
 
 ~~~json
 {
     "extends": ["heck/node", "heck/noFormatting"]
+}
+~~~
+
+### Exclude rules included in Rome
+
+To disable some the rules that are already included in Rome you can use this configuration:
+
+~~~json
+{
+    "extends": ["heck/node", "heck/excludeRome"]
 }
 ~~~
