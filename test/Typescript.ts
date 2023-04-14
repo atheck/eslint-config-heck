@@ -97,3 +97,17 @@ toJSON();
 // no-duplicate-type-constituents
 type Union = "A" | "A";
 type Intersection = { a: string } & { a: string };
+
+// no-unsafe-declaration-merging
+interface Merging {}
+class Merging {}
+
+// no-unsafe-enum-comparison
+enum UnsafeEnum {
+    Apple,
+    Banana,
+}
+
+const enumValue: UnsafeEnum = UnsafeEnum.Apple;
+
+enumValue === 1;
