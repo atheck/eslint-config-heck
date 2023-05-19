@@ -113,3 +113,9 @@ const uniqueNumbers = [1, 1, 2, 2];
 if ([...new Set(uniqueNumbers)].length === uniqueNumbers.length) {
     // blank
 }
+
+// prefer-blob-reading-methods
+const fileReader = new FileReader();
+const blob = new Blob();
+
+fileReader.readAsArrayBuffer(blob);
