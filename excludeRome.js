@@ -91,6 +91,7 @@ module.exports = {
         "unicorn/no-useless-switch-case": "off",
         "unicorn/prefer-array-flat-map": "off",
         "unicorn/prefer-prototype-methods": "off",
+        "unicorn/switch-case-braces": "off",
 
         // React
         "react/button-has-type": "off",
