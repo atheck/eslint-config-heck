@@ -31,6 +31,7 @@ module.exports = {
         "no-loss-of-precision": "off",
         "no-negated-condition": "off",
         "no-new-symbol": "off",
+        "no-mixed-operators": "off",
         "no-obj-calls": "off",
         "no-param-reassign": "off",
         "no-prototype-builtins": "off",
@@ -64,6 +65,7 @@ module.exports = {
         "require-yield": "off",
         "sort-imports": "off",
         "valid-typeof": "off",
+        "wrap-regex": "off",
 
         // Typescript
         "@typescript-eslint/array-type": "off",

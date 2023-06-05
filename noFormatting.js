@@ -68,6 +68,7 @@ module.exports = {
         "typescript-heck/array-type-spacing": "off",
 
         // React
+        "react/jsx-curly-newline": "off",
         "react/jsx-indent": "off",
         "react/jsx-indent-props": "off",
         "react/jsx-one-expression-per-line": "off",
