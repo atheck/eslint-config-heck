@@ -230,11 +230,11 @@ const newFunc = new Function("a", "b", "return a + b;");
 // no-new-wrappers
 const newString = new String("Hello");
 
-// no-nonoctal-decimal-escape
-const nooctalEscape = "\8\9";
+// no-nonoctal-decimal-escape: off (typescript handles it)
+// const noNonOctalEscape = "\8\9";
 
-// no-octal-escape
-const octalEscape = "\251";
+// no-octal-escape: off (typescript handles it)
+// const octalEscape = "\251";
 
 // no-param-reassign
 const paramReassign = function (param: { a: number }) {
