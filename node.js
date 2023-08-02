@@ -1046,7 +1046,13 @@ const overrides = [
             "@typescript-eslint/prefer-includes": "error",
             "@typescript-eslint/prefer-literal-enum-member": "error",
             "@typescript-eslint/prefer-namespace-keyword": "off",
-            "@typescript-eslint/prefer-nullish-coalescing": "error",
+            "@typescript-eslint/prefer-nullish-coalescing": [
+                "error",
+                {
+                    ignoreConditionalTests: true,
+                    ignoreMixedLogicalExpressions: true,
+                },
+            ],
             "@typescript-eslint/prefer-optional-chain": "error",
             "@typescript-eslint/prefer-readonly": [
                 "error",
