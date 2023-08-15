@@ -1,3 +1,6 @@
 .github
+.eslintrc.json
+.releaserc.json
+tsconfig.json
 coverage
 test
