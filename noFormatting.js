@@ -76,7 +76,7 @@ module.exports = {
         "@typescript-eslint/member-delimiter-style": "off",
         "@typescript-eslint/no-extra-parens": "off",
         "@typescript-eslint/object-curly-spacing": "off",
-        "@typescript-eslint/padding-line-between-statements": "off",
+        // "@typescript-eslint/padding-line-between-statements": taken from node.js
         "@typescript-eslint/quotes": "off",
         "@typescript-eslint/semi": "off",
         "@typescript-eslint/space-before-blocks": "off",
