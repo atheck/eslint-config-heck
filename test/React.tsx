@@ -1,5 +1,7 @@
 import React, { Fragment, useCallback, useState } from "react";
 
+import "@testing-library/react";
+
 type Props = {
     actionName: string,
 }
@@ -78,3 +80,4 @@ function Hooks (props: Props): JSX.Element {
 }
 
 export { Component };
+export type { Fragment };

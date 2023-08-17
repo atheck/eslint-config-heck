@@ -294,7 +294,8 @@ const rules = {
     "jsx-quotes": "error",
     "key-spacing": "error",
     "keyword-spacing": "error",
-    "line-comment-position": "error",
+    // redundant with no-inline-comments
+    "line-comment-position": "off",
     "linebreak-style": ["error"],
     "lines-around-comment": "off",
     "lines-between-class-members": [
@@ -376,9 +377,11 @@ const rules = {
     "padded-blocks": ["error", "never"],
     "padding-line-between-statements": [
         "error",
+        // return
         {
             blankLine: "always", prev: "*", next: "return",
         },
+        // const, let, var
         {
             blankLine: "always", prev: ["const", "let", "var"], next: "*",
         },
@@ -386,10 +389,25 @@ const rules = {
             blankLine: "always", prev: "*", next: ["const", "let", "var"],
         },
         {
-            blankLine: "always", prev: "*", next: ["case", "default"],
+            blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"],
+        },
+        // import
+        {
+            blankLine: "always", prev: ["import", "cjs-import"], next: "*",
         },
         {
-            blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"],
+            blankLine: "never", prev: ["import", "cjs-import"], next: ["import", "cjs-import"],
+        },
+        // export
+        {
+            blankLine: "always", prev: "*", next: ["export", "cjs-export"],
+        },
+        {
+            blankLine: "any", prev: ["export", "cjs-export"], next: ["export", "cjs-export"],
+        },
+        // function
+        {
+            blankLine: "always", prev: "*", next: "function",
         },
     ],
     "prefer-exponentiation-operator": "error",
@@ -1184,9 +1202,11 @@ const overrides = [
             "padding-line-between-statements": "off",
             "@typescript-eslint/padding-line-between-statements": [
                 "error",
+                // return
                 {
                     blankLine: "always", prev: "*", next: "return",
                 },
+                // const, let, var
                 {
                     blankLine: "always", prev: ["const", "let", "var"], next: "*",
                 },
@@ -1194,10 +1214,39 @@ const overrides = [
                     blankLine: "always", prev: "*", next: ["const", "let", "var"],
                 },
                 {
-                    blankLine: "always", prev: "*", next: ["case", "default"],
+                    blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"],
+                },
+                // import
+                {
+                    blankLine: "always", prev: "import", next: "*",
                 },
                 {
-                    blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"],
+                    blankLine: "never", prev: "import", next: "import",
+                },
+                // export
+                {
+                    blankLine: "always", prev: "*", next: "export",
+                },
+                {
+                    blankLine: "any", prev: "export", next: "export",
+                },
+                // function
+                {
+                    blankLine: "always", prev: "*", next: "function",
+                },
+                // interface
+                {
+                    blankLine: "always", prev: "*", next: "interface",
+                },
+                {
+                    blankLine: "always", prev: "interface", next: "*",
+                },
+                // type
+                {
+                    blankLine: "always", prev: "*", next: "type",
+                },
+                {
+                    blankLine: "any", prev: "type", next: "type",
                 },
             ],
             quotes: "off",

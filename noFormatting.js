@@ -25,6 +25,7 @@ module.exports = {
         "jsx-quotes": "off",
         "key-spacing": "off",
         "keyword-spacing": "off",
+        "line-comment-position": "off",
         "linebreak-style": "off",
         "lines-between-class-members": "off",
         "max-len": "off",
@@ -32,6 +33,7 @@ module.exports = {
         "new-parens": "off",
         "newline-per-chained-call": "off",
         "no-extra-parens": "off",
+        // "no-inline-comments": taken from node.js
         "no-mixed-spaces-and-tabs": "off",
         "no-multi-spaces": "off",
         "no-tabs": "off",
@@ -43,7 +45,7 @@ module.exports = {
         "object-property-newline": "off",
         "operator-linebreak": "off",
         "padded-blocks": "off",
-        "padding-line-between-statements": "off",
+        // "padding-line-between-statements": taken from node.js
         quotes: "off",
         "rest-spread-spacing": "off",
         semi: "off",

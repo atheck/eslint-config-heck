@@ -394,3 +394,8 @@ const regexResult = /foo/u.exec("foo");
 // This must be the last rule of this file:
 // eol-last
 const lastLine = "";
+
+interface Foo {
+    name: string,
+}
+type Test = string;
