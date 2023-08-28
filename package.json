@@ -4,7 +4,7 @@
   "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
   "main": "index.js",
   "scripts": {
-    "update": "npx npm-check-updates -i",
+    "update": "npx npm-check-updates -i --install always",
     "lint": "eslint --ext '.ts,.tsx' .",
     "semantic-release": "semantic-release"
   },
@@ -17,28 +17,28 @@
   "author": "atheck",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.4.0",
-    "@typescript-eslint/parser": "6.4.0",
-    "eslint": "8.47.0",
+    "@typescript-eslint/eslint-plugin": "6.5.0",
+    "@typescript-eslint/parser": "6.5.0",
+    "eslint": "8.48.0",
     "eslint-import-resolver-typescript": "3.6.0",
     "eslint-plugin-deprecation": "1.5.0",
-    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-import": "2.28.1",
     "eslint-plugin-jest": "27.2.3",
-    "eslint-plugin-react": "7.33.1",
+    "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-native": "4.0.0",
-    "eslint-plugin-testing-library": "6.0.0",
+    "eslint-plugin-testing-library": "6.0.1",
     "eslint-plugin-typescript-heck": "1.3.1",
     "eslint-plugin-unicorn": "48.0.1",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
     "@testing-library/react": "14.0.0",
-    "@types/jest": "29.5.3",
-    "@types/react": "18.2.20",
-    "jest": "29.6.2",
+    "@types/jest": "29.5.4",
+    "@types/react": "18.2.21",
+    "jest": "29.6.4",
     "react": "18.2.0",
-    "semantic-release": "21.0.7"
+    "semantic-release": "21.1.1"
   },
   "repository": {
     "type": "git",
