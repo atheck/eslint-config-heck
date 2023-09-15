@@ -70,6 +70,16 @@ To disable some of the formatting rules (when using a formatter like prettier or
 }
 ~~~
 
+### Rules with usage of Biome
+
+If you are using Biome you can use "nodeWithBiome" or "browserWithBiome":
+
+~~~json
+{
+    "extends": ["heck/nodeWithBiome"]
+}
+~~~
+
 ### Exclude rules included in Rome
 
 To disable some the rules that are already included in Rome you can use this configuration:
@@ -79,3 +89,5 @@ To disable some the rules that are already included in Rome you can use this con
     "extends": ["heck/node", "heck/excludeRome"]
 }
 ~~~
+
+**Attention:** Since Rome is no longer maintained, this will not be the case with this ruleset. Use the Biome rulesets instead.
