@@ -80,6 +80,15 @@ If you are using Biome you can use "nodeWithBiome" or "browserWithBiome":
 }
 ~~~
 
+If you are using Biome you can also extend your Biome config with the "biomeLinting.json":
+
+~~~json
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "extends": ["./node_modules/eslint-config-heck/biomeLinting.json"]
+}
+~~~
+
 ### Exclude rules included in Rome
 
 To disable some the rules that are already included in Rome you can use this configuration:
