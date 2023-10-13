@@ -277,7 +277,7 @@ const rules = {
     "no-negated-condition": "off",
 
     "no-nested-ternary": "error",
-    "no-new-object": "error",
+    "no-object-constructor": "error",
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
     "no-tabs": "off",
@@ -1199,6 +1199,7 @@ const overrides = [
             "testing-library/no-wait-for-side-effects": "error",
             "testing-library/no-wait-for-snapshot": "error",
             "testing-library/prefer-explicit-assert": "error",
+            "testing-library/prefer-implicit-assert": "off",
             "testing-library/prefer-find-by": "error",
             "testing-library/prefer-presence-queries": "error",
             "testing-library/prefer-query-by-disappearance": "error",
