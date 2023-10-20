@@ -1198,6 +1198,20 @@ const overrides = [
             "@typescript-eslint/no-use-before-define": "off",
             "no-useless-constructor": "off",
             "@typescript-eslint/no-useless-constructor": "error",
+            "prefer-destructuring": "off",
+            "@typescript-eslint/prefer-destructuring": [
+                "error",
+                {
+                    VariableDeclarator: {
+                        array: false,
+                        object: true,
+                    },
+                    AssignmentExpression: {
+                        array: false,
+                        object: false,
+                    },
+                },
+            ],
             "object-curly-spacing": "off",
             "@typescript-eslint/object-curly-spacing": ["error", "always"],
             "padding-line-between-statements": "off",

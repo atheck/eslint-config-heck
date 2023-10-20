@@ -111,3 +111,9 @@ enum UnsafeEnum {
 const enumValue: UnsafeEnum = UnsafeEnum.Apple;
 
 enumValue === 1;
+
+const destructure = { a: 1, b: 2 };
+
+// prefer-destructuring
+const a = destructure.a;
+const {b} = destructure;
