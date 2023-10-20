@@ -32,7 +32,7 @@ module.exports = {
         "no-import-assign": "off",
         "no-inner-declarations": "off",
         "no-label-var": "off",
-        "no-lone-blocks": "off",
+        "no-lone-blocks": "error",
         "no-lonely-if": "off",
         "no-loss-of-precision": "off",
         "no-mixed-operators": "off",

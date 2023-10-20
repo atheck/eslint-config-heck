@@ -181,7 +181,7 @@
         "noMisrefactoredShorthandAssign": "error",
         "noUnusedImports": "error",
         "noUselessElse": "error",
-        "noUselessLoneBlockStatements": "error",
+        "noUselessLoneBlockStatements": "off",
         "useAriaActivedescendantWithTabindex": "error",
         "useArrowFunction": "error",
         "useAsConstAssertion": "error",

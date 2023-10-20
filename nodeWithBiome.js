@@ -138,7 +138,7 @@ const rules = {
     "no-invalid-this": "error",
     "no-iterator": "error",
     "no-labels": "error",
-    "no-lone-blocks": "off",
+    "no-lone-blocks": "error",
     "no-loop-func": "error",
     "no-magic-numbers": "off",
     "no-multi-spaces": "off",
