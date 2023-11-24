@@ -62,7 +62,7 @@ If you are using react-native, you can enable react-native specific rules:
 
 ### No formatting
 
-To disable some of the formatting rules (when using a formatter like prettier or Rome) you can use this configuration:
+To disable some of the formatting rules (when using a formatter like prettier or Biome) you can use this configuration:
 
 ~~~json
 {
@@ -88,15 +88,3 @@ If you are using Biome you can also extend your Biome config with the "biomeLint
     "extends": ["./node_modules/eslint-config-heck/biomeLinting.json"]
 }
 ~~~
-
-### Exclude rules included in Rome
-
-To disable some the rules that are already included in Rome you can use this configuration:
-
-~~~json
-{
-    "extends": ["heck/node", "heck/excludeRome"]
-}
-~~~
-
-**Attention:** Since Rome is no longer maintained, this will not be the case with this ruleset. Use the Biome rulesets instead.
