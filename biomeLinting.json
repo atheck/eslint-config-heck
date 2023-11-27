@@ -190,7 +190,7 @@
         "noUnusedImports": "error",
         "noUnusedPrivateClassMembers": "error",
         "noUselessLoneBlockStatements": "off",
-        "useAwait": "error",
+        "useAwait": "off",
         "useGroupedTypeImport": "error",
         "useImportRestrictions": "error",
         "useRegexLiterals": "error",
