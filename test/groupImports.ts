@@ -11,15 +11,15 @@ import { complex } from "./Complexity";
 import { Component } from "./React";
 
 export {
-    Fragment,
-    path,
-    Component,
-    name,
-    ESLint,
-    a,
-    EventEmitter,
-    abort,
-    addListener,
-    compilerOptions,
-    complex,
+	Fragment,
+	path,
+	Component,
+	name,
+	ESLint,
+	a,
+	EventEmitter,
+	abort,
+	addListener,
+	compilerOptions,
+	complex,
 };

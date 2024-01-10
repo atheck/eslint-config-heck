@@ -1,33 +1,35 @@
 // arrow-body-style
-const lambda = () => { return 0; };
+const lambda = () => {
+	return 0;
+};
 const lambda3 = () => {
-    return {
-        foo: 0,
-    };
-}
+	return {
+		foo: 0,
+	};
+};
 
 // arrow-parens
 [1, 2, 3].map((arg) => arg);
 
 // arrow-spacing
-const lambda4 = arg=>arg;
+const lambda4 = (arg) => arg;
 
 // constructor-super: off (handled by typescript)
 class MyError extends Error {
-    constructor () {
-        // Blank
-    }
+	constructor() {
+		// Blank
+	}
 }
 
 class OtherError {
-    constructor () {
-        super();
-    }
+	constructor() {
+		super();
+	}
 }
 
 // generator-star-spacing
-const generator = function*() {
-    yield 0;
+const generator = function* () {
+	yield 0;
 };
 
 // no-class-assign: off (handled by typescript)
@@ -42,8 +44,8 @@ assign = 1;
 
 // no-dupe-class-members: off (handled by typescript)
 class DupeMembers {
-    foo () {}
-    foo () {}
+	foo() {}
+	foo() {}
 }
 
 // no-duplicate-imports
@@ -55,24 +57,24 @@ const newSymbol = new Symbol("symbol");
 
 // no-this-before-super: off (handled by typescript)
 class ThisBeforeSuper extends Error {
-    constructor () {
-        this.message = "";
+	constructor() {
+		this.message = "";
 
-        super();
-    }
+		super();
+	}
 }
 
 // no-useless-computed-key
 const uselessComputedKey = {
-    ["a"]: 0,
-    ["0+1"]: 1,
+	["a"]: 0,
+	["0+1"]: 1,
 };
 
 // no-useless-constructor
 class UselessConstructor {
-    constructor () {
-        // Blank
-    }
+	constructor() {
+		// Blank
+	}
 }
 
 // no-useless-rename
@@ -84,18 +86,18 @@ var aVar = null;
 // object-shorthand
 let x = 1;
 const noShorthand = {
-    x: x,
-    aFunc: function () {
-        // Blank
-    },
-    aLambda: () => {
-        return 0;
-    },
+	x: x,
+	aFunc: function () {
+		// Blank
+	},
+	aLambda: () => {
+		return 0;
+	},
 };
 
 // prefer-arrow-callback
 [1, 2].map(function (value) {
-    return value;
+	return value;
 });
 
 // prefer-const
@@ -119,7 +121,7 @@ parseInt("1111", 2);
 
 // prefer-rest-params
 const withoutRestParams = function () {
-    console.log(arguments);
+	console.log(arguments);
 };
 
 // prefer-spread
@@ -132,12 +134,12 @@ const who = "Welt";
 const noTemplate = "Hallo " + who;
 
 // require-yield
-const noYield = function * () {
-    return 10;
+const noYield = function* () {
+	return 10;
 };
 
 // rest-spread-spacing
-Math.max(... maxArgs);
+Math.max(...maxArgs);
 
 // sort-imports
 
@@ -145,12 +147,12 @@ Math.max(... maxArgs);
 const noDescription = Symbol();
 
 // template-curly-spacing
-const curlySpacing = `Hallo ${ who }`;
+const curlySpacing = `Hallo ${who}`;
 
 // yield-star-spacing
-const otherYieldStarSpacing = function * () {
-    yield 0;
+const otherYieldStarSpacing = function* () {
+	yield 0;
 };
-const yieldStarSpacing = function * () {
-    yield*otherYieldStarSpacing();
+const yieldStarSpacing = function* () {
+	yield* otherYieldStarSpacing();
 };

@@ -3,80 +3,72 @@ import React, { Fragment, useCallback, useState } from "react";
 import "@testing-library/react";
 
 type Props = {
-    actionName: string,
-}
+	actionName: string;
+};
 
 const Component = function (props: Props): React.ReactElement {
-    return <div>
-        <button >{props.actionName}</button>
-    </div>;
+	return (
+		<div>
+			<button>{props.actionName}</button>
+		</div>
+	);
 };
 
 class ClassComponent extends React.Component<{}, { actionName: string }> {
-    private renderBefore (): null {
-        return null;
-    }
+	private renderBefore(): null {
+		return null;
+	}
 
-    public render (): React.ReactElement {
-        this.setState({ actionName: this.state.actionName });
+	public render(): React.ReactElement {
+		this.setState({ actionName: this.state.actionName });
 
-        return < div aria-checked={true}  color="black"
+		return <div aria-checked={true} color="black" className="foo" />;
+	}
 
-            className = "foo"/>;
-    }
+	private renderPart(): JSX.Element {
+		return <div />;
+	}
 
-    private renderPart (): JSX.Element {
-        return <div />;
-    }
+	private uselessFragment(): JSX.Element {
+		return <Fragment>{"single"}</Fragment>;
+	}
 
-    private uselessFragment(): JSX.Element {
-        return (
-            <Fragment>
-                {"single"}
-            </Fragment>
-        );
-    }
-
-    private uselessFragment(): JSX.Element {
-        return (
-            <Fragment>
-                <div />
-            </Fragment>
-        );
-    }
+	private uselessFragment(): JSX.Element {
+		return (
+			<Fragment>
+				<div />
+			</Fragment>
+		);
+	}
 }
 
-function FunctionComponent (): React.ReactElement {
-    const hook = useState(true);
+function FunctionComponent(): React.ReactElement {
+	const hook = useState(true);
 
-    return (
-        <iframe>
-            <div />
-        </iframe>
-    );
+	return (
+		<iframe>
+			<div />
+		</iframe>
+	);
 }
 
 // Hooks
-function Hooks (props: Props): JSX.Element {
-    if (true) {
-        const [state, setState] = useState(true);
-    }
+function Hooks(props: Props): JSX.Element {
+	if (true) {
+		const [state, setState] = useState(true);
+	}
 
-    const [someVar, setSomeVar] = useState(true);
+	const [someVar, setSomeVar] = useState(true);
 
-    useCallback(() => {
-        if (someVar) {
-            setSomeVar(false);
-        }
-    }, []);
+	useCallback(() => {
+		if (someVar) {
+			setSomeVar(false);
+		}
+	}, []);
 
-    const { actionName } = props;
+	const { actionName } = props;
 
-    return (
-        <div>
-            {actionName}
-        </div>
-    );
+	return <div>{actionName}</div>;
 }
 
 export { Component };

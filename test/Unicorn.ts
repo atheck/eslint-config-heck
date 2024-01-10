@@ -3,9 +3,9 @@ const regex = /[0-9]\.[a-zA-Z0-9_]\-[^0-9]/i;
 
 // catch-error-name
 try {
-    // blank
+	// blank
 } catch (error: unknown) {
-    console.error(error);
+	console.error(error);
 }
 
 // consistent-destructuring
@@ -15,16 +15,16 @@ const prop2 = obj.prop2;
 
 // consistent-function-scoping
 const scoping = function (): void {
-    const innerArrow = (): void => {
-        // blank
-    };
+	const innerArrow = (): void => {
+		// blank
+	};
 
-    const innerFunc = function (): void {
-        // blank
-    };
+	const innerFunc = function (): void {
+		// blank
+	};
 
-    innerArrow();
-    innerFunc();
+	innerArrow();
+	innerFunc();
 };
 
 // expiring-todo-comments
@@ -35,7 +35,7 @@ const array = [];
 const isEmpty = !array.length;
 
 if (array.length !== 0) {
-    // blank
+	// blank
 }
 
 // new-for-builtins
@@ -43,8 +43,8 @@ const noNewArray = Array(2);
 
 // no-unused-property
 const usedObj = {
-    used: 1,
-    unused: 2,
+	used: 1,
+	unused: 2,
 };
 
 console.log(usedObj.used);
@@ -55,22 +55,22 @@ const { used } = usedObj;
 const bigNumber = 1_000;
 
 // no-nested-ternary
-const nestedTernary = true ? true ? 1 : 2 : 3;
+const nestedTernary = true ? (true ? 1 : 2) : 3;
 
 // prefer-code-point
-const char = String.fromCharCode(0x1_F9_84);
+const char = String.fromCharCode(0x1_f9_84);
 
 // no-await-expression-member
-async function doSomething (): Promise<string> {
-    return "";
+async function doSomething(): Promise<string> {
+	return "";
 }
 
-async function awaitSomething (): Promise<number> {
-    return (await doSomething()).length;
+async function awaitSomething(): Promise<number> {
+	return (await doSomething()).length;
 }
 
 // no-thenable
-function then (): void {}
+function then(): void {}
 
 export { then };
 
@@ -85,11 +85,11 @@ const log = Math.log(2) * Math.LOG10E;
 
 // no-useless-switch-case
 switch (log) {
-    case 1_000:
+	case 1_000:
 
-    default:
-        scoping();
-        break;
+	default:
+		scoping();
+		break;
 }
 
 // prefer-native-coercion-functions
@@ -97,21 +97,21 @@ const toBoolean = (value: number): boolean => Boolean(value);
 
 // no-negated-condition
 if (!log) {
-    console.log("false");
+	console.log("false");
 } else {
-    console.log("true");
+	console.log("true");
 }
 
 // no-typeof-undefined
 if (typeof log === "undefined") {
-    // blank
+	// blank
 }
 
 // prefer-set-size
 const uniqueNumbers = [1, 1, 2, 2];
 
 if ([...new Set(uniqueNumbers)].length === uniqueNumbers.length) {
-    // blank
+	// blank
 }
 
 // prefer-blob-reading-methods

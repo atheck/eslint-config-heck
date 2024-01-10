@@ -1,53 +1,46 @@
 // for-direction
 const forDirection = function (): void {
-    for (let i = 0; i < 10; i--) {
-
-    }
-}
+	for (let i = 0; i < 10; i--) {}
+};
 
 // getter-return: off (typescript handles it)
 class GetterReturn {
-    get name() {
-
-    }
+	get name() {}
 }
 
 // no-async-promise-executor
 const noAsyncPromiseExecutor = function (): void {
-    new Promise(async (resolve, reject) => {
-        resolve(null);
-    })
-}
+	new Promise(async (resolve, reject) => {
+		resolve(null);
+	});
+};
 
 // no-await-in-loop
 const noAwaitInLoop = async function (): Promise<void> {
-    for (const value of [1, 2, 3]) {
-        await noAsyncPromiseExecutor();
-    }
-}
+	for (const value of [1, 2, 3]) {
+		await noAsyncPromiseExecutor();
+	}
+};
 
 // no-compare-neg-zero
 const noCompareNegZero = function (): void {
-    const value = 0;
-    if (value === -0) {
-
-    }
-}
+	const value = 0;
+	if (value === -0) {
+	}
+};
 
 // no-cond-assign
 const noCondAssign = function (): void {
-    let value = "";
-    if (value = "value") {
-
-    }
-}
+	let value = "";
+	if ((value = "value")) {
+	}
+};
 
 // no-console
 console.log("ESLint");
 
 // no-constant-condition
 if (false) {
-
 }
 
 // no-control-regex
@@ -57,86 +50,71 @@ const regex = /\x1f/;
 debugger;
 
 // no-dupe-args: off (typescript handles it)
-const NoDupeArgs = function (a: number, b: number, a: number): void {
-
-}
+const NoDupeArgs = function (a: number, b: number, a: number): void {};
 
 // no-dupe-else-if
 const a = true;
 const b = false;
 if (a) {
-
 } else if (b) {
-
 } else if (b) {
-
 }
 
 // no-dupe-keys: off (typescript handles it)
 const dupeKeys = {
-    bar: "",
-    "bar": "",
-    1: "",
-    0x1: "",
+	bar: "",
+	bar: "",
+	1: "",
+	0x1: "",
 };
 
 // no-duplicate-case
 let caseValue = 1;
 switch (caseValue) {
-    case 1:
-        break;
+	case 1:
+		break;
 
-    case 1:
-        break;
+	case 1:
+		break;
 }
 
 // no-empty
 if (true) {
-
 }
 
 // no-empty-character-class
-const emptyCharClass = /[]/
+const emptyCharClass = /[]/;
 
 // no-ex-assign
 
 try {
-    // blank
+	// blank
 } catch (ex) {
-    ex = 10;
+	ex = 10;
 }
 
 // no-extra-boolean-case
 const castedToBool = undefined;
 if (!!castedToBool) {
-
 }
 
 // no-extra-parens
-const sum = (1 * 2);
+const sum = 1 * 2;
 
 const noExtraParens = function (): number {
-    return (1 + 2);
-}
+	return 1 + 2;
+};
 
 // no-extra-semi
-const noExtraSemi = 1;;
+const noExtraSemi = 1;
 
 // no-func-assign: off (typescript handles it)
-function noFuncAssign (): void {
+function noFuncAssign(): void {}
+noFuncAssign = function (): void {};
 
-}
-noFuncAssign = function (): void {
+let someFuncAssign = function (): void {};
 
-}
-
-let someFuncAssign = function (): void {
-
-}
-
-someFuncAssign = function(): void {
-
-}
+someFuncAssign = function (): void {};
 
 // no-import-assign: off (typescript handles ist)
 import { checkPropertyChange } from "json-schema";
@@ -145,7 +123,7 @@ checkPropertyChange = 1;
 
 // no-inner-declarations
 if (true) {
-    function noInnerDecl () {}
+	function noInnerDecl() {}
 }
 
 // no-invalid-regexp
@@ -163,7 +141,7 @@ const theMath = new Math();
 
 // no-promise-executor-return
 const promiseExecutorReturn = new Promise((resolve, reject) => {
-    return 1;
+	return 1;
 });
 
 // no-prototype-builtins
@@ -175,71 +153,70 @@ const regexSpaces = /a    b/;
 
 // no-setter-return: off (typescript handles it)
 class SetterReturn {
-    set name (value: string) {
-        return "";
-    }
+	set name(value: string) {
+		return "";
+	}
 }
 
 // no-sparse-arrays
-const sparseArray = [1,,,2];
+const sparseArray = [1, , , 2];
 
 // no-template-curly-in-string
 const templateInString = "${name}";
 
 // no-unexpected-multiline: off (typescript handles it)
 const bar = 1;
-var foo = bar
-(1 || 2).baz();
+var foo = bar(1 || 2).baz();
 
-const hello = "world"
-[1, 2, 3].forEach(console.log);
+const hello = "world"[(1, 2, 3)].forEach(console.log);
 
-let x = function() {}
-x
-`hello`
+let x = function () {};
+x`hello`;
 
 // no-unreachable
-function unreachable (): void {
-    return;
+function unreachable(): void {
+	return;
 
-    const a = 2;
+	const a = 2;
 }
 
 // no-unreachable-loop
 while (true) {
-    break;
+	break;
 }
 
 // no-unsafe-finally
-function unsafeFinally () {
-    try {
-        return 1;
-    } finally {
-        return 2;
-    }
+function unsafeFinally() {
+	try {
+		return 1;
+	} finally {
+		return 2;
+	}
 }
 
 // no-unsafe-negation: off (typescript handles it)
 const key = "";
-if (!key in {}) {
-
+if ((!key) in {}) {
 }
 
-if (!{} instanceof Array) {}
+if ((!{}) instanceof Array) {
+}
 
 // no-unsafe-optional-chaining
 const unsafeOptionalChaining = undefined;
-(unsafeOptionalChaining?.foo)()
+(unsafeOptionalChaining?.foo)();
 
 // no-useless-backreference
 const uselessBackReference = /^(?:(a)|b(?:c|\1))$/;
 
 // use-isnan
 
-if (1 === NaN) {}
+if (1 === NaN) {
+}
 
 // valid-typeof: off (typescript handles it)
 const typeofString = "";
-if (typeof typeofString === "str") {}
+if (typeof typeofString === "str") {
+}
 
 export {};

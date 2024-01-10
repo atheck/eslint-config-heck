@@ -1,18 +1,18 @@
-"use strict";
+/* eslint-disable strict */
 
 const node = require("./nodeWithBiome");
 
 const env = {
-    ...node.env,
+	...node.env,
 
-    browser: true,
-    commonjs: true,
-    serviceworker: true,
-    "shared-node-browser": true,
-    worker: true,
+	browser: true,
+	commonjs: true,
+	serviceworker: true,
+	"shared-node-browser": true,
+	worker: true,
 };
 
 module.exports = {
-    ...node,
-    env,
+	...node,
+	env,
 };

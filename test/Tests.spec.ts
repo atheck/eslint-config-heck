@@ -2,44 +2,41 @@
 jest.mock("./React", () => ({}));
 
 describe("Test", () => {
-    // jest/expect-expect
-    it("works", () => {
-    });
+	// jest/expect-expect
+	it("works", () => {});
 
-    // jest/consistent-test-it
-    test("instead of it", () => {
-        expect(false).toBeFalsy();
-    });
+	// jest/consistent-test-it
+	test("instead of it", () => {
+		expect(false).toBeFalsy();
+	});
 
-    // jest/lowercase-name
-    it("Uppercase", () => {
+	// jest/lowercase-name
+	it("Uppercase", () => {});
 
-    });
+	// jest/no-commented-out-tests
+	// it("commented out", () => {
+	//     // arrange
 
-    // jest/no-commented-out-tests
-    // it("commented out", () => {
-    //     // arrange
+	//     // act
 
-    //     // act
+	//     // assert
 
-    //     // assert
+	// });
 
-    // });
+	// jest/no-conditional-expect
+	it("conditional expect", () => {
+		// arrange
 
-    // jest/no-conditional-expect
-    it("conditional expect", () => {
-        // arrange
+		// act
 
-        // act
+		// assert
+		if (true) {
+			expect(true).toBeTruthy();
+		}
+	});
 
-        // assert
-        if (true) {
-            expect(true).toBeTruthy();
-        }
-    });
-
-    it("snapshot", () => {
-        expect("value").toMatchSnapshot();
-        expect("value").toMatchSnapshot();
-    });
+	it("snapshot", () => {
+		expect("value").toMatchSnapshot();
+		expect("value").toMatchSnapshot();
+	});
 });
