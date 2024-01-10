@@ -208,7 +208,7 @@
           "level": "error",
           "options": {
             "strictCase": true,
-            "enumMemberCase": [
+            "filenameCases": [
               "camelCase",
               "PascalCase"
             ]
