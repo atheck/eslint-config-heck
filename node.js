@@ -1085,6 +1085,7 @@ const overrides = [
 			"@typescript-eslint/no-unsafe-return": "error",
 			"@typescript-eslint/no-unsafe-unary-minus": "error",
 			"@typescript-eslint/no-useless-empty-export": "error",
+			"@typescript-eslint/no-useless-template-literals": "error",
 			"@typescript-eslint/no-var-requires": "error",
 			"@typescript-eslint/non-nullable-type-assertion-style": "off",
 			"@typescript-eslint/parameter-properties": "off",
@@ -1120,7 +1121,13 @@ const overrides = [
 			"@typescript-eslint/restrict-plus-operands": "error",
 			"@typescript-eslint/restrict-template-expressions": "off",
 			"@typescript-eslint/strict-boolean-expressions": "off",
-			"@typescript-eslint/switch-exhaustiveness-check": "error",
+			"@typescript-eslint/switch-exhaustiveness-check": [
+				"error",
+				{
+					allowDefaultCaseForExhaustiveSwitch: false,
+					requireDefaultForNonUnion: true,
+				},
+			],
 			"@typescript-eslint/triple-slash-reference": "error",
 			"@typescript-eslint/type-annotation-spacing": "error",
 			"@typescript-eslint/typedef": "off",

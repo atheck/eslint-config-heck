@@ -5,6 +5,7 @@
     "rules": {
       "a11y": {
         "noAccessKey": "error",
+        "noAriaHiddenOnFocusable": "error",
         "noAriaUnsupportedElements": "error",
         "noAutofocus": "error",
         "noBlankTarget": "error",
@@ -30,6 +31,7 @@
         "useMediaCaption": "error",
         "useValidAnchor": "error",
         "useValidAriaProps": "error",
+        "useValidAriaRole": "error",
         "useValidAriaValues": "error",
         "useValidLang": "error"
       },
@@ -56,13 +58,14 @@
         "useFlatMap": "error",
         "useLiteralKeys": "error",
         "useOptionalChain": "error",
+        "useRegexLiterals": "error",
         "useSimpleNumberKeys": "error",
         "useSimplifiedLogicExpression": "off"
       },
       "correctness": {
         "noChildrenProp": "error",
-        "noConstAssign": "error",
         "noConstantCondition": "error",
+        "noConstAssign": "error",
         "noConstructorReturn": "error",
         "noEmptyCharacterClassInRegex": "error",
         "noEmptyPattern": "error",
@@ -70,6 +73,7 @@
         "noInnerDeclarations": "error",
         "noInvalidConstructorSuper": "error",
         "noInvalidNewBuiltin": "error",
+        "noNewSymbol": "off",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
         "noRenderReturnValue": "error",
@@ -104,6 +108,7 @@
       "style": {
         "noArguments": "error",
         "noCommaOperator": "error",
+        "noDefaultExport": "error",
         "noImplicitBoolean": "off",
         "noInferrableTypes": "error",
         "noNamespace": "error",
@@ -115,8 +120,8 @@
         "noShoutyConstants": "error",
         "noUnusedTemplateLiteral": "error",
         "noUselessElse": "error",
-        "useAsConstAssertion": "error",
         "noVar": "error",
+        "useAsConstAssertion": "error",
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
         "useConst": "error",
@@ -163,6 +168,7 @@
         "noFunctionAssign": "error",
         "noGlobalIsFinite": "error",
         "noGlobalIsNan": "error",
+        "noImplicitAnyLet": "error",
         "noImportAssign": "error",
         "noLabelVar": "error",
         "noMisleadingInstantiator": "error",
@@ -182,19 +188,39 @@
         "useValidTypeof": "error"
       },
       "nursery": {
-        "noAriaHiddenOnFocusable": "error",
-        "noDefaultExport": "error",
         "noDuplicateJsonKeys": "error",
         "noEmptyBlockStatements": "error",
-        "noImplicitAnyLet": "error",
+        "noEmptyTypeParameters": "error",
+        "noGlobalAssign": "error",
+        "noGlobalEval": "error",
+        "noInvalidUseBeforeDeclaration": "off",
+        "noMisleadingCharacterClass": "error",
+        "noNodejsModules": "off",
+        "noThenProperty": "error",
         "noUnusedImports": "error",
         "noUnusedPrivateClassMembers": "error",
-        "noUselessLoneBlockStatements": "off",
+        "noUselessLoneBlockStatements": "error",
+        "noUselessTernary": "error",
         "useAwait": "off",
+        "useConsistentArrayType": "error",
+        "useExportType": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "enumMemberCase": [
+              "camelCase",
+              "PascalCase"
+            ]
+          }
+        },
+        "useForOf": "error",
         "useGroupedTypeImport": "error",
         "useImportRestrictions": "error",
-        "useRegexLiterals": "error",
-        "useValidAriaRole": "error"
+        "useImportType": "error",
+        "useNodejsImportProtocol": "error",
+        "useNumberNamespace": "error",
+        "useShorthandFunctionType": "error"
       }
     }
   }

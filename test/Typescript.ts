@@ -117,3 +117,30 @@ const destructure = { a: 1, b: 2 };
 // prefer-destructuring
 const a = destructure.a;
 const { b } = destructure;
+
+// switch-exhaustiveness-check
+let value = 1;
+
+switch (value) {
+	case 0:
+		break;
+}
+
+type SwitchType = "a" | "b";
+
+let switchValue: SwitchType = "a";
+
+switch (switchValue) {
+	case "a":
+		break;
+
+	case "b":
+		break;
+
+	default:
+		break;
+}
+
+interface EmptyType<> {
+	foo: Array<number>;
+}
