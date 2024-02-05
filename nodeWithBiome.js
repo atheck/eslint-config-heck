@@ -858,6 +858,7 @@ const overrides = [
 					format: null,
 				},
 			],
+			"@typescript-eslint/no-array-delete": "off",
 			"@typescript-eslint/no-base-to-string": "error",
 			"@typescript-eslint/no-confusing-non-null-assertion": "error",
 			"@typescript-eslint/no-confusing-void-expression": "off",
@@ -1027,20 +1028,6 @@ const overrides = [
 			"@typescript-eslint/no-use-before-define": "off",
 			"no-useless-constructor": "off",
 			"@typescript-eslint/no-useless-constructor": "off",
-			"prefer-destructuring": "off",
-			"@typescript-eslint/prefer-destructuring": [
-				"error",
-				{
-					VariableDeclarator: {
-						array: false,
-						object: true,
-					},
-					AssignmentExpression: {
-						array: false,
-						object: false,
-					},
-				},
-			],
 			"object-curly-spacing": "off",
 			"@typescript-eslint/object-curly-spacing": "off",
 			"padding-line-between-statements": "off",
@@ -1119,6 +1106,22 @@ const overrides = [
 					next: "type",
 				},
 			],
+			"prefer-destructuring": "off",
+			"@typescript-eslint/prefer-destructuring": [
+				"error",
+				{
+					VariableDeclarator: {
+						array: false,
+						object: true,
+					},
+					AssignmentExpression: {
+						array: false,
+						object: false,
+					},
+				},
+			],
+			"prefer-promise-reject-errors": "off",
+			"@typescript-eslint/prefer-promise-reject-errors": "error",
 			quotes: "off",
 			"@typescript-eslint/quotes": "off",
 			"require-await": "off",
