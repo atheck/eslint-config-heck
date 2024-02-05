@@ -911,6 +911,8 @@ const overrides = [
 			"@typescript-eslint/parameter-properties": "off",
 			"@typescript-eslint/prefer-as-const": "off",
 			"@typescript-eslint/prefer-enum-initializers": "off",
+			// unicorns prefer-array-find is more powerful
+			"@typescript-eslint/prefer-find": "off",
 			"@typescript-eslint/prefer-for-of": "off",
 			"@typescript-eslint/prefer-function-type": "off",
 			"@typescript-eslint/prefer-includes": "error",

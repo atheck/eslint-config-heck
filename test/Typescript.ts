@@ -144,3 +144,6 @@ switch (switchValue) {
 interface EmptyType<> {
 	foo: Array<number>;
 }
+
+// prefer-find
+[].filter((i) => i === 1)[0];
