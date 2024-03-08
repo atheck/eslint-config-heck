@@ -5,7 +5,15 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    "./biome": "./biomeLinting.json"
+    "./biome": "./biomeLinting.json",
+    "./browser": "./browser.js",
+    "./browserWithBiome": "./browserWithBiome.js",
+    "./node": "./node.js",
+    "./nodeWithBiome": "./nodeWithBiome.js",
+    "./complexity": "./complexity.js",
+    "./groupImports": "./groupImports.js",
+    "./noFormatting": "./noFormatting.js",
+    "./reactNative": "./reactNative.js"
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",
