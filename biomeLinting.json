@@ -37,6 +37,7 @@
       },
       "complexity": {
         "noBannedTypes": "error",
+        "noEmptyTypeParameters": "error",
         "noExcessiveCognitiveComplexity": "warn",
         "noExtraBooleanCast": "error",
         "noForEach": "error",
@@ -48,6 +49,7 @@
         "noUselessEmptyExport": "error",
         "noUselessFragments": "error",
         "noUselessLabel": "error",
+        "noUselessLoneBlockStatements": "error",
         "noUselessRename": "error",
         "noUselessSwitchCase": "error",
         "noUselessThisAlias": "error",
@@ -73,6 +75,7 @@
         "noInnerDeclarations": "error",
         "noInvalidConstructorSuper": "error",
         "noInvalidNewBuiltin": "error",
+        "noInvalidUseBeforeDeclaration": "off",
         "noNewSymbol": "off",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
@@ -87,7 +90,9 @@
         "noUnreachableSuper": "error",
         "noUnsafeFinally": "error",
         "noUnsafeOptionalChaining": "error",
+        "noUnusedImports": "error",
         "noUnusedLabels": "error",
+        "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "noVoidElementsWithChildren": "error",
         "noVoidTypeReturn": "error",
@@ -103,7 +108,8 @@
       },
       "security": {
         "noDangerouslySetInnerHtml": "error",
-        "noDangerouslySetInnerHtmlWithChildren": "error"
+        "noDangerouslySetInnerHtmlWithChildren": "error",
+        "noGlobalEval": "error"
       },
       "style": {
         "noArguments": "error",
@@ -124,17 +130,34 @@
         "useAsConstAssertion": "error",
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
+        "useConsistentArrayType": "error",
         "useConst": "error",
         "useDefaultParameterLast": "error",
         "useEnumInitializers": "error",
         "useExponentiationOperator": "error",
+        "useExportType": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "filenameCases": [
+              "camelCase",
+              "PascalCase"
+            ]
+          }
+        },
+        "useForOf": "error",
         "useFragmentSyntax": "off",
+        "useImportType": "error",
         "useLiteralEnumMembers": "error",
         "useNamingConvention": "off",
+        "useNodejsImportProtocol": "error",
+        "useNumberNamespace": "error",
         "useNumericLiterals": "error",
         "useSelfClosingElements": "error",
         "useShorthandArrayType": "error",
         "useShorthandAssign": "error",
+        "useShorthandFunctionType": "error",
         "useSingleCaseStatement": "error",
         "useSingleVarDeclarator": "error",
         "useTemplate": "error",
@@ -161,16 +184,19 @@
         "noDuplicateJsxProps": "error",
         "noDuplicateObjectKeys": "error",
         "noDuplicateParameters": "error",
+        "noEmptyBlockStatements": "error",
         "noEmptyInterface": "off",
         "noExplicitAny": "error",
         "noExtraNonNullAssertion": "error",
         "noFallthroughSwitchClause": "error",
         "noFunctionAssign": "error",
+        "noGlobalAssign": "error",
         "noGlobalIsFinite": "error",
         "noGlobalIsNan": "error",
         "noImplicitAnyLet": "error",
         "noImportAssign": "error",
         "noLabelVar": "error",
+        "noMisleadingCharacterClass": "error",
         "noMisleadingInstantiator": "error",
         "noMisrefactoredShorthandAssign": "error",
         "noPrototypeBuiltins": "error",
@@ -179,8 +205,10 @@
         "noSelfCompare": "error",
         "noShadowRestrictedNames": "error",
         "noSparseArray": "error",
+        "noThenProperty": "error",
         "noUnsafeDeclarationMerging": "error",
         "noUnsafeNegation": "error",
+        "useAwait": "off",
         "useDefaultSwitchClauseLast": "error",
         "useGetterReturn": "error",
         "useIsArray": "error",
@@ -188,39 +216,25 @@
         "useValidTypeof": "error"
       },
       "nursery": {
+        "noBarrelFile": "error",
+        "noConsole": "error",
         "noDuplicateJsonKeys": "error",
-        "noEmptyBlockStatements": "error",
-        "noEmptyTypeParameters": "error",
-        "noGlobalAssign": "error",
-        "noGlobalEval": "error",
-        "noInvalidUseBeforeDeclaration": "off",
-        "noMisleadingCharacterClass": "error",
+        "noDuplicateTestHooks": "error",
+        "noExcessiveNestedTestSuites": "error",
+        "noExportsInTest": "error",
+        "noFocusedTests": "warn",
+        "noNamespaceImport": "error",
         "noNodejsModules": "off",
-        "noThenProperty": "error",
-        "noUnusedImports": "error",
-        "noUnusedPrivateClassMembers": "error",
-        "noUselessLoneBlockStatements": "error",
+        "noReExportAll": "error",
+        "noRestrictedImports": "off",
+        "noSemicolonInJsx": "error",
+        "noSkippedTests": "warn",
+        "noUndeclaredDependencies": "error",
         "noUselessTernary": "error",
-        "useAwait": "off",
-        "useConsistentArrayType": "error",
-        "useExportType": "error",
-        "useFilenamingConvention": {
-          "level": "error",
-          "options": {
-            "strictCase": true,
-            "filenameCases": [
-              "camelCase",
-              "PascalCase"
-            ]
-          }
-        },
-        "useForOf": "error",
-        "useGroupedTypeImport": "error",
         "useImportRestrictions": "error",
-        "useImportType": "error",
-        "useNodejsImportProtocol": "error",
-        "useNumberNamespace": "error",
-        "useShorthandFunctionType": "error"
+        "useJsxKeyInIterable": "error",
+        "useNodeAssertStrict": "error",
+        "useSortedClasses": "off"
       }
     }
   }
