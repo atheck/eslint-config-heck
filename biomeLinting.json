@@ -229,7 +229,7 @@
         "noRestrictedImports": "off",
         "noSemicolonInJsx": "error",
         "noSkippedTests": "warn",
-        "noUndeclaredDependencies": "error",
+        "noUndeclaredDependencies": "off",
         "noUselessTernary": "error",
         "useImportRestrictions": "error",
         "useJsxKeyInIterable": "error",
