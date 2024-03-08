@@ -2,7 +2,11 @@
   "name": "eslint-config-heck",
   "version": "1.5.0",
   "description": "Contains an ESLint configuration for ES2015+, TypeScript, and React.",
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    "./biome": "./biomeLinting.json"
+  },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",
     "lint": "eslint --ext '.ts,.tsx' .",

@@ -85,6 +85,6 @@ If you are using Biome you can also extend your Biome config with the "biomeLint
 ~~~json
 {
     "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["./node_modules/eslint-config-heck/biomeLinting.json"]
+    "extends": ["eslint-config-heck/biome"]
 }
 ~~~
