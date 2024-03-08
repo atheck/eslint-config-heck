@@ -6,14 +6,14 @@
   "main": "index.js",
   "exports": {
     "./biome": "./biomeLinting.json",
-    "./browser": "./browser.js",
-    "./browserWithBiome": "./browserWithBiome.js",
-    "./node": "./node.js",
-    "./nodeWithBiome": "./nodeWithBiome.js",
-    "./complexity": "./complexity.js",
-    "./groupImports": "./groupImports.js",
-    "./noFormatting": "./noFormatting.js",
-    "./reactNative": "./reactNative.js"
+    "./browser": "./browser.cjs",
+    "./browserWithBiome": "./browserWithBiome.cjs",
+    "./node": "./node.cjs",
+    "./nodeWithBiome": "./nodeWithBiome.cjs",
+    "./complexity": "./complexity.cjs",
+    "./groupImports": "./groupImports.cjs",
+    "./noFormatting": "./noFormatting.cjs",
+    "./reactNative": "./reactNative.cjs"
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",
