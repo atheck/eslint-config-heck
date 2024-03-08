@@ -428,6 +428,7 @@ const rules = {
 	// eslint-plugin-react
 	"react/boolean-prop-naming": "off",
 	"react/button-has-type": "off",
+	"react/checked-requires-onchange-or-readonly": "error",
 	"react/default-props-match-prop-types": "off",
 	"react/destructuring-assignment": [
 		"error",
@@ -1137,6 +1138,7 @@ const overrides = [
 
 			// Typescript handles itself
 			"consistent-return": "off",
+			"@typescript-eslint/consistent-return": "off",
 			"constructor-super": "off",
 			"getter-return": "off",
 			"no-class-assign": "off",
