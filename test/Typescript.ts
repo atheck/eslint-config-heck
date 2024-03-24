@@ -147,3 +147,6 @@ interface EmptyType<> {
 
 // prefer-find
 [].filter((i) => i === 1)[0];
+
+// use-unknown-in-catch-callback-variable
+Promise.reject(new Error("error")).catch((ex) => console.error(ex));

@@ -955,6 +955,7 @@ const overrides = [
 				},
 			],
 			"@typescript-eslint/unified-signatures": "error",
+			"@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
 
 			// Extension rules
 			"block-spacing": "off",
