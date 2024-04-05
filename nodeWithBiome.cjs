@@ -610,12 +610,14 @@ const rules = {
 	"unicorn/import-style": "error",
 	"unicorn/new-for-builtins": "error",
 	"unicorn/no-abusive-eslint-disable": "error",
+	"unicorn/no-anonymous-default-export": "error",
 	"unicorn/no-array-callback-reference": "off",
 	"unicorn/no-array-for-each": "off",
 	"unicorn/no-array-method-this-argument": "error",
 	"unicorn/no-array-push-push": "error",
 	"unicorn/no-array-reduce": "off",
 	"unicorn/no-await-expression-member": "error",
+	"unicorn/no-await-in-promise-methods": "error",
 	"unicorn/no-console-spaces": "error",
 	"unicorn/no-document-cookie": "error",
 	"unicorn/no-empty-file": "error",
@@ -632,6 +634,7 @@ const rules = {
 	"unicorn/no-null": "off",
 	"unicorn/no-object-as-default-parameter": "error",
 	"unicorn/no-process-exit": "error",
+	"unicorn/no-single-promise-in-promise-methods": "error",
 	"unicorn/no-static-only-class": "off",
 	"unicorn/no-thenable": "off",
 	"unicorn/no-this-assignment": "error",
@@ -1011,7 +1014,7 @@ const overrides = [
 			"no-shadow": "off",
 			"@typescript-eslint/no-shadow": "error",
 			"no-throw-literal": "off",
-			"@typescript-eslint/no-throw-literal": [
+			"@typescript-eslint/only-throw-error": [
 				"error",
 				{
 					allowThrowingAny: false,
