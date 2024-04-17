@@ -150,3 +150,6 @@ interface EmptyType<> {
 
 // use-unknown-in-catch-callback-variable
 Promise.reject(new Error("error")).catch((ex) => console.error(ex));
+
+// biome/noEvolvingAny
+let abc = null;

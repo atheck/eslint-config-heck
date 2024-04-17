@@ -1450,6 +1450,7 @@ const overrides = [
 			"jest/prefer-expect-assertions": "off",
 			"jest/prefer-expect-resolves": "error",
 			"jest/prefer-hooks-on-top": "error",
+			"jest/prefer-importing-jest-globals": "off",
 			"jest/prefer-lowercase-title": [
 				"error",
 				{
