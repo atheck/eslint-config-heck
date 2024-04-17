@@ -233,7 +233,7 @@
         "noDoneCallback": "error",
         "noDuplicateElseIf": "error",
         "noDuplicateJsonKeys": "error",
-        "noEvolvingAny": "error",
+        "noEvolvingAny": "off",
         "noFlatMapIdentity": "error",
         "noMisplacedAssertion": "error",
         "noNodejsModules": "off",
