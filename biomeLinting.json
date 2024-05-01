@@ -237,8 +237,13 @@
         "noFlatMapIdentity": "error",
         "noMisplacedAssertion": "error",
         "noNodejsModules": "off",
+        "noReactSpecificProps": "off",
         "noRestrictedImports": "off",
         "noUndeclaredDependencies": "off",
+        "noUselessUndefinedInitialization": "error",
+        "useArrayLiterals": "error",
+        "useConsistentBuiltinInstatiation": "error",
+        "useDefaultSwitchClause": "off",
         "useImportRestrictions": "error",
         "useSortedClasses": "off"
       }
