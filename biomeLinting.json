@@ -242,8 +242,9 @@
         "noUndeclaredDependencies": "off",
         "noUselessUndefinedInitialization": "error",
         "useArrayLiterals": "error",
-        "useConsistentBuiltinInstatiation": "error",
+        "useConsistentBuiltinInstantiation": "error",
         "useDefaultSwitchClause": "off",
+        "useExplicitLengthCheck": "error",
         "useImportRestrictions": "error",
         "useSortedClasses": "off"
       }

@@ -605,7 +605,7 @@ const rules = {
 	"unicorn/error-message": "error",
 	"unicorn/escape-case": "error",
 	"unicorn/expiring-todo-comments": "error",
-	"unicorn/explicit-length-check": "error",
+	"unicorn/explicit-length-check": "off",
 	"unicorn/filename-case": "off",
 	"unicorn/import-style": "error",
 	"unicorn/new-for-builtins": "off",
