@@ -737,6 +737,7 @@ const rules = {
 		},
 	],
 	"unicorn/consistent-destructuring": "error",
+	"unicorn/consistent-empty-array-spread": "error",
 	"unicorn/consistent-function-scoping": [
 		"error",
 		{
@@ -777,9 +778,11 @@ const rules = {
 	"unicorn/no-for-loop": "error",
 	"unicorn/no-hex-escape": "error",
 	"unicorn/no-instanceof-array": "error",
+	"unicorn/no-invalid-fetch-options": "error",
 	"unicorn/no-invalid-remove-event-listener": "error",
 	"unicorn/no-keyword-prefix": "off",
 	"unicorn/no-lonely-if": "error",
+	"unicorn/no-magic-array-flat-depth": "error",
 	"unicorn/no-negated-condition": "error",
 	"unicorn/no-nested-ternary": "off",
 	"unicorn/no-new-array": "error",
@@ -848,11 +851,12 @@ const rules = {
 	"unicorn/prefer-set-has": "error",
 	"unicorn/prefer-set-size": "error",
 	"unicorn/prefer-spread": "error",
-
+	"unicorn/prefer-string-raw": "error",
 	"unicorn/prefer-string-replace-all": "error",
 	"unicorn/prefer-string-slice": "error",
 	"unicorn/prefer-string-starts-ends-with": "error",
 	"unicorn/prefer-string-trim-start-end": "error",
+	"unicorn/prefer-structured-clone": "error",
 	"unicorn/prefer-switch": "error",
 
 	// TODO: off until there is a solution to this: https://github.com/sindresorhus/eslint-plugin-unicorn/issues/1079
