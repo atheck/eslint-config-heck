@@ -1,6 +1,6 @@
 /* eslint-disable strict */
 
-const node = require("./nodeWithBiome");
+const node = require("./nodeWithBiome.cjs");
 
 const env = {
 	...node.env,
