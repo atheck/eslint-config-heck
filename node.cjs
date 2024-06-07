@@ -1094,7 +1094,7 @@ const overrides = [
 			"@typescript-eslint/no-unsafe-return": "error",
 			"@typescript-eslint/no-unsafe-unary-minus": "error",
 			"@typescript-eslint/no-useless-empty-export": "error",
-			"@typescript-eslint/no-useless-template-expression": "error",
+			"@typescript-eslint/no-unnecessary-template-expression": "error",
 			"@typescript-eslint/no-var-requires": "error",
 			"@typescript-eslint/non-nullable-type-assertion-style": "off",
 			"@typescript-eslint/parameter-properties": "off",
