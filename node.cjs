@@ -1094,7 +1094,7 @@ const overrides = [
 			"@typescript-eslint/no-unsafe-return": "error",
 			"@typescript-eslint/no-unsafe-unary-minus": "error",
 			"@typescript-eslint/no-useless-empty-export": "error",
-			"@typescript-eslint/no-useless-template-literals": "error",
+			"@typescript-eslint/no-useless-template-expression": "error",
 			"@typescript-eslint/no-var-requires": "error",
 			"@typescript-eslint/non-nullable-type-assertion-style": "off",
 			"@typescript-eslint/parameter-properties": "off",
@@ -1126,7 +1126,6 @@ const overrides = [
 			"@typescript-eslint/prefer-regexp-exec": "error",
 			"@typescript-eslint/prefer-return-this-type": "error",
 			"@typescript-eslint/prefer-string-starts-ends-with": "error",
-			"@typescript-eslint/prefer-ts-expect-error": "error",
 			"@typescript-eslint/promise-function-async": "error",
 			"@typescript-eslint/require-array-sort-compare": "error",
 			"@typescript-eslint/restrict-plus-operands": "error",
@@ -1455,6 +1454,7 @@ const overrides = [
 			"jest/prefer-expect-resolves": "error",
 			"jest/prefer-hooks-on-top": "error",
 			"jest/prefer-importing-jest-globals": "off",
+			"jest/prefer-jest-mocked": "error",
 			"jest/prefer-lowercase-title": [
 				"error",
 				{

@@ -157,13 +157,13 @@ const rules = {
 	"no-self-assign": "off",
 	"no-self-compare": "off",
 	"no-sequences": "off",
-	"no-throw-literal": "error",
+	"no-throw-literal": "off",
 	"no-unmodified-loop-condition": "error",
 	"no-unused-expressions": "error",
 	"no-unused-labels": "off",
 	"no-useless-call": "error",
 	"no-useless-catch": "off",
-	"no-useless-concat": "error",
+	"no-useless-concat": "off",
 	"no-useless-escape": "error",
 	"no-useless-return": "error",
 	"no-void": "off",
@@ -178,14 +178,7 @@ const rules = {
 	"require-unicode-regexp": "error",
 	"vars-on-top": "error",
 	"wrap-iife": "off",
-	yoda: [
-		"error",
-		"never",
-		{
-			exceptRange: true,
-			onlyEquality: false,
-		},
-	],
+	yoda: "off",
 
 	// Strict mode
 	strict: ["error", "global"],
@@ -602,7 +595,7 @@ const rules = {
 	],
 	"unicorn/custom-error-definition": "off",
 	"unicorn/empty-brace-spaces": "off",
-	"unicorn/error-message": "error",
+	"unicorn/error-message": "off",
 	"unicorn/escape-case": "error",
 	"unicorn/expiring-todo-comments": "error",
 	"unicorn/explicit-length-check": "off",
@@ -666,7 +659,7 @@ const rules = {
 	"unicorn/prefer-at": "error",
 	"unicorn/prefer-blob-reading-methods": "error",
 	"unicorn/prefer-code-point": "error",
-	"unicorn/prefer-date-now": "error",
+	"unicorn/prefer-date-now": "off",
 	"unicorn/prefer-default-parameters": "error",
 	"unicorn/prefer-dom-node-append": "error",
 	"unicorn/prefer-dom-node-dataset": "error",
@@ -709,13 +702,13 @@ const rules = {
 	"unicorn/prevent-abbreviations": "off",
 	"unicorn/relative-url-style": "error",
 	"unicorn/require-array-join-separator": "error",
-	"unicorn/require-number-to-fixed-digits-argument": "error",
+	"unicorn/require-number-to-fixed-digits-argument": "off",
 	"unicorn/require-post-message-target-origin": "error",
 	"unicorn/string-content": "off",
 	"unicorn/switch-case-braces": "off",
 	"unicorn/template-indent": "off",
 	"unicorn/text-encoding-identifier-case": "error",
-	"unicorn/throw-new-error": "error",
+	"unicorn/throw-new-error": "off",
 
 	// eslint-plugin-import
 	"import/export": "off",
@@ -790,7 +783,7 @@ const overrides = [
 		plugins: [...plugins, "@typescript-eslint", "deprecation"],
 		rules: {
 			// Typescript
-			"@typescript-eslint/adjacent-overload-signatures": "error",
+			"@typescript-eslint/adjacent-overload-signatures": "off",
 			"@typescript-eslint/array-type": "off",
 			"@typescript-eslint/await-thenable": "error",
 			"@typescript-eslint/ban-ts-comment": [
@@ -903,7 +896,7 @@ const overrides = [
 			"@typescript-eslint/no-unsafe-return": "error",
 			"@typescript-eslint/no-unsafe-unary-minus": "error",
 			"@typescript-eslint/no-useless-empty-export": "off",
-			"@typescript-eslint/no-useless-template-literals": "error",
+			"@typescript-eslint/no-useless-template-expression": "error",
 			"@typescript-eslint/no-var-requires": "error",
 			"@typescript-eslint/non-nullable-type-assertion-style": "off",
 			"@typescript-eslint/parameter-properties": "off",
@@ -935,7 +928,6 @@ const overrides = [
 			"@typescript-eslint/prefer-regexp-exec": "error",
 			"@typescript-eslint/prefer-return-this-type": "error",
 			"@typescript-eslint/prefer-string-starts-ends-with": "error",
-			"@typescript-eslint/prefer-ts-expect-error": "error",
 			"@typescript-eslint/promise-function-async": "error",
 			"@typescript-eslint/require-array-sort-compare": "error",
 			"@typescript-eslint/restrict-plus-operands": "error",
@@ -1014,13 +1006,7 @@ const overrides = [
 			"no-shadow": "off",
 			"@typescript-eslint/no-shadow": "error",
 			"no-throw-literal": "off",
-			"@typescript-eslint/only-throw-error": [
-				"error",
-				{
-					allowThrowingAny: false,
-					allowThrowingUnknown: false,
-				},
-			],
+			"@typescript-eslint/only-throw-error": "off",
 			"no-unused-expressions": "off",
 			"@typescript-eslint/no-unused-expressions": "error",
 			"no-unused-vars": "off",
@@ -1222,6 +1208,7 @@ const overrides = [
 			"jest/prefer-expect-resolves": "error",
 			"jest/prefer-hooks-on-top": "error",
 			"jest/prefer-importing-jest-globals": "off",
+			"jest/prefer-jest-mocked": "error",
 			"jest/prefer-lowercase-title": [
 				"error",
 				{
