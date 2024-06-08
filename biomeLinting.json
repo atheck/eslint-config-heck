@@ -170,7 +170,7 @@
                 "selector": {
                   "kind": "typeParameter"
                 },
-                "match": "^T(.+)",
+                "match": "T(.+)",
                 "formats": [
                   "PascalCase"
                 ]
