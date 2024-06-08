@@ -261,7 +261,7 @@ const rules = {
 	"array-element-newline": ["error", "consistent"],
 	"block-spacing": "error",
 	"brace-style": "error",
-	camelcase: "error",
+	camelcase: "off",
 	"capitalized-comments": "off",
 	"comma-dangle": ["error", "always-multiline"],
 	"comma-spacing": "error",

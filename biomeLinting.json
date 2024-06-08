@@ -160,7 +160,24 @@
         "useFragmentSyntax": "off",
         "useImportType": "error",
         "useLiteralEnumMembers": "error",
-        "useNamingConvention": "off",
+        "useNamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "requireAscii": true,
+            "conventions": [
+              {
+                "selector": {
+                  "kind": "typeParameter"
+                },
+                "match": "^T(.+)",
+                "formats": [
+                  "PascalCase"
+                ]
+              }
+            ]
+          }
+        },
         "useNodeAssertStrict": "error",
         "useNodejsImportProtocol": "error",
         "useNumberNamespace": "error",
