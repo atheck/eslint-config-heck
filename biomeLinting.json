@@ -253,7 +253,7 @@
         "useErrorMessage": "error",
         "useExplicitLengthCheck": "error",
         "useFocusableInteractive": "error",
-        "useImportExtensions": "error",
+        "useImportExtensions": "off",
         "useImportRestrictions": "error",
         "useNumberToFixedDigitsArgument": "error",
         "useSemanticElements": "error",
