@@ -153,3 +153,5 @@ Promise.reject(new Error("error")).catch((ex) => console.error(ex));
 
 // biome/noEvolvingAny
 let abc = null;
+
+interface Generic<TFoo> {}

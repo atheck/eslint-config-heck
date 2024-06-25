@@ -621,6 +621,7 @@ const rules = {
 	"unicorn/no-keyword-prefix": "off",
 	"unicorn/no-lonely-if": "off",
 	"unicorn/no-negated-condition": "off",
+	"unicorn/no-negation-in-equality-check": "error",
 	"unicorn/no-nested-ternary": "off",
 	"unicorn/no-new-array": "error",
 	"unicorn/no-new-buffer": "error",
@@ -646,12 +647,7 @@ const rules = {
 	"unicorn/number-literal-case": "off",
 	"unicorn/numeric-separators-style": "error",
 	"unicorn/prefer-add-event-listener": "error",
-	"unicorn/prefer-array-find": [
-		"error",
-		{
-			checkFromLast: true,
-		},
-	],
+	"unicorn/prefer-array-find": "error",
 	"unicorn/prefer-array-flat": "error",
 	"unicorn/prefer-array-flat-map": "off",
 	"unicorn/prefer-array-index-of": "error",

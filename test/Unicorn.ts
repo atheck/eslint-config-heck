@@ -119,3 +119,11 @@ const fileReader = new FileReader();
 const blob = new Blob();
 
 fileReader.readAsArrayBuffer(blob);
+
+// no-negation-in-equality-check
+let foo = true;
+let bar = false;
+
+if (!foo !== bar) {
+	abc = 1;
+}
