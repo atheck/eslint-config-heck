@@ -127,3 +127,7 @@ let bar = false;
 if (!foo !== bar) {
 	abc = 1;
 }
+
+// "unicorn/no-length-as-slice-end"
+const numbers = [1, 2, 3];
+const sliced = numbers.slice(0, numbers.length);

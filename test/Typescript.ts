@@ -155,3 +155,9 @@ Promise.reject(new Error("error")).catch((ex) => console.error(ex));
 let abc = null;
 
 interface Generic<TFoo> {}
+
+// "@typescript-eslint/no-unsafe-function-type": "error"
+
+let fn: Function;
+let i: Number;
+let empty: {};
