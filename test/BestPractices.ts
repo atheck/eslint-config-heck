@@ -63,19 +63,6 @@ const defaultParamLast = function (a: number = 0, b: number) {
 
 defaultParamLast(undefined, 0);
 
-// dot-location
-const _ = accessorPairsGetWithoutSet.
-    name
-
-// dot-notation
-const o = {
-    name: "",
-    class: ""
-}
-
-o["name"]
-o["class"]
-
 // eqeqeq
 if (o == null) {
     // blank
@@ -205,13 +192,6 @@ label:
 for (var i = 0; i < 10; i++) {
     const returnsI = function () { return i; };
     returnsI();
-}
-
-// no-multi-spaces
-const multiSpaces  =    2;  //  Test
-const multiSpacesObject = {
-    a:  1,
-    b: 2,
 }
 
 // no-multi-str
@@ -362,9 +342,6 @@ const varsNotOnTop = function () {
     uselessReturn();
     var b = 1;
 }
-
-// wrap-iife
-const iife = function () { return 1; }();
 
 // yoda
 if (1 === iife) {

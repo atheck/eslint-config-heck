@@ -98,13 +98,6 @@ const castedToBool = undefined;
 if (!!castedToBool) {
 }
 
-// no-extra-parens
-const sum = 1 * 2;
-
-const noExtraParens = function (): number {
-	return 1 + 2;
-};
-
 // no-extra-semi
 const noExtraSemi = 1;
 

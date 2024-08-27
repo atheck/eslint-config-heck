@@ -60,16 +60,6 @@ If you are using react-native, you can enable react-native specific rules:
 }
 ~~~
 
-### No formatting
-
-To disable some of the formatting rules (when using a formatter like prettier or Biome) you can use this configuration:
-
-~~~json
-{
-    "extends": ["heck/node", "heck/noFormatting"]
-}
-~~~
-
 ### Rules with usage of Biome
 
 If you are using Biome you can use "nodeWithBiome" or "browserWithBiome":
