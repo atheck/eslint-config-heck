@@ -212,4 +212,11 @@ const typeofString = "";
 if (typeof typeofString === "str") {
 }
 
+// no-unused-private-class-members
+class Unused {
+	#unused = 1;
+}
+
+const octal = 0777;
+
 export {};
