@@ -294,7 +294,6 @@ const rules = {
 	"unicode-bom": "error",
 
 	// @stylistic
-	"@stylistic/jsx-pascal-case": "error",
 	"@stylistic/max-statements-per-line": "error",
 	"@stylistic/multiline-comment-style": ["error", "separate-lines"],
 	"@stylistic/no-floating-decimal": "error",

@@ -477,7 +477,6 @@ const rules = {
 			allowExpressions: true,
 		},
 	],
-	"react/jsx-pascal-case": "error",
 	"react/jsx-props-no-spread-multi": "error",
 	"react/jsx-props-no-spreading": "off",
 	"react/jsx-sort-props": "off",
