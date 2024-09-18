@@ -278,14 +278,19 @@
         "noProcessEnv": "error",
         "noRestrictedImports": "off",
         "noRestrictedTypes": "off",
-        "noSecrets": "error",
+        "noSecrets": "off",
         "noStaticElementInteractions": "error",
         "noSubstr": "error",
         "noUselessEscapeInRegex": "error",
         "useAdjacentOverloadSignatures": "error",
         "useAriaPropsSupportedByRole": "error",
         "useConsistentCurlyBraces": "off",
-        "useConsistentMemberAccessibility": "error",
+        "useConsistentMemberAccessibility": {
+          "level": "error",
+          "options": {
+            "accessibility": "explicit"
+          }
+        },
         "useImportRestrictions": "error",
         "useSortedClasses": "off",
         "useStrictMode": "error",

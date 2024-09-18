@@ -835,7 +835,7 @@ const overrides = [
 			"no-useless-constructor": "off",
 			"@typescript-eslint/no-useless-constructor": "off",
 			"@typescript-eslint/no-useless-empty-export": "off",
-			"@typescript-eslint/no-var-requires": "error",
+			"@typescript-eslint/no-var-requires": "off",
 			"@typescript-eslint/no-wrapper-object-types": "off",
 			"@typescript-eslint/non-nullable-type-assertion-style": "off",
 			"no-throw-literal": "off",
