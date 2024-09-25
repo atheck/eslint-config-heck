@@ -284,6 +284,7 @@
         "noUselessEscapeInRegex": "error",
         "useAdjacentOverloadSignatures": "error",
         "useAriaPropsSupportedByRole": "error",
+        "useComponentExportOnlyModules": "off",
         "useConsistentCurlyBraces": "off",
         "useConsistentMemberAccessibility": {
           "level": "error",
