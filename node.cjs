@@ -940,7 +940,10 @@ const overrides = [
 			"@typescript-eslint/no-this-alias": "error",
 			"@typescript-eslint/no-type-alias": "off",
 			"@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-			"@typescript-eslint/no-unnecessary-condition": "error",
+			"@typescript-eslint/no-unnecessary-condition": [
+				"error",
+				{ checkTypePredicates: true },
+			],
 			"@typescript-eslint/no-unnecessary-parameter-property-assignment":
 				"error",
 			"@typescript-eslint/no-unnecessary-qualifier": "error",
