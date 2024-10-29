@@ -305,7 +305,7 @@
           }
         },
         "useDeprecatedReason": "off",
-        "useExplicitType": "error",
+        "useExplicitType": "off",
         "useGoogleFontDisplay": "error",
         "useGuardForIn": "error",
         "useImportRestrictions": "error",
