@@ -131,3 +131,12 @@ if (!foo !== bar) {
 // "unicorn/no-length-as-slice-end"
 const numbers = [1, 2, 3];
 const sliced = numbers.slice(0, numbers.length);
+
+// unicorn/consistent-existence-index-check
+const index = ["foo", "bar"].indexOf("bar");
+
+if (index < 0) {
+}
+
+if (index === -1) {
+}
