@@ -6,14 +6,11 @@
   "main": "index.js",
   "exports": {
     "./biome": "./biomeLinting.json",
-    "./browser": "./browser.cjs",
-    "./browserWithBiome": "./browserWithBiome.cjs",
-    "./node": "./node.cjs",
-    "./nodeWithBiome": "./nodeWithBiome.cjs",
-    "./complexity": "./complexity.cjs",
-    "./groupImports": "./groupImports.cjs",
-    "./noFormatting": "./noFormatting.cjs",
-    "./reactNative": "./reactNative.cjs"
+    "./node": "./node.mjs",
+    "./nodeWithBiome": "./nodeWithBiome.mjs",
+    "./complexity": "./complexity.mjs",
+    "./groupImports": "./groupImports.mjs",
+    "./reactNative": "./reactNative.mjs"
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",
@@ -29,10 +26,11 @@
   "author": "atheck",
   "license": "MIT",
   "dependencies": {
-    "@stylistic/eslint-plugin": "2.9.0",
-    "@typescript-eslint/eslint-plugin": "8.12.1",
-    "@typescript-eslint/parser": "8.12.1",
-    "eslint": "8.57.1",
+    "@eslint/compat": "1.2.2",
+    "@stylistic/eslint-plugin": "2.10.0",
+    "@typescript-eslint/eslint-plugin": "8.12.2",
+    "@typescript-eslint/parser": "8.12.2",
+    "eslint": "9.13.0",
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "28.8.3",
@@ -49,6 +47,7 @@
     "@testing-library/react": "16.0.1",
     "@types/jest": "29.5.14",
     "@types/react": "18.3.12",
+    "globals": "15.11.0",
     "jest": "29.7.0",
     "react": "18.3.1",
     "semantic-release": "24.2.0"
