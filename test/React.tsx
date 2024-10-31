@@ -68,7 +68,11 @@ function Hooks(props: Props): JSX.Element {
 
 	const { actionName } = props;
 
-	return <div>{actionName}</div>;
+	return (
+		<div {...props} {...props}>
+			{actionName}
+		</div>
+	);
 }
 
 export { Component };

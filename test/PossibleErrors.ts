@@ -98,13 +98,6 @@ const castedToBool = undefined;
 if (!!castedToBool) {
 }
 
-// no-extra-parens
-const sum = 1 * 2;
-
-const noExtraParens = function (): number {
-	return 1 + 2;
-};
-
 // no-extra-semi
 const noExtraSemi = 1;
 
@@ -218,5 +211,12 @@ if (1 === NaN) {
 const typeofString = "";
 if (typeof typeofString === "str") {
 }
+
+// no-unused-private-class-members
+class Unused {
+	#unused = 1;
+}
+
+const octal = 0777;
 
 export {};

@@ -8,12 +8,6 @@ const lambda3 = () => {
 	};
 };
 
-// arrow-parens
-[1, 2, 3].map((arg) => arg);
-
-// arrow-spacing
-const lambda4 = (arg) => arg;
-
 // constructor-super: off (handled by typescript)
 class MyError extends Error {
 	constructor() {
@@ -26,11 +20,6 @@ class OtherError {
 		super();
 	}
 }
-
-// generator-star-spacing
-const generator = function* () {
-	yield 0;
-};
 
 // no-class-assign: off (handled by typescript)
 class Assigned {}
@@ -138,21 +127,5 @@ const noYield = function* () {
 	return 10;
 };
 
-// rest-spread-spacing
-Math.max(...maxArgs);
-
-// sort-imports
-
 // symbol-description
 const noDescription = Symbol();
-
-// template-curly-spacing
-const curlySpacing = `Hallo ${who}`;
-
-// yield-star-spacing
-const otherYieldStarSpacing = function* () {
-	yield 0;
-};
-const yieldStarSpacing = function* () {
-	yield* otherYieldStarSpacing();
-};
