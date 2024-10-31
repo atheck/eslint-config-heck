@@ -10,13 +10,17 @@ npm install --save-dev eslint eslint-config-heck
 
 ## Usage
 
-To use one of the included configurations, create a `eslint.config.js` file and use the `extends` keyword.
+To use one of the included configurations, create a `eslint.config.js` and import the configuration you want to use.
 
 For a Node.js project use:
 
-~~~json
+~~~js
 {
-    "extends": "heck/node"
+    import node from "eslint-config-heck/node";
+
+    export default {
+        ...node,
+    };
 }
 ~~~
 
@@ -24,21 +28,33 @@ For a Node.js project use:
 
 ### Complexity
 
-Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** or **browser** rules:
+Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** configuration:
 
-~~~json
+~~~js
 {
-    "extends": ["heck/node", "heck/complexity"]
+    import node from "eslint-config-heck/node";
+    import complexity from "eslint-config-heck/complexity";
+
+    export default {
+        ...node,
+        ...complexity,
+    };
 }
 ~~~
 
 ### Group imports
 
-Optionally you can switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** or **browser** rules:
+Optionally you can switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** configuration:
 
-~~~json
+~~~js
 {
-    "extends": ["heck/node", "heck/groupImports"]
+    import node from "eslint-config-heck/node";
+    import groupImports from "eslint-config-heck/groupImports";
+
+    export default {
+        ...node,
+        ...groupImports,
+    };
 }
 ~~~
 
@@ -46,19 +62,29 @@ Optionally you can switch to another import sorting rule, which groups the impor
 
 If you are using react-native, you can enable react-native specific rules:
 
-~~~json
+~~~js
 {
-    "extends": ["heck/node", "heck/reactNative"]
+    import node from "eslint-config-heck/node";
+    import reactNative from "eslint-config-heck/reactNative";
+
+    export default {
+        ...node,
+        ...reactNative,
+    };
 }
 ~~~
 
 ### Rules with usage of Biome
 
-If you are using Biome you can use "nodeWithBiome" or "browserWithBiome":
+If you are using Biome you can use the "nodeWithBiome" configuration:
 
-~~~json
+~~~js
 {
-    "extends": ["heck/nodeWithBiome"]
+    import nodeWithBiome from "eslint-config-heck/nodeWithBiome";
+
+    export default {
+        ...nodeWithBiome,
+    };
 }
 ~~~
 
