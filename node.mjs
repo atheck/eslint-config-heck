@@ -123,6 +123,7 @@ export default [
 				},
 			],
 			"no-use-before-define": ["error", "nofunc"],
+			"no-useless-assignment": "error",
 			"no-useless-backreference": "error",
 			"require-atomic-updates": "error",
 			"use-isnan": "error",
