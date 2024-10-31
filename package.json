@@ -26,6 +26,7 @@
   "author": "atheck",
   "license": "MIT",
   "dependencies": {
+    "@eslint/compat": "1.2.2",
     "@stylistic/eslint-plugin": "2.10.0",
     "@typescript-eslint/eslint-plugin": "8.12.2",
     "@typescript-eslint/parser": "8.12.2",
@@ -42,7 +43,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@eslint/compat": "1.2.2",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.0.1",
     "@types/jest": "29.5.14",
