@@ -43,6 +43,7 @@ export default [
 			},
 		},
 		rules: {
+			// Possible problems
 			"array-callback-return": [
 				"error",
 				{
@@ -126,6 +127,8 @@ export default [
 			"require-atomic-updates": "error",
 			"use-isnan": "error",
 			"valid-typeof": "error",
+
+			// Suggestions
 			"accessor-pairs": [
 				"error",
 				{
@@ -306,7 +309,6 @@ export default [
 						array: false,
 						object: true,
 					},
-
 					AssignmentExpression: {
 						array: false,
 						object: false,
@@ -347,8 +349,12 @@ export default [
 					onlyEquality: false,
 				},
 			],
+
+			// Layout & Formatting
 			"line-comment-position": "off",
 			"unicode-bom": "error",
+
+			// @stylistic
 			"@stylistic/jsx-pascal-case": "error",
 			"@stylistic/max-statements-per-line": "error",
 			"@stylistic/multiline-comment-style": ["error", "separate-lines"],
@@ -356,11 +362,13 @@ export default [
 			"@stylistic/no-mixed-operators": "error",
 			"@stylistic/padding-line-between-statements": [
 				"error",
+				// return
 				{
 					blankLine: "always",
 					prev: "*",
 					next: "return",
 				},
+				// const, let, var
 				{
 					blankLine: "always",
 					prev: ["const", "let", "var"],
@@ -376,6 +384,7 @@ export default [
 					prev: ["const", "let", "var"],
 					next: ["const", "let", "var"],
 				},
+				// import
 				{
 					blankLine: "always",
 					prev: ["import", "cjs-import"],
@@ -386,6 +395,7 @@ export default [
 					prev: ["import", "cjs-import"],
 					next: ["import", "cjs-import"],
 				},
+				// export
 				{
 					blankLine: "always",
 					prev: "*",
@@ -396,6 +406,7 @@ export default [
 					prev: ["export", "cjs-export"],
 					next: ["export", "cjs-export"],
 				},
+				// function
 				{
 					blankLine: "always",
 					prev: "*",
@@ -404,6 +415,8 @@ export default [
 			],
 			"@stylistic/quote-props": ["error", "as-needed"],
 			"@stylistic/spaced-comment": ["error", "always"],
+
+			// eslint-plugin-react
 			"react/boolean-prop-naming": "off",
 			"react/button-has-type": "error",
 			"react/checked-requires-onchange-or-readonly": "error",
@@ -585,8 +598,12 @@ export default [
 			"react/static-property-placement": "off",
 			"react/style-prop-object": "error",
 			"react/void-dom-elements-no-children": "error",
+
+			// eslint-plugin-react-hooks
 			"react-hooks/rules-of-hooks": "error",
 			"react-hooks/exhaustive-deps": "error",
+
+			// eslint-plugin-unicorn
 			"unicorn/better-regex": "error",
 			"unicorn/catch-error-name": [
 				"error",
@@ -716,6 +733,8 @@ export default [
 			"unicorn/prefer-string-trim-start-end": "error",
 			"unicorn/prefer-structured-clone": "error",
 			"unicorn/prefer-switch": "error",
+
+			// TODO: off until there is a solution to this: https://github.com/sindresorhus/eslint-plugin-unicorn/issues/1079
 			"unicorn/prefer-ternary": "off",
 			"unicorn/prefer-top-level-await": "off",
 			"unicorn/prefer-type-error": "error",
@@ -729,6 +748,8 @@ export default [
 			"unicorn/template-indent": "off",
 			"unicorn/text-encoding-identifier-case": "error",
 			"unicorn/throw-new-error": "error",
+
+			// eslint-plugin-import
 			"import/export": "off",
 			"import/no-deprecated": "off",
 			"import/no-empty-named-blocks": "error",
@@ -812,6 +833,7 @@ export default [
 			},
 		},
 		rules: {
+			// Typescript
 			"@typescript-eslint/adjacent-overload-signatures": "error",
 			"@typescript-eslint/array-type": [
 				"error",
@@ -873,7 +895,6 @@ export default [
 				{
 					selector: ["variableLike", "memberLike"],
 					format: ["strictCamelCase", "StrictPascalCase"],
-
 					filter: {
 						regex: "^__html$",
 						match: false,
@@ -1021,7 +1042,6 @@ export default [
 						array: false,
 						object: true,
 					},
-
 					AssignmentExpression: {
 						array: false,
 						object: false,
@@ -1029,6 +1049,7 @@ export default [
 				},
 			],
 			"@typescript-eslint/prefer-enum-initializers": "error",
+			// unicorns prefer-array-find is more powerful
 			"@typescript-eslint/prefer-find": "off",
 			"@typescript-eslint/prefer-for-of": "error",
 			"@typescript-eslint/prefer-function-type": "off",
@@ -1080,6 +1101,8 @@ export default [
 			],
 			"@typescript-eslint/unified-signatures": "error",
 			"@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+
+			// Typescript handles itself
 			"consistent-return": "off",
 			"@typescript-eslint/consistent-return": "off",
 			"constructor-super": "off",
@@ -1103,6 +1126,9 @@ export default [
 			"no-unsafe-negation": "off",
 			"no-with": "off",
 			"valid-typeof": "off",
+
+			// React
+			// If you are working in a typed-codebase which encourages you to always use boolean conditions, this rule can be disabled.
 			"react/jsx-no-leaked-render": "off",
 		},
 	},
@@ -1122,6 +1148,7 @@ export default [
 			"testing-library": testingLibrary,
 		},
 		rules: {
+			// eslint-plugin-jest
 			"jest/consistent-test-it": "error",
 			"jest/expect-expect": [
 				"error",
@@ -1153,6 +1180,7 @@ export default [
 			"jest/no-standalone-expect": "error",
 			"jest/no-test-prefixes": "error",
 			"jest/no-test-return-statement": "error",
+			// This rule is only active if using typescript - see down below
 			"jest/no-untyped-mock-factory": "off",
 			"jest/padding-around-after-all-blocks": "off",
 			"jest/padding-around-after-each-blocks": "off",
@@ -1194,6 +1222,8 @@ export default [
 			"jest/valid-title": "error",
 			"@typescript-eslint/unbound-method": "off",
 			"jest/unbound-method": "error",
+
+			// plugin-testing-library
 			"testing-library/await-async-events": "error",
 			"testing-library/await-async-queries": "error",
 			"testing-library/await-async-utils": "error",
