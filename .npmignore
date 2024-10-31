@@ -1,6 +1,7 @@
 .github
-.eslintrc.json
 .releaserc.json
+biome.jsonc
+eslint.config.mjs
 tsconfig.json
 coverage
 test

@@ -14,7 +14,7 @@
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",
-    "lint": "eslint --ext '.ts,.tsx' .",
+    "lint": "eslint .",
     "semantic-release": "semantic-release"
   },
   "keywords": [

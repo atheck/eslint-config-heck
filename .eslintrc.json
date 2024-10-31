@@ -1,3 +1,0 @@
-{
-    "extends": ["./nodeWithBiome.cjs", "./complexity.cjs", "./groupImports.cjs"]
-}
