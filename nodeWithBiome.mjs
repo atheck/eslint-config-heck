@@ -724,27 +724,12 @@ export default [
 	{
 		files: ["**/*.ts", "**/*.tsx"],
 		plugins: {
-			"@stylistic": stylistic,
-			react,
-			"react-hooks": reactHooks,
-			unicorn,
-			import: importPlugin,
 			"@typescript-eslint": typescriptEslint,
 		},
 		languageOptions: {
-			globals: {
-				NodeJS: true,
-			},
 			parser: tsParser,
-			ecmaVersion: "latest",
 			sourceType: "module",
 			parserOptions: {
-				ecmaFeatures: {
-					globalReturn: false,
-					impliedStrict: false,
-					jsx: true,
-				},
-
 				project: "tsconfig.json",
 			},
 		},
@@ -1116,6 +1101,7 @@ export default [
 			jest,
 		},
 		rules: {
+			// eslint-plugin-jest
 			"jest/no-untyped-mock-factory": "error",
 		},
 	},
