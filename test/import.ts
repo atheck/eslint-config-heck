@@ -2,7 +2,7 @@
 import * as unresolved from "not-installed";
 const newline = 0;
 // import/name: off - handled by Typescript
-import { notExisting } from "./ES6";
+import { export1, notExisting } from "./ES6";
 
 // import/default: off - handled by Typescript
 import Default from "./BestPractices";
@@ -30,3 +30,6 @@ import { AccessExpression } from "typescript";
 
 // no-empty-named-blocks
 import {} from "eslint";
+
+// no-cycle
+const export1a = export1;

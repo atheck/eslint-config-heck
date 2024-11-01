@@ -11,6 +11,7 @@ import testingLibrary from "eslint-plugin-testing-library";
 
 // biome-ignore lint/style/noDefaultExport: Required for ESLint
 export default [
+	importPlugin.flatConfigs.typescript,
 	{
 		plugins: {
 			"@stylistic": stylistic,
@@ -815,7 +816,8 @@ export default [
 			parser: tsParser,
 			sourceType: "module",
 			parserOptions: {
-				project: "tsconfig.json",
+				projectService: true,
+				tsconfigRootDir: import.meta.dirname,
 			},
 		},
 		rules: {

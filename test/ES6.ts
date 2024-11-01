@@ -1,3 +1,10 @@
+// no-duplicate-imports
+import { AbstractKeyword } from "typescript";
+import { AccessExpression } from "typescript";
+// no-useless-rename
+import { AmdDependency as AmdDependency } from "typescript";
+import defaultExport1 from "./import";
+
 // arrow-body-style
 const lambda = () => {
 	return 0;
@@ -37,10 +44,6 @@ class DupeMembers {
 	foo() {}
 }
 
-// no-duplicate-imports
-import { AbstractKeyword } from "typescript";
-import { AccessExpression } from "typescript";
-
 // no-new-symbol: off (handled by typescript)
 const newSymbol = new Symbol("symbol");
 
@@ -65,9 +68,6 @@ class UselessConstructor {
 		// Blank
 	}
 }
-
-// no-useless-rename
-import { AmdDependency as AmdDependency } from "typescript";
 
 // no-var
 var aVar = null;
@@ -129,3 +129,8 @@ const noYield = function* () {
 
 // symbol-description
 const noDescription = Symbol();
+
+// import/no-cycle
+const export1 = defaultExport1;
+
+export { export1 };

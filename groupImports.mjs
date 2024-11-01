@@ -9,7 +9,6 @@ export default [
 					ignoreDeclarationSort: true,
 				},
 			],
-
 			"import/order": [
 				"error",
 				{
@@ -23,7 +22,6 @@ export default [
 						"index",
 						"object",
 					],
-
 					alphabetize: {
 						order: "asc",
 						caseInsensitive: true,

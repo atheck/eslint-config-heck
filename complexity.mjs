@@ -18,7 +18,6 @@ export default [
 			"**/*.test.js",
 			"**/*.test.jsx",
 		],
-
 		rules: {
 			"max-statements": "off",
 			"max-params": "off",

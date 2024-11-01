@@ -7,7 +7,6 @@ export default [
 		plugins: {
 			"react-native": fixupPluginRules(reactNative),
 		},
-
 		rules: {
 			"react-native/no-color-literals": "error",
 			"react-native/no-inline-styles": "error",
