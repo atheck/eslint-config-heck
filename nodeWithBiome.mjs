@@ -11,7 +11,6 @@ import testingLibrary from "eslint-plugin-testing-library";
 
 // biome-ignore lint/style/noDefaultExport: Required for ESLint
 export default [
-	importPlugin.flatConfigs.typescript,
 	{
 		plugins: {
 			"@stylistic": stylistic,
@@ -721,6 +720,10 @@ export default [
 			"import/order": "off",
 			"import/prefer-default-export": "off",
 		},
+	},
+	{
+		files: ["**/*.ts", "**/*.tsx"],
+		...importPlugin.flatConfigs.typescript,
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
