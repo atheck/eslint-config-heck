@@ -7,6 +7,12 @@
 		"rules": {
 			"style": {
 				"useNamingConvention": "off"
+			},
+			"suspicious": {
+				"noRedundantUseStrict": "off"
+			},
+			"nursery": {
+				"noCommonJs": "off"
 			}
 		}
 	}

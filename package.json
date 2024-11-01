@@ -6,11 +6,11 @@
   "main": "index.js",
   "exports": {
     "./biome": "./biomeLinting.json",
-    "./node": "./node.mjs",
-    "./nodeWithBiome": "./nodeWithBiome.mjs",
-    "./complexity": "./complexity.mjs",
-    "./groupImports": "./groupImports.mjs",
-    "./reactNative": "./reactNative.mjs"
+    "./node": "./node.cjs",
+    "./nodeWithBiome": "./nodeWithBiome.cjs",
+    "./complexity": "./complexity.cjs",
+    "./groupImports": "./groupImports.cjs",
+    "./reactNative": "./reactNative.cjs"
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --install always",

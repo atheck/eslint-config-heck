@@ -1,8 +1,9 @@
-import { fixupPluginRules } from "@eslint/compat";
-import reactNative from "eslint-plugin-react-native";
+"use strict";
 
-// biome-ignore lint/style/noDefaultExport: Required for ESLint
-export default [
+const { fixupPluginRules } = require("@eslint/compat");
+const reactNative = require("eslint-plugin-react-native");
+
+module.exports = [
 	{
 		plugins: {
 			"react-native": fixupPluginRules(reactNative),
