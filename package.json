@@ -13,7 +13,7 @@
     "./reactNative": "./reactNative.cjs"
   },
   "scripts": {
-    "update": "npx -y npm-check-updates -i --install never && npx -y npm-check-updates -i --target minor --install never && npx -y npm-check-updates -i --target patch --install never && npm update --legacy-peer-deps",
+    "update": "npx -y npm-check-updates -i --install never && npx -y npm-check-updates -i --target minor --install never && npx -y npm-check-updates -i --target patch --install never && npm update --force",
     "lint": "eslint .",
     "semantic-release": "semantic-release"
   },
