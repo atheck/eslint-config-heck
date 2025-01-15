@@ -1,12 +1,11 @@
 "use strict";
 
-const { fixupPluginRules } = require("@eslint/compat");
 const reactNative = require("eslint-plugin-react-native");
 
 module.exports = [
 	{
 		plugins: {
-			"react-native": fixupPluginRules(reactNative),
+			"react-native": reactNative,
 		},
 		rules: {
 			"react-native/no-color-literals": "error",

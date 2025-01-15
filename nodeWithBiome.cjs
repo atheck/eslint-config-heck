@@ -826,6 +826,7 @@ module.exports = [
 			"@typescript-eslint/no-meaningless-void-operator": "off",
 			"@typescript-eslint/no-misused-new": "off",
 			"@typescript-eslint/no-misused-promises": "error",
+			"@typescript-eslint/no-misused-spread": "error",
 			"@typescript-eslint/no-mixed-enums": "off",
 			"@typescript-eslint/no-namespace": "off",
 			"@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
