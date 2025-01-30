@@ -5,7 +5,7 @@ eslint-config-heck contains an ESLint configuration for ES2015+, TypeScript, and
 ## Installation
 
 ~~~sh
-npm install --save-dev eslint eslint-config-heck
+npm install --save-dev eslint@9 eslint-config-heck
 ~~~
 
 ## Usage
@@ -70,6 +70,9 @@ If you are using react-native, you can enable react-native specific rules:
         ...node,
         ...reactNative,
     };
+}
+~~~
+
 ### Rules with usage of Biome
 
 If you are using Biome you can use the "nodeWithBiome" configuration:
