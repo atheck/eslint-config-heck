@@ -26,10 +26,10 @@
   "author": "atheck",
   "license": "MIT",
   "dependencies": {
-    "@stylistic/eslint-plugin": "2.13.0",
-    "@typescript-eslint/eslint-plugin": "8.20.0",
-    "@typescript-eslint/parser": "8.20.0",
-    "eslint": "9.18.0",
+    "@stylistic/eslint-plugin": "3.0.1",
+    "@typescript-eslint/eslint-plugin": "8.22.0",
+    "@typescript-eslint/parser": "8.22.0",
+    "eslint": "9.19.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "28.11.0",
     "eslint-plugin-react": "7.37.4",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/react": "16.1.0",
+    "@testing-library/react": "16.2.0",
     "@types/jest": "29.5.14",
     "@types/react": "18.3.18",
     "globals": "15.14.0",
