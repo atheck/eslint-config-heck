@@ -1,8 +1,7 @@
-"use strict";
+import reactNative from "eslint-plugin-react-native";
 
-const reactNative = require("eslint-plugin-react-native");
-
-module.exports = [
+// biome-ignore lint/style/noDefaultExport: Required for ESLint configuration
+export default [
 	{
 		plugins: {
 			"react-native": reactNative,
