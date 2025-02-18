@@ -308,9 +308,11 @@ module.exports = [
 			"unicode-bom": "error",
 
 			// @stylistic
+			"@stylistic/jsx-pascal-case": "off",
 			"@stylistic/max-statements-per-line": "error",
 			"@stylistic/multiline-comment-style": ["error", "separate-lines"],
 			"@stylistic/no-floating-decimal": "error",
+			"@stylistic/no-mixed-operators": "off",
 			"@stylistic/padding-line-between-statements": [
 				"error",
 				// return
@@ -538,6 +540,8 @@ module.exports = [
 					ignore: ["^ex([A-Z0-9].*)?$"],
 				},
 			],
+			"unicorn/consistent-assert": "error",
+			"unicorn/consistent-date-clone": "error",
 			"unicorn/consistent-destructuring": "error",
 			"unicorn/consistent-empty-array-spread": "error",
 			"unicorn/consistent-existence-index-check": "error",
@@ -557,6 +561,7 @@ module.exports = [
 			"unicorn/import-style": "error",
 			"unicorn/new-for-builtins": "off",
 			"unicorn/no-abusive-eslint-disable": "error",
+			"unicorn/no-accessor-recursion": "error",
 			"unicorn/no-anonymous-default-export": "error",
 			"unicorn/no-array-callback-reference": "off",
 			"unicorn/no-array-for-each": "off",
@@ -571,12 +576,14 @@ module.exports = [
 			"unicorn/no-for-loop": "error",
 			"unicorn/no-hex-escape": "error",
 			"unicorn/no-instanceof-array": "off",
+			"unicorn/no-instanceof-builtins": "error",
 			"unicorn/no-invalid-fetch-options": "error",
 			"unicorn/no-invalid-remove-event-listener": "error",
 			"unicorn/no-keyword-prefix": "off",
 			"unicorn/no-length-as-slice-end": "error",
 			"unicorn/no-lonely-if": "off",
 			"unicorn/no-magic-array-flat-depth": "error",
+			"unicorn/no-named-default": "error",
 			"unicorn/no-negated-condition": "off",
 			"unicorn/no-negation-in-equality-check": "error",
 			"unicorn/no-nested-ternary": "off",
