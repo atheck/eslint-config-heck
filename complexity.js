@@ -1,6 +1,5 @@
-"use strict";
-
-module.exports = [
+// biome-ignore lint/style/noDefaultExport: Required for ESLint configuration
+export default [
 	{
 		rules: {
 			"max-depth": ["warn", 2],

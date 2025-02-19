@@ -1,17 +1,16 @@
-"use strict";
+import stylistic from "@stylistic/eslint-plugin";
+import typescriptEslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import importPlugin, { flatConfigs } from "eslint-plugin-import";
+import jest from "eslint-plugin-jest";
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import testingLibrary from "eslint-plugin-testing-library";
+import unicorn from "eslint-plugin-unicorn";
+import globals from "globals";
 
-const stylistic = require("@stylistic/eslint-plugin");
-const typescriptEslint = require("@typescript-eslint/eslint-plugin");
-const tsParser = require("@typescript-eslint/parser");
-const importPlugin = require("eslint-plugin-import");
-const jest = require("eslint-plugin-jest");
-const react = require("eslint-plugin-react");
-const reactHooks = require("eslint-plugin-react-hooks");
-const testingLibrary = require("eslint-plugin-testing-library");
-const unicorn = require("eslint-plugin-unicorn");
-const globals = require("globals");
-
-module.exports = [
+// biome-ignore lint/style/noDefaultExport: Required for ESLint configuration
+export default [
 	{
 		plugins: {
 			"@stylistic": stylistic,
@@ -815,7 +814,7 @@ module.exports = [
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
-		...importPlugin.flatConfigs.typescript,
+		...flatConfigs.typescript,
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
@@ -827,7 +826,7 @@ module.exports = [
 			sourceType: "module",
 			parserOptions: {
 				projectService: true,
-				tsconfigRootDir: __dirname,
+				tsconfigRootDir: import.meta.dirname,
 			},
 		},
 		rules: {
