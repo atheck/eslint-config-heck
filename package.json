@@ -5,7 +5,9 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    "./biome": "./biomeLinting.json",
+    "./biomeJsTs": "./biomeJsTs.json",
+    "./biomeCss": "./biomeCss.json",
+    "./biomeJson": "./biomeJson.json",
     "./node": "./node.js",
     "./nodeWithBiome": "./nodeWithBiome.js",
     "./complexity": "./complexity.js",

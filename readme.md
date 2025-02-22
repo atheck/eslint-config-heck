@@ -87,19 +87,17 @@ If you are using Biome you can use the "nodeWithBiome" configuration:
 }
 ~~~
 
-If you are using Biome you can also extend your Biome config with the "biomeLinting.json":
+If you are using Biome you can also extend your Biome config with the following Biome configurations:
+
+- JavaScript/TypeScript: biomeJsTs
+- CSS: biomeCss
+- JSON: biomeJson
+
+To enable all Biome rules, you can use the following configuration:
 
 ~~~json
 {
     "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["./node_modules/eslint-config-heck/biomeLinting.json"],
+    "extends": ["eslint-config-heck/biomeJsTs", "eslint-config-heck/biomeCss", "eslint-config-heck/biomeJson"],
 }
 ~~~
-
-This enables all Biome rules (JavaScript, TypeScript, css, and json).
-
-If you only want to enable rules for a specific language, you can use the following configurations:
-
-- JavaScript/TypeScript: biomeJsTs.json
-- CSS: biomeCss.json
-- JSON: biomeJson.json
