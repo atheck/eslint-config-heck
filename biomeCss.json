@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "useGenericFontNames": "error"
+      },
+      "correctness": {
+        "noInvalidDirectionInLinearGradient": "error",
+        "noInvalidGridAreas": "error",
+        "noInvalidPositionAtImportRule": "error",
+        "noUnknownFunction": "error",
+        "noUnknownMediaFeatureName": "error",
+        "noUnknownProperty": "error",
+        "noUnknownUnit": "error",
+        "noUnmatchableAnbSelector": "error"
+      },
+      "suspicious": {
+        "noDuplicateAtImportRules": "error",
+        "noDuplicateFontNames": "error",
+        "noDuplicateSelectorsKeyframeBlock": "error",
+        "noEmptyBlock": "error",
+        "noImportantInKeyframe": "error",
+        "noShorthandPropertyOverrides": "error"
+      },
+      "nursery": {
+        "noDescendingSpecificity": "error",
+        "noDuplicateCustomProperties": "error",
+        "noDuplicateProperties": "error",
+        "noIrregularWhitespace": "error",
+        "noMissingVarFunction": "error",
+        "noUnknownPseudoClass": "error",
+        "noUnknownPseudoElement": "error",
+        "noUnknownTypeSelector": "error",
+        "noValueAtRule": "error"
+      }
+    }
+  }
+}
