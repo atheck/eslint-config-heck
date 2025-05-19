@@ -53,3 +53,8 @@ const usingFunc = function () {
 };
 
 const usedBeforeDefine = "";
+
+// no-unassigned-vars
+let unassigned: string;
+
+console.log(unassigned);

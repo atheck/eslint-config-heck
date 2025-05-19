@@ -257,6 +257,7 @@ export default [
 			"no-shadow-restricted-names": "error",
 			"no-ternary": "off",
 			"no-throw-literal": "error",
+			"no-unassigned-vars": "error",
 			"no-undef-init": "error",
 			"no-undefined": "off",
 			"no-underscore-dangle": [
@@ -997,6 +998,7 @@ export default [
 			"@typescript-eslint/no-unnecessary-type-arguments": "error",
 			"@typescript-eslint/no-unnecessary-type-assertion": "error",
 			"@typescript-eslint/no-unnecessary-type-constraint": "error",
+			"@typescript-eslint/no-unnecessary-type-conversion": "error",
 			"@typescript-eslint/no-unnecessary-type-parameters": "error",
 			"@typescript-eslint/no-unsafe-argument": "error",
 			"@typescript-eslint/no-unsafe-assignment": "error",
@@ -1241,6 +1243,7 @@ export default [
 			"testing-library/no-node-access": "error",
 			"testing-library/no-promise-in-fire-event": "off",
 			"testing-library/no-render-in-lifecycle": "error",
+			"testing-library/no-test-id-queries": "error",
 			"testing-library/no-unnecessary-act": "error",
 			"testing-library/no-wait-for-multiple-assertions": "error",
 			"testing-library/no-wait-for-side-effects": "error",
