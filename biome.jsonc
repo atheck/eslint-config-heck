@@ -1,18 +1,36 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"extends": [
-		"./biomeJsTs.json"
-	],
+	"extends": ["./biomeJsTs.json"],
 	"linter": {
 		"rules": {
 			"style": {
-				"useNamingConvention": "off"
+				"useNamingConvention": "off",
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error",
+				"noCommonJs": "off"
 			},
 			"suspicious": {
 				"noRedundantUseStrict": "off"
 			},
-			"nursery": {
-				"noCommonJs": "off"
+			"nursery": {}
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "off",
+				"useSortedKeys": "off",
+				"useSortedProperties": "off"
 			}
 		}
 	}
