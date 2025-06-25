@@ -9,7 +9,7 @@ export default [
 					ignoreDeclarationSort: true,
 				},
 			],
-			"import/order": [
+			"importPlugin/order": [
 				"error",
 				{
 					groups: [
