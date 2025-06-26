@@ -43,7 +43,13 @@ export default [
 		},
 		rules: {
 			// Possible problems
-			"array-callback-return": "off",
+			"array-callback-return": [
+				"error",
+				{
+					allowImplicit: true,
+					checkForEach: false,
+				},
+			],
 			"constructor-super": "off",
 			"for-direction": "off",
 			"getter-return": "off",
@@ -212,7 +218,7 @@ export default [
 			"no-return-assign": "off",
 			"no-script-url": "error",
 			"no-sequences": "off",
-			"no-shadow": "off",
+			"no-shadow": "error",
 			"no-shadow-restricted-names": "off",
 			"no-ternary": "off",
 			"no-throw-literal": "off",
