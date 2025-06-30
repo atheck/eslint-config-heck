@@ -162,7 +162,7 @@ export default [
 			"max-statements": "off",
 			"multiline-comment-style": "off",
 			"new-cap": "error",
-			"no-alert": "error",
+			"no-alert": "off",
 			"no-array-constructor": "off",
 			"no-bitwise": "off",
 			"no-caller": "error",
@@ -182,7 +182,7 @@ export default [
 			"no-extra-boolean-cast": "off",
 			"no-extra-label": "off",
 			"no-global-assign": "off",
-			"no-implicit-coercion": "error",
+			"no-implicit-coercion": "off",
 			"no-implicit-globals": "off",
 			"no-implied-eval": "error",
 			"no-inline-comments": "error",
@@ -222,7 +222,7 @@ export default [
 			"no-shadow-restricted-names": "off",
 			"no-ternary": "off",
 			"no-throw-literal": "off",
-			"no-unassigned-vars": "error",
+			"no-unassigned-vars": "off",
 			"no-undef-init": "off",
 			"no-undefined": "off",
 			"no-underscore-dangle": [
@@ -902,12 +902,7 @@ export default [
 			"@typescript-eslint/prefer-optional-chain": "error",
 			"prefer-promise-reject-errors": "off",
 			"@typescript-eslint/prefer-promise-reject-errors": "error",
-			"@typescript-eslint/prefer-readonly": [
-				"error",
-				{
-					onlyInlineLambdas: true,
-				},
-			],
+			"@typescript-eslint/prefer-readonly": "off",
 			"@typescript-eslint/prefer-readonly-parameter-types": "off",
 			"@typescript-eslint/prefer-reduce-type-parameter": "error",
 			"@typescript-eslint/prefer-regexp-exec": "error",
@@ -931,7 +926,7 @@ export default [
 					ignoreStatic: true,
 				},
 			],
-			"@typescript-eslint/unified-signatures": "error",
+			"@typescript-eslint/unified-signatures": "off",
 			"@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
 
 			// Typescript handles itself

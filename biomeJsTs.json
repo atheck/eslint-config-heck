@@ -131,8 +131,10 @@
 				"noBitwiseOperators": "error",
 				"noConstantBinaryExpression": "error",
 				"noDestructuredProps": "off",
+				"noExcessiveLinesPerFunction": "off",
 				"noFloatingPromises": "error",
 				"noGlobalDirnameFilename": "warn",
+				"noImplicitCoercion": "error",
 				"noImportCycles": "error",
 				"noNestedComponentDefinitions": "error",
 				"noNoninteractiveElementInteractions": "error",
@@ -142,6 +144,7 @@
 				"noSecrets": "off",
 				"noShadow": "off",
 				"noTsIgnore": "error",
+				"noUnassignedVariables": "error",
 				"noUnresolvedImports": "off",
 				"noUnwantedPolyfillio": "off",
 				"noUselessBackrefInRegex": "error",
@@ -166,9 +169,11 @@
 				"useNumericSeparators": "error",
 				"useObjectSpread": "error",
 				"useParseIntRadix": "error",
+				"useReadonlyClassProperties": "error",
 				"useSingleJsDocAsterisk": "error",
 				"useSortedClasses": "off",
 				"useSymbolDescription": "error",
+				"useUnifiedTypeSignature": "error",
 				"useUniqueElementIds": "error"
 			},
 			"performance": {
@@ -279,6 +284,7 @@
 				"useTrimStartEnd": "error"
 			},
 			"suspicious": {
+				"noAlert": "error",
 				"noApproximativeNumericConstant": "error",
 				"noArrayIndexKey": "error",
 				"noAssignInExpressions": "error",
