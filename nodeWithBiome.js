@@ -275,7 +275,7 @@ export default [
 			"prefer-object-has-own": "error",
 			"prefer-object-spread": "off",
 			"prefer-promise-reject-errors": "error",
-			"prefer-regex-literals": "error",
+			"prefer-regex-literals": "off",
 			"prefer-rest-params": "off",
 			"prefer-spread": "error",
 			"prefer-template": "off",
