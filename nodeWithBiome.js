@@ -707,7 +707,7 @@ export default [
 			"importPlugin/newline-after-import": "off",
 			"importPlugin/no-anonymous-default-export": "error",
 			"importPlugin/no-default-export": "off",
-			"importPlugin/no-duplicates": "error",
+			"importPlugin/no-duplicates": ["error", { "prefer-inline": true }],
 			"importPlugin/no-named-default": "off",
 			"importPlugin/no-named-export": "off",
 			"importPlugin/no-namespace": "off",
