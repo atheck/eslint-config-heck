@@ -149,7 +149,7 @@
 				"noReactPropAssign": "error",
 				"noRestrictedElements": "off",
 				"noSecrets": "off",
-				"noShadow": "error",
+				"noShadow": "off",
 				"noTsIgnore": "error",
 				"noUnassignedVariables": "error",
 				"noUnresolvedImports": "off",
