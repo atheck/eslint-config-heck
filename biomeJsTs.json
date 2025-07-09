@@ -110,7 +110,12 @@
 				"noUnreachableSuper": "error",
 				"noUnsafeFinally": "error",
 				"noUnsafeOptionalChaining": "error",
-				"noUnusedFunctionParameters": "error",
+				"noUnusedFunctionParameters": {
+					"level": "error",
+					"options": {
+						"ignoreRestSiblings": true
+					}
+				},
 				"noUnusedImports": "error",
 				"noUnusedLabels": "error",
 				"noUnusedPrivateClassMembers": "error",
@@ -138,11 +143,13 @@
 				"noImportCycles": "error",
 				"noNestedComponentDefinitions": "error",
 				"noNoninteractiveElementInteractions": "error",
+				"noMagicNumbers": "off",
+				"noMisusedPromises": "error",
 				"noProcessGlobal": "error",
 				"noReactPropAssign": "error",
 				"noRestrictedElements": "off",
 				"noSecrets": "off",
-				"noShadow": "off",
+				"noShadow": "error",
 				"noTsIgnore": "error",
 				"noUnassignedVariables": "error",
 				"noUnresolvedImports": "off",
