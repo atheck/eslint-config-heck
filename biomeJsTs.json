@@ -176,6 +176,7 @@
 				"useNumericSeparators": "error",
 				"useObjectSpread": "error",
 				"useParseIntRadix": "error",
+				"useReactFunctionComponents": "warn",
 				"useReadonlyClassProperties": "error",
 				"useSingleJsDocAsterisk": "error",
 				"useSortedClasses": "off",

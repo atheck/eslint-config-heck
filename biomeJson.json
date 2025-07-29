@@ -6,6 +6,9 @@
     "rules": {
       "suspicious": {
         "noDuplicateObjectKeys": "error"
+      },
+      "nursery": {
+        "noQuickfixBiome": "error"
       }
     }
   }
