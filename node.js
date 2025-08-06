@@ -1069,6 +1069,7 @@ export default [
 				"error",
 				{
 					ignoreMixedLogicalExpressions: true,
+					ignorePrimitives: true,
 				},
 			],
 			"@typescript-eslint/prefer-optional-chain": "error",
