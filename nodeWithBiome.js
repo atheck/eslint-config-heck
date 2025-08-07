@@ -751,7 +751,7 @@ export default [
 			"@typescript-eslint/consistent-generic-constructors": "error",
 			"@typescript-eslint/consistent-indexed-object-style": "error",
 			"@typescript-eslint/consistent-type-assertions": "error",
-			"@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+			"@typescript-eslint/consistent-type-definitions": "off",
 			"@typescript-eslint/consistent-type-exports": "off",
 			"@typescript-eslint/consistent-type-imports": "off",
 			"default-param-last": "off",
@@ -815,7 +815,7 @@ export default [
 			"@typescript-eslint/no-mixed-enums": "off",
 			"@typescript-eslint/no-namespace": "off",
 			"@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
-			"@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+			"@typescript-eslint/no-non-null-asserted-optional-chain": "off",
 			"@typescript-eslint/no-non-null-assertion": "off",
 			"no-redeclare": "off",
 			"@typescript-eslint/no-redeclare": "off",
@@ -829,12 +829,7 @@ export default [
 			"@typescript-eslint/no-this-alias": "off",
 			"@typescript-eslint/no-type-alias": "off",
 			"@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-			"@typescript-eslint/no-unnecessary-condition": [
-				"error",
-				{
-					checkTypePredicates: true,
-				},
-			],
+			"@typescript-eslint/no-unnecessary-condition": "off",
 			"@typescript-eslint/no-unnecessary-parameter-property-assignment":
 				"error",
 			"@typescript-eslint/no-unnecessary-qualifier": "error",
