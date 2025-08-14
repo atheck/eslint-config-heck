@@ -1,46 +1,46 @@
 {
-  "root": false,
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "a11y": {
-        "useGenericFontNames": "error"
-      },
-      "correctness": {
-        "noInvalidDirectionInLinearGradient": "error",
-        "noInvalidGridAreas": "error",
-        "noInvalidPositionAtImportRule": "error",
-        "noMissingVarFunction": "error",
-        "noUnknownFunction": "error",
-        "noUnknownMediaFeatureName": "error",
-        "noUnknownProperty": "error",
-        "noUnknownPseudoClass": "error",
-        "noUnknownPseudoElement": "error",
-        "noUnknownTypeSelector": "error",
-        "noUnknownUnit": "error",
-        "noUnmatchableAnbSelector": "error"
-      },
-      "nursery": {
-        "noImportantStyles": "error",
-        "noUnknownAtRule": "error",
-        "noUselessEscapeInString": "error"
-      },
-      "style": {
-        "noDescendingSpecificity": "error",
-        "noValueAtRule": "error"
-      },
-      "suspicious": {
-        "noDuplicateAtImportRules": "error",
-        "noDuplicateCustomProperties": "error",
-        "noDuplicateFontNames": "error",
-        "noDuplicateProperties": "error",
-        "noDuplicateSelectorsKeyframeBlock": "error",
-        "noEmptyBlock": "error",
-        "noImportantInKeyframe": "error",
-        "noIrregularWhitespace": "error",
-        "noShorthandPropertyOverrides": "error"
-      }
-    }
-  }
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": {
+				"useGenericFontNames": "error"
+			},
+			"complexity": {
+				"noImportantStyles": "error"
+			},
+			"correctness": {
+				"noInvalidDirectionInLinearGradient": "error",
+				"noInvalidGridAreas": "error",
+				"noInvalidPositionAtImportRule": "error",
+				"noMissingVarFunction": "error",
+				"noUnknownFunction": "error",
+				"noUnknownMediaFeatureName": "error",
+				"noUnknownProperty": "error",
+				"noUnknownPseudoClass": "error",
+				"noUnknownPseudoElement": "error",
+				"noUnknownTypeSelector": "error",
+				"noUnknownUnit": "error",
+				"noUnmatchableAnbSelector": "error"
+			},
+			"style": {
+				"noDescendingSpecificity": "error",
+				"noValueAtRule": "error"
+			},
+			"suspicious": {
+				"noDuplicateAtImportRules": "error",
+				"noDuplicateCustomProperties": "error",
+				"noDuplicateFontNames": "error",
+				"noDuplicateProperties": "error",
+				"noDuplicateSelectorsKeyframeBlock": "error",
+				"noEmptyBlock": "error",
+				"noImportantInKeyframe": "error",
+				"noIrregularWhitespace": "error",
+				"noShorthandPropertyOverrides": "error",
+				"noUnknownAtRules": "error",
+				"noUselessEscapeInString": "error"
+			}
+		}
+	}
 }

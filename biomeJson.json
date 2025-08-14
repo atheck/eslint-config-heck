@@ -1,15 +1,15 @@
 {
-  "root": false,
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "suspicious": {
-        "noDuplicateObjectKeys": "error"
-      },
-      "nursery": {
-        "noQuickfixBiome": "error"
-      }
-    }
-  }
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"suspicious": {
+				"noBiomeFirstException": "error",
+				"noDuplicateObjectKeys": "error",
+				"noQuickfixBiome": "error",
+				"useBiomeIgnoreFolder": "error"
+			}
+		}
+	}
 }
