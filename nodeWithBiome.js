@@ -279,6 +279,12 @@ export default [
 			"prefer-rest-params": "off",
 			"prefer-spread": "error",
 			"prefer-template": "off",
+			"preserve-caught-error": [
+				"error",
+				{
+					"requireCatchParameter": true
+				}
+			],
 			radix: "off",
 			"require-await": "off",
 			"require-unicode-regexp": "error",
