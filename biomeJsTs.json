@@ -148,6 +148,7 @@
 			"nursery": {
 				"noFloatingPromises": "error",
 				"noImportCycles": "error",
+				"noJsxLiterals": "error",
 				"noMisusedPromises": "error",
 				"noNonNullAssertedOptionalChain": "error",
 				"noSecrets": "off",
