@@ -146,15 +146,18 @@
 				"useYield": "error"
 			},
 			"nursery": {
+				"noDeprecatedImports": "off",
 				"noFloatingPromises": "error",
 				"noImportCycles": "error",
 				"noJsxLiterals": "error",
 				"noMisusedPromises": "error",
 				"noNonNullAssertedOptionalChain": "error",
+				"noReactForwardRef": "error",
 				"noSecrets": "off",
 				"noShadow": "off",
 				"noUnnecessaryConditions": "off",
 				"noUnresolvedImports": "off",
+				"noUnusedExpressions": "error",
 				"noUselessCatchBinding": "error",
 				"noUselessUndefined": "error",
 				"useConsistentArrowReturn": "error",

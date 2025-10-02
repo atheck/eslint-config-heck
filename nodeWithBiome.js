@@ -232,7 +232,7 @@ export default [
 				},
 			],
 			"no-unneeded-ternary": "off",
-			"no-unused-expressions": "error",
+			"no-unused-expressions": "off",
 			"no-unused-labels": "off",
 			"no-useless-call": "error",
 			"no-useless-catch": "off",
@@ -282,8 +282,8 @@ export default [
 			"preserve-caught-error": [
 				"error",
 				{
-					"requireCatchParameter": true
-				}
+					requireCatchParameter: true,
+				},
 			],
 			radix: "off",
 			"require-await": "off",
@@ -865,7 +865,7 @@ export default [
 			"@typescript-eslint/no-unsafe-type-assertion": "error",
 			"@typescript-eslint/no-unsafe-unary-minus": "error",
 			"no-unused-expressions": "off",
-			"@typescript-eslint/no-unused-expressions": "error",
+			"@typescript-eslint/no-unused-expressions": "off",
 			"no-unused-vars": "off",
 			"@typescript-eslint/no-unused-vars": "off",
 			"no-use-before-define": "off",
