@@ -99,7 +99,7 @@
 				"noInnerDeclarations": "error",
 				"noInvalidBuiltinInstantiation": "error",
 				"noInvalidConstructorSuper": "error",
-				"noInvalidUseBeforeDeclaration": "off",
+				"noInvalidUseBeforeDeclaration": "error",
 				"noNestedComponentDefinitions": "error",
 				"noNodejsModules": "off",
 				"noNonoctalDecimalEscape": "error",

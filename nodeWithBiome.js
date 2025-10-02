@@ -102,7 +102,7 @@ export default [
 			"no-unsafe-optional-chaining": "off",
 			"no-unused-private-class-members": "off",
 			"no-unused-vars": "off",
-			"no-use-before-define": ["error", "nofunc"],
+			"no-use-before-define": "off",
 			"no-useless-assignment": "error",
 			"no-useless-backreference": "off",
 			"require-atomic-updates": "error",
