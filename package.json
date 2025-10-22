@@ -54,6 +54,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atheck/eslint-config-heck.git"
+    "url": "git+https://github.com/atheck/eslint-config-heck.git"
   }
 }
