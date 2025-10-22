@@ -5,7 +5,8 @@
 		"enabled": true,
 		"rules": {
 			"nursery": {
-				"noDuplicateDependencies": "error"
+				"noDuplicateDependencies": "error",
+				"noEmptySource": "error"
 			},
 			"suspicious": {
 				"noBiomeFirstException": "error",

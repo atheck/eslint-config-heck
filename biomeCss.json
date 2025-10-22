@@ -24,6 +24,9 @@
 				"noUnknownUnit": "error",
 				"noUnmatchableAnbSelector": "error"
 			},
+			"nursery": {
+				"noEmptySource": "error"
+			},
 			"style": {
 				"noDescendingSpecificity": "error",
 				"noValueAtRule": "error"

@@ -147,6 +147,7 @@
 			},
 			"nursery": {
 				"noDeprecatedImports": "off",
+				"noEmptySource": "error",
 				"noFloatingPromises": "error",
 				"noImportCycles": "error",
 				"noJsxLiterals": "error",
