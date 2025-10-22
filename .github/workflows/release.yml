@@ -6,10 +6,18 @@ on:
       - beta
       - alpha
 
+permissions:
+  contents: read
+
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -18,11 +26,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.1
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
+      - name: Update npm
+        run: npm i -g npm@latest
       - name: Install dependencies
         run: npm ci --force
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
