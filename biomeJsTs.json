@@ -152,9 +152,7 @@
 				"noImportCycles": "error",
 				"noJsxLiterals": "error",
 				"noMisusedPromises": "error",
-				"noNonNullAssertedOptionalChain": "error",
 				"noReactForwardRef": "error",
-				"noSecrets": "off",
 				"noShadow": "off",
 				"noUnnecessaryConditions": "off",
 				"noUnresolvedImports": "off",
@@ -162,10 +160,8 @@
 				"noUselessCatchBinding": "error",
 				"noUselessUndefined": "error",
 				"useConsistentArrowReturn": "error",
-				"useConsistentTypeDefinitions": "error",
 				"useExhaustiveSwitchCases": "error",
 				"useExplicitType": "off",
-				"useReactFunctionComponents": "warn",
 				"useSortedClasses": "off"
 			},
 			"performance": {
@@ -186,7 +182,8 @@
 				"noBlankTarget": "error",
 				"noDangerouslySetInnerHtml": "error",
 				"noDangerouslySetInnerHtmlWithChildren": "error",
-				"noGlobalEval": "error"
+				"noGlobalEval": "error",
+				"noSecrets": "off"
 			},
 			"style": {
 				"noCommonJs": "error",
@@ -235,6 +232,7 @@
 						"syntax": "shorthand"
 					}
 				},
+				"useConsistentTypeDefinitions": "error",
 				"useConst": "error",
 				"useDefaultParameterLast": "error",
 				"useDefaultSwitchClause": "off",
@@ -281,6 +279,7 @@
 				"useNumberNamespace": "error",
 				"useNumericSeparators": "error",
 				"useObjectSpread": "error",
+				"useReactFunctionComponents": "warn",
 				"useReadonlyClassProperties": "error",
 				"useSelfClosingElements": "error",
 				"useShorthandAssign": "error",
@@ -342,6 +341,7 @@
 				"noMisleadingInstantiator": "error",
 				"noMisplacedAssertion": "error",
 				"noMisrefactoredShorthandAssign": "error",
+				"noNonNullAssertedOptionalChain": "error",
 				"noOctalEscape": "error",
 				"noPrototypeBuiltins": "error",
 				"noReactSpecificProps": "off",
