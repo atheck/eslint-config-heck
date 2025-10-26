@@ -140,3 +140,11 @@ if (index < 0) {
 
 if (index === -1) {
 }
+
+// unicorn/no-immediate-mutation
+const mutation = [1, 2];
+
+mutation.push(3, 4);
+
+// unicorn/no-useless-collection-argument
+const set = new Set([]);
