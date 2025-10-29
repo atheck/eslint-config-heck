@@ -150,6 +150,7 @@
 				"noEmptySource": "error",
 				"noFloatingPromises": "error",
 				"noImportCycles": "error",
+				"noIncrementDecrement": "off",
 				"noJsxLiterals": "error",
 				"noMisusedPromises": "error",
 				"noReactForwardRef": "error",
