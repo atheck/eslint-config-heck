@@ -146,6 +146,7 @@
 				"useYield": "error"
 			},
 			"nursery": {
+				"noContinue": "off",
 				"noDeprecatedImports": "off",
 				"noEmptySource": "error",
 				"noFloatingPromises": "error",
