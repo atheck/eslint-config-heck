@@ -163,6 +163,7 @@
 				"noUnusedExpressions": "error",
 				"noUselessCatchBinding": "error",
 				"noUselessUndefined": "error",
+				"useArraySortCompare": "error",
 				"useConsistentArrowReturn": "error",
 				"useExhaustiveSwitchCases": "error",
 				"useExplicitType": "off",

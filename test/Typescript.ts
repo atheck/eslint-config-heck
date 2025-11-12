@@ -161,3 +161,6 @@ interface Generic<TFoo> {}
 let fn: Function;
 let i: Number;
 let empty: {};
+
+// useArraySortCompare
+arrayType.sort();
