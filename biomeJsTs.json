@@ -150,7 +150,7 @@
 				"noDeprecatedImports": "off",
 				"noEmptySource": "error",
 				"noFloatingPromises": "error",
-				"noForIn": "error",
+				"noForIn": "warn",
 				"noImportCycles": "error",
 				"noIncrementDecrement": "off",
 				"noJsxLiterals": "error",

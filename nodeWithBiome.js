@@ -277,7 +277,7 @@ export default [
 			"prefer-promise-reject-errors": "error",
 			"prefer-regex-literals": "off",
 			"prefer-rest-params": "off",
-			"prefer-spread": "error",
+			"prefer-spread": "off",
 			"prefer-template": "off",
 			"preserve-caught-error": [
 				"error",
@@ -654,7 +654,7 @@ export default [
 			"unicorn/prefer-set-has": "error",
 			"unicorn/prefer-set-size": "error",
 			"unicorn/prefer-single-call": "error",
-			"unicorn/prefer-spread": "off",
+			"unicorn/prefer-spread": "error",
 			"unicorn/prefer-string-raw": "error",
 			"unicorn/prefer-string-replace-all": "error",
 			"unicorn/prefer-string-slice": "off",
