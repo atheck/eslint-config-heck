@@ -150,13 +150,15 @@
 				"noDeprecatedImports": "off",
 				"noEmptySource": "error",
 				"noFloatingPromises": "error",
+				"noForIn": "error",
 				"noImportCycles": "error",
 				"noIncrementDecrement": "off",
 				"noJsxLiterals": "error",
 				"noMisusedPromises": "error",
-				"noParametersOnlyUsedInRecursion": "off",
+				"noParametersOnlyUsedInRecursion": "warn",
 				"noReactForwardRef": "error",
 				"noShadow": "off",
+				"noSyncScripts": "error",
 				"noUnknownAttribute": "error",
 				"noUnnecessaryConditions": "off",
 				"noUnresolvedImports": "off",
@@ -167,7 +169,9 @@
 				"useConsistentArrowReturn": "error",
 				"useExhaustiveSwitchCases": "error",
 				"useExplicitType": "off",
-				"useSortedClasses": "off"
+				"useFind": "off",
+				"useSortedClasses": "off",
+				"useSpread": "error"
 			},
 			"performance": {
 				"noAccumulatingSpread": "error",
