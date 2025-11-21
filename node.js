@@ -1241,12 +1241,13 @@ export default [
 			"jest/require-hook": "error",
 			"jest/require-to-throw-message": "error",
 			"jest/require-top-level-describe": "error",
+			"@typescript-eslint/unbound-method": "off",
+			"jest/unbound-method": "error",
 			"jest/valid-describe-callback": "error",
 			"jest/valid-expect": "error",
 			"jest/valid-expect-in-promise": "error",
+			"jest/valid-mock-module-path": "error",
 			"jest/valid-title": "error",
-			"@typescript-eslint/unbound-method": "off",
-			"jest/unbound-method": "error",
 
 			// plugin-testing-library
 			"testing-library/await-async-events": "error",
