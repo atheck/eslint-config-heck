@@ -195,7 +195,7 @@ export default [
 			"no-loop-func": "error",
 			"no-magic-numbers": "off",
 			"no-multi-assign": "error",
-			"no-multi-str": "error",
+			"no-multi-str": "off",
 			"no-negated-condition": "off",
 			"no-nested-ternary": "off",
 			"no-new": "error",
@@ -207,7 +207,7 @@ export default [
 			"no-octal-escape": "off",
 			"no-param-reassign": "off",
 			"no-plusplus": "off",
-			"no-proto": "error",
+			"no-proto": "off",
 			"no-redeclare": "off",
 			"no-regex-spaces": "off",
 			"no-restricted-exports": "off",
@@ -424,7 +424,7 @@ export default [
 			"react/jsx-no-comment-textnodes": "off",
 			"react/jsx-no-constructed-context-values": "error",
 			"react/jsx-no-duplicate-props": "off",
-			"react/jsx-no-leaked-render": "error",
+			"react/jsx-no-leaked-render": "off",
 			"react/jsx-no-literals": "off",
 			"react/jsx-no-script-url": "error",
 			"react/jsx-no-target-blank": "off",
@@ -436,7 +436,7 @@ export default [
 			],
 			"react/jsx-no-useless-fragment": "off",
 			"react/jsx-pascal-case": "error",
-			"react/jsx-props-no-spread-multi": "error",
+			"react/jsx-props-no-spread-multi": "off",
 			"react/jsx-props-no-spreading": "off",
 			"react/jsx-sort-props": "off",
 			"react/jsx-tag-spacing": "off",
@@ -968,10 +968,6 @@ export default [
 			"no-unsafe-negation": "off",
 			"no-with": "off",
 			"valid-typeof": "off",
-
-			// React
-			// If you are working in a typed-codebase which encourages you to always use boolean conditions, this rule can be disabled.
-			"react/jsx-no-leaked-render": "off",
 		},
 	},
 	{
