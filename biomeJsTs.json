@@ -392,5 +392,20 @@
 				"useStrictMode": "error"
 			}
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": [
+				"**/*.ts",
+				"**/*.tsx"
+			],
+			"linter": {
+				"rules": {
+					"nursery": {
+						"noLeakedRender": "off"
+					}
+				}
+			}
+		}
+	]
 }
