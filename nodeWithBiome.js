@@ -1050,6 +1050,8 @@ export default [
 			"jest/prefer-strict-equal": "error",
 			"jest/prefer-to-be": "error",
 			"jest/prefer-to-contain": "error",
+			"jest/prefer-to-have-been-called": "off",
+			"jest/prefer-to-have-been-called-times": "error",
 			"jest/prefer-to-have-length": "error",
 			"jest/prefer-todo": "warn",
 			"jest/require-hook": "error",
