@@ -4,7 +4,6 @@ import tsParser from "@typescript-eslint/parser";
 import importPlugin, { flatConfigs } from "eslint-plugin-import";
 import jest from "eslint-plugin-jest";
 import react from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
 import testingLibrary from "eslint-plugin-testing-library";
 import unicorn from "eslint-plugin-unicorn";
 import globals from "globals";
@@ -15,7 +14,6 @@ export default [
 		plugins: {
 			"@stylistic": stylistic,
 			react,
-			"react-hooks": reactHooks,
 			unicorn,
 			importPlugin,
 		},
@@ -236,12 +234,7 @@ export default [
 			"no-unused-labels": "off",
 			"no-useless-call": "error",
 			"no-useless-catch": "off",
-			"no-useless-computed-key": [
-				"error",
-				{
-					enforceForClassMembers: true,
-				},
-			],
+			"no-useless-computed-key": "off",
 			"no-useless-concat": "off",
 			"no-useless-constructor": "off",
 			"no-useless-escape": "off",
@@ -303,9 +296,9 @@ export default [
 
 			// @stylistic
 			"@stylistic/jsx-pascal-case": "off",
-			"@stylistic/max-statements-per-line": "error",
+			"@stylistic/max-statements-per-line": "off",
 			"@stylistic/multiline-comment-style": ["error", "separate-lines"],
-			"@stylistic/no-floating-decimal": "error",
+			"@stylistic/no-floating-decimal": "off",
 			"@stylistic/no-mixed-operators": "off",
 			"@stylistic/padding-line-between-statements": [
 				"error",
@@ -360,7 +353,7 @@ export default [
 					next: "function",
 				},
 			],
-			"@stylistic/quote-props": ["error", "as-needed"],
+			"@stylistic/quote-props": "off",
 			"@stylistic/spaced-comment": ["error", "always"],
 
 			// eslint-plugin-react
@@ -448,7 +441,7 @@ export default [
 			"react/no-array-index-key": "off",
 			"react/no-arrow-function-lifecycle": "error",
 			"react/no-children-prop": "off",
-			"react/no-danger": "error",
+			"react/no-danger": "off",
 			"react/no-danger-with-children": "off",
 			"react/no-deprecated": "warn",
 			"react/no-did-mount-set-state": "error",
@@ -521,10 +514,6 @@ export default [
 			"react/style-prop-object": "error",
 			"react/void-dom-elements-no-children": "off",
 
-			// eslint-plugin-react-hooks
-			"react-hooks/rules-of-hooks": "error",
-			"react-hooks/exhaustive-deps": "error",
-
 			// eslint-plugin-unicorn
 			"unicorn/better-regex": "error",
 			"unicorn/catch-error-name": [
@@ -568,7 +557,7 @@ export default [
 			"unicorn/no-console-spaces": "error",
 			"unicorn/no-document-cookie": "off",
 			"unicorn/no-empty-file": "error",
-			"unicorn/no-for-loop": "error",
+			"unicorn/no-for-loop": "off",
 			"unicorn/no-hex-escape": "error",
 			"unicorn/no-immediate-mutation": "error",
 			"unicorn/no-instanceof-array": "off",
@@ -904,8 +893,9 @@ export default [
 			"@typescript-eslint/prefer-find": "off",
 			"@typescript-eslint/prefer-for-of": "off",
 			"@typescript-eslint/prefer-function-type": "off",
-			"@typescript-eslint/prefer-includes": "error",
-			"@typescript-eslint/prefer-literal-enum-member": "error",
+			// unicorns prefer-includes is more powerful
+			"@typescript-eslint/prefer-includes": "off",
+			"@typescript-eslint/prefer-literal-enum-member": "off",
 			"@typescript-eslint/prefer-namespace-keyword": "off",
 			"@typescript-eslint/prefer-nullish-coalescing": [
 				"error",
@@ -914,7 +904,7 @@ export default [
 					ignorePrimitives: true,
 				},
 			],
-			"@typescript-eslint/prefer-optional-chain": "error",
+			"@typescript-eslint/prefer-optional-chain": "off",
 			"prefer-promise-reject-errors": "off",
 			"@typescript-eslint/prefer-promise-reject-errors": "error",
 			"@typescript-eslint/prefer-readonly": "off",
