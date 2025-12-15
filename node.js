@@ -1042,6 +1042,7 @@ export default [
 			"@typescript-eslint/no-use-before-define": "off",
 			"no-useless-constructor": "off",
 			"@typescript-eslint/no-useless-constructor": "error",
+			"@typescript-eslint/no-useless-default-assignment": "error",
 			"@typescript-eslint/no-useless-empty-export": "error",
 			"@typescript-eslint/no-var-requires": "off",
 			"@typescript-eslint/no-wrapper-object-types": "error",
