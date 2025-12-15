@@ -270,6 +270,12 @@ Promise.reject("error").catch((error: any) => {
 	console.log(error);
 });
 
+// @typescript-eslint/no-useless-default-assignment
+function uselessDefaultAssignment(value: string | undefined = undefined): string {
+	return value ?? "fallback";
+}
+uselessDefaultAssignment("provided");
+
 export {
 	awaitNonThenable,
 	LiteralStyle,
@@ -320,4 +326,5 @@ export {
 	mixedAdd,
 	MethodClass,
 	unboundMethod,
+	uselessDefaultAssignment,
 };

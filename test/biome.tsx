@@ -290,6 +290,11 @@ function SyncScript(): React.ReactElement {
 	return <script src={"script.js"} />;
 }
 
+// nursery/noScriptUrl
+function ScriptUrl(): React.ReactElement {
+	return <a href="javascript:alert('XSS')" />;
+}
+
 // nursery/noUnknownAttribute
 function UnknownAttribute(): React.ReactElement {
 	return <div unknownattr={"value"}>{"Content"}</div>;

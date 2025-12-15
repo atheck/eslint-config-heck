@@ -405,6 +405,16 @@ switch (switchType) {
 	// Missing 'c'
 }
 
+// nursery/useAwaitThenable
+async function awaitThenable(): Promise<void> {
+	const thenable = { then: (resolve: (value: number) => void) => resolve(42) };
+	await thenable;
+}
+
+// nursery/useRegexpExec
+const regexpExecString = "test string";
+const regexpMatch = regexpExecString.match(/test/);
+
 // nursery/useSpread
 const copied = Object.assign({}, obj);
 
@@ -1092,4 +1102,8 @@ export {
 	allPath,
 	strict,
 	readFile,
+	scriptUrl,
+	awaitThenable,
+	regexpExecString,
+	regexpMatch,
 };

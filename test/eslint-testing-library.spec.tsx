@@ -230,4 +230,16 @@ describe("Prefer User Event", () => {
 	});
 });
 
+// testing-library/prefer-user-event-setup
+describe("Prefer User Event Setup", () => {
+	it("uses userEvent without setup", async () => {
+		render(<TestComponent />);
+
+		const element = screen.getByText("Hello");
+
+		await userEvent.click(element);
+		expect(element).toBeInTheDocument();
+	});
+});
+
 export { domWaitFor, renderHook };

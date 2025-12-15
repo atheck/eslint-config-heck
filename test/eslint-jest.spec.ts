@@ -126,6 +126,15 @@ describe("Test Return Statement", () => {
 		return true;
 	});
 });
+
+// jest/no-unneeded-async-expect-function
+describe("No Unneeded Async Expect Function", () => {
+	it("uses unnecessary async in expect rejects", async () => {
+		await expect(async () => {
+			await Promise.reject("fail");
+		}).rejects.toThrow("fail");
+	});
+});
 describe("Padding Around Describe", () => {
 	it("no padding before describe", () => {
 		expect(true).toBe(true);
