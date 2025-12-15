@@ -173,7 +173,7 @@
 				"noUselessCatchBinding": "error",
 				"noUselessUndefined": "error",
 				"useArraySortCompare": "error",
-				"useAwaitThenable": "error",
+				"useAwaitThenable": "off",
 				"useConsistentArrowReturn": "error",
 				"useDestructuring": "off",
 				"useExhaustiveSwitchCases": "error",

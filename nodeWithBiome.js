@@ -743,7 +743,7 @@ export default [
 			// Typescript
 			"@typescript-eslint/adjacent-overload-signatures": "off",
 			"@typescript-eslint/array-type": "off",
-			"@typescript-eslint/await-thenable": "off",
+			"@typescript-eslint/await-thenable": "error",
 			"@typescript-eslint/ban-ts-comment": "off",
 			"@typescript-eslint/ban-tslint-comment": "error",
 			"@typescript-eslint/ban-types": "off",
