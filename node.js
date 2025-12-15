@@ -1204,6 +1204,7 @@ export default [
 			"jest/no-standalone-expect": "error",
 			"jest/no-test-prefixes": "error",
 			"jest/no-test-return-statement": "error",
+			"jest/no-unneeded-async-expect-function": "error",
 			// This rule is only active if using typescript - see down below
 			"jest/no-untyped-mock-factory": "off",
 			"jest/padding-around-after-all-blocks": "off",
@@ -1279,6 +1280,7 @@ export default [
 			"testing-library/prefer-query-matchers": "off",
 			"testing-library/prefer-screen-queries": "error",
 			"testing-library/prefer-user-event": "error",
+			"testing-library/prefer-user-event-setup": "error",
 			"testing-library/render-result-naming-convention": "off",
 		},
 	},

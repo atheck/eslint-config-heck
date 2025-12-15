@@ -3,6 +3,9 @@
 	"extends": ["./biomeJsTs.json"],
 	"linter": {
 		"rules": {
+			"nursery": {
+				"useRequiredScripts": "off"
+			},
 			"style": {
 				"useNamingConvention": "off",
 				"noCommonJs": "off"
