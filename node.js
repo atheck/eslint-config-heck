@@ -1192,6 +1192,7 @@ export default [
 			"jest/no-disabled-tests": "warn",
 			"jest/no-done-callback": "error",
 			"jest/no-duplicate-hooks": "error",
+			"jest/no-error-equal": "error",
 			"jest/no-export": "error",
 			"jest/no-focused-tests": "warn",
 			"jest/no-hooks": "off",
@@ -1205,6 +1206,7 @@ export default [
 			"jest/no-standalone-expect": "error",
 			"jest/no-test-prefixes": "error",
 			"jest/no-test-return-statement": "error",
+			"jest/no-unnecessary-assertion": "error",
 			"jest/no-unneeded-async-expect-function": "error",
 			// This rule is only active if using typescript - see down below
 			"jest/no-untyped-mock-factory": "off",
@@ -1250,6 +1252,7 @@ export default [
 			"jest/valid-describe-callback": "error",
 			"jest/valid-expect": "error",
 			"jest/valid-expect-in-promise": "error",
+			"jest/valid-expect-with-promise": "error",
 			"jest/valid-mock-module-path": "error",
 			"jest/valid-title": "error",
 
