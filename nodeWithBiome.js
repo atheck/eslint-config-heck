@@ -1039,6 +1039,7 @@ export default [
 				},
 			],
 			"jest/prefer-mock-promise-shorthand": "error",
+			"jest/prefer-mock-return-shorthand": "error",
 			"jest/prefer-snapshot-hint": "error",
 			"jest/prefer-spy-on": "error",
 			"jest/prefer-strict-equal": "error",
