@@ -192,7 +192,7 @@ export default [
 			"no-lonely-if": "off",
 			"no-loop-func": "error",
 			"no-magic-numbers": "off",
-			"no-multi-assign": "error",
+			"no-multi-assign": "off",
 			"no-multi-str": "off",
 			"no-negated-condition": "off",
 			"no-nested-ternary": "off",
