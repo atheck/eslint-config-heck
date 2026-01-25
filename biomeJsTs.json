@@ -148,9 +148,11 @@
 			"nursery": {
 				"noContinue": "off",
 				"noDeprecatedImports": "off",
+				"noDivRegex": "off",
 				"noDuplicatedSpreadProps": "error",
 				"noEmptySource": "error",
 				"noEqualsToNull": "off",
+				"noFloatingClasses": "error",
 				"noFloatingPromises": "error",
 				"noForIn": "warn",
 				"noImportCycles": "error",
@@ -179,6 +181,12 @@
 				"useAwaitThenable": "off",
 				"useConsistentArrowReturn": "error",
 				"useDestructuring": "off",
+				"useErrorCause": {
+					"level": "error",
+					"options": {
+						"requireCatchParameter": true
+					}
+				},
 				"useExhaustiveSwitchCases": "error",
 				"useExplicitType": "off",
 				"useFind": "off",

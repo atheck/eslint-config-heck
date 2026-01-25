@@ -1109,6 +1109,7 @@ export default [
 			"@typescript-eslint/restrict-template-expressions": "off",
 			"@typescript-eslint/return-await": "off",
 			"@typescript-eslint/strict-boolean-expressions": "off",
+			"@typescript-eslint/strict-void-return": "error",
 			"@typescript-eslint/switch-exhaustiveness-check": [
 				"error",
 				{
