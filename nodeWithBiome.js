@@ -918,7 +918,7 @@ export default [
 			"@typescript-eslint/restrict-template-expressions": "off",
 			"@typescript-eslint/return-await": "off",
 			"@typescript-eslint/strict-boolean-expressions": "off",
-			"@typescript-eslint/strict-void-return": "error",
+			"@typescript-eslint/strict-void-return": "off",
 			"@typescript-eslint/switch-exhaustiveness-check": "off",
 			"@typescript-eslint/triple-slash-reference": "error",
 			"@typescript-eslint/typedef": "off",
