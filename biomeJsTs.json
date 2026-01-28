@@ -180,6 +180,7 @@
 				"useArraySortCompare": "error",
 				"useAwaitThenable": "off",
 				"useConsistentArrowReturn": "error",
+				"useConsistentEnumValueType": "error",
 				"useDestructuring": "off",
 				"useErrorCause": {
 					"level": "error",
