@@ -771,7 +771,7 @@ export default [
 			"@typescript-eslint/init-declarations": "off",
 			"@typescript-eslint/max-params": "off",
 			"@typescript-eslint/member-ordering": "off",
-			"@typescript-eslint/method-signature-style": "error",
+			"@typescript-eslint/method-signature-style": "off",
 			"@typescript-eslint/naming-convention": "off",
 			"no-array-constructor": "off",
 			"@typescript-eslint/no-array-constructor": "off",

@@ -166,6 +166,7 @@
 				"noParametersOnlyUsedInRecursion": "warn",
 				"noProto": "error",
 				"noReactForwardRef": "error",
+				"noRedundantDefaultExport": "error",
 				"noReturnAssign": "error",
 				"noScriptUrl": "error",
 				"noShadow": "off",
@@ -181,6 +182,7 @@
 				"useAwaitThenable": "off",
 				"useConsistentArrowReturn": "error",
 				"useConsistentEnumValueType": "error",
+				"useConsistentMethodSignatures": "error",
 				"useDestructuring": "off",
 				"useErrorCause": {
 					"level": "error",
@@ -191,6 +193,7 @@
 				"useExhaustiveSwitchCases": "error",
 				"useExplicitType": "off",
 				"useFind": "off",
+				"useGlobalThis": "off",
 				"useRegexpExec": "error",
 				"useSortedClasses": "off",
 				"useSpread": "error"
