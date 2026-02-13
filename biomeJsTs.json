@@ -399,7 +399,7 @@
 				"noVar": "error",
 				"noWith": "error",
 				"useAdjacentOverloadSignatures": "error",
-				"useAwait": "off",
+				"useAwait": "error",
 				"useDefaultSwitchClauseLast": "error",
 				"useErrorMessage": "error",
 				"useGetterReturn": "error",
