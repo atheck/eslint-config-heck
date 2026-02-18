@@ -976,17 +976,12 @@ export default [
 		rules: {
 			// eslint-plugin-jest
 			"jest/consistent-test-it": "error",
-			"jest/expect-expect": [
-				"error",
-				{
-					assertFunctionNames: ["expect*"],
-				},
-			],
+			"jest/expect-expect": "off",
 			"jest/max-expects": "off",
 			"jest/max-nested-describe": "off",
 			"jest/no-alias-methods": "error",
 			"jest/no-commented-out-tests": "error",
-			"jest/no-conditional-expect": "error",
+			"jest/no-conditional-expect": "off",
 			"jest/no-conditional-in-test": "error",
 			"jest/no-confusing-set-timeout": "error",
 			"jest/no-deprecated-functions": "warn",

@@ -4,13 +4,11 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"nursery": {
-				"noDuplicateDependencies": "error",
-				"noEmptySource": "error"
-			},
 			"suspicious": {
 				"noBiomeFirstException": "error",
+				"noDuplicateDependencies": "error",
 				"noDuplicateObjectKeys": "error",
+				"noEmptySource": "error",
 				"noQuickfixBiome": "error",
 				"useBiomeIgnoreFolder": "error"
 			}
