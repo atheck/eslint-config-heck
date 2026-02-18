@@ -426,7 +426,12 @@
 				"useGoogleFontDisplay": "error",
 				"useGuardForIn": "error",
 				"useIsArray": "error",
-				"useIterableCallbackReturn": "error",
+				"useIterableCallbackReturn": {
+					"level": "error",
+					"options": {
+						"checkForEach": false
+					}
+				},
 				"useNamespaceKeyword": "error",
 				"useNumberToFixedDigitsArgument": "error",
 				"useStaticResponseMethods": "error",
