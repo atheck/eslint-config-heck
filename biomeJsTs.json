@@ -191,6 +191,7 @@
 				"noUnknownAttribute": "error",
 				"noUnnecessaryConditions": "off",
 				"noUselessReturn": "error",
+				"useArraySome": "error",
 				"useArraySortCompare": "error",
 				"useAwaitThenable": "off",
 				"useConsistentEnumValueType": "error",
@@ -207,10 +208,13 @@
 				"useExplicitType": "off",
 				"useFind": "off",
 				"useGlobalThis": "off",
+				"useNamedCaptureGroup": "error",
+				"useNullishCoalescing": "error",
 				"usePlaywrightValidDescribeCallback": "off",
 				"useRegexpExec": "error",
 				"useSortedClasses": "off",
-				"useSpread": "error"
+				"useSpread": "error",
+				"useUnicodeRegex": "error"
 			},
 			"performance": {
 				"noAccumulatingSpread": "error",
