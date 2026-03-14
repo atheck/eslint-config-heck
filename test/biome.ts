@@ -21,6 +21,9 @@ type BannedBoolean = Boolean;
 // complexity/noCommaOperator
 let commaResult = (1, 2, 3);
 
+// nursery/useImportsFirst
+import "./biome.tsx";
+
 // complexity/noEmptyTypeParameters
 function emptyTypeParams<>(): void {}
 

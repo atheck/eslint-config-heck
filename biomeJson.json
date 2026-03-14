@@ -4,6 +4,10 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
+			"nursery": {
+				"noEmptyObjectKeys": "warn",
+				"noTopLevelLiterals": "warn"
+			},
 			"suspicious": {
 				"noBiomeFirstException": "error",
 				"noDuplicateDependencies": "error",
