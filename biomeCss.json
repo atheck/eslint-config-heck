@@ -25,6 +25,7 @@
 				"noUnmatchableAnbSelector": "error"
 			},
 			"nursery": {
+				"noDuplicateSelectors": "warn",
 				"useBaseline": "warn"
 			},
 			"style": {
