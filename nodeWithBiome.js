@@ -760,16 +760,7 @@ export default [
 			"@typescript-eslint/default-param-last": "off",
 			"dot-notation": "off",
 			"@typescript-eslint/dot-notation": "off",
-			"@typescript-eslint/explicit-function-return-type": [
-				"error",
-				{
-					allowExpressions: true,
-					allowTypedFunctionExpressions: true,
-					allowHigherOrderFunctions: true,
-					allowDirectConstAssertionInArrowFunctions: true,
-					allowConciseArrowFunctionExpressionsStartingWithVoid: false,
-				},
-			],
+			"@typescript-eslint/explicit-function-return-type": "off",
 			"@typescript-eslint/explicit-member-accessibility": "off",
 			"@typescript-eslint/explicit-module-boundary-types": "off",
 			"init-declarations": "off",
@@ -843,7 +834,7 @@ export default [
 			"@typescript-eslint/no-unnecessary-type-arguments": "error",
 			"@typescript-eslint/no-unnecessary-type-assertion": "error",
 			"@typescript-eslint/no-unnecessary-type-constraint": "off",
-			"@typescript-eslint/no-unnecessary-type-conversion": "error",
+			"@typescript-eslint/no-unnecessary-type-conversion": "off",
 			"@typescript-eslint/no-unnecessary-type-parameters": "error",
 			"@typescript-eslint/no-unsafe-argument": "error",
 			"@typescript-eslint/no-unsafe-assignment": "error",
@@ -972,7 +963,7 @@ export default [
 		},
 		rules: {
 			// eslint-plugin-jest
-			"jest/consistent-test-it": "error",
+			"jest/consistent-test-it": "off",
 			"jest/expect-expect": "off",
 			"jest/max-expects": "off",
 			"jest/max-nested-describe": "off",

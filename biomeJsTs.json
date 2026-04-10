@@ -167,6 +167,7 @@
 				"noInlineStyles": "warn",
 				"noJsxPropsBind": "off",
 				"noLeakedRender": "error",
+				"noMisleadingReturnType": "info",
 				"noMisusedPromises": "error",
 				"noMultiAssign": "error",
 				"noMultiStr": "error",
@@ -194,12 +195,21 @@
 				"noUnnecessaryConditions": "off",
 				"noUnsafePlusOperands": "error",
 				"noUselessReturn": "error",
+				"noUselessTypeConversion": "error",
 				"useArraySome": "error",
 				"useArraySortCompare": "error",
 				"useAwaitThenable": "off",
 				"useConsistentEnumValueType": "error",
 				"useConsistentMethodSignatures": "error",
+				"useConsistentTestIt": {
+					"level": "error",
+					"options": {
+						"function": "it",
+						"withinDescribe": "it"
+					}
+				},
 				"useDestructuring": "off",
+				"useDisposables": "error",
 				"useErrorCause": {
 					"level": "error",
 					"options": {
@@ -208,6 +218,13 @@
 				},
 				"useExhaustiveSwitchCases": "error",
 				"useExpect": "error",
+				"useExplicitReturnType": {
+					"level": "error",
+					"options": {
+						"allowExpressions": true,
+						"allowIifes": true
+					}
+				},
 				"useExplicitType": "off",
 				"useFind": "off",
 				"useGlobalThis": "off",
