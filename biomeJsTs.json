@@ -219,7 +219,7 @@
 				"useExhaustiveSwitchCases": "error",
 				"useExpect": "error",
 				"useExplicitReturnType": {
-					"level": "error",
+					"level": "off",
 					"options": {
 						"allowExpressions": true,
 						"allowIifes": true

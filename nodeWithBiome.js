@@ -760,7 +760,16 @@ export default [
 			"@typescript-eslint/default-param-last": "off",
 			"dot-notation": "off",
 			"@typescript-eslint/dot-notation": "off",
-			"@typescript-eslint/explicit-function-return-type": "off",
+			"@typescript-eslint/explicit-function-return-type": [
+				"error",
+				{
+					allowExpressions: true,
+					allowTypedFunctionExpressions: true,
+					allowHigherOrderFunctions: true,
+					allowDirectConstAssertionInArrowFunctions: true,
+					allowConciseArrowFunctionExpressionsStartingWithVoid: false,
+				},
+			],
 			"@typescript-eslint/explicit-member-accessibility": "off",
 			"@typescript-eslint/explicit-module-boundary-types": "off",
 			"init-declarations": "off",
