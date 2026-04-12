@@ -167,7 +167,7 @@
 				"noInlineStyles": "warn",
 				"noJsxPropsBind": "off",
 				"noLeakedRender": "error",
-				"noMisleadingReturnType": "info",
+				"noMisleadingReturnType": "off",
 				"noMisusedPromises": "error",
 				"noMultiAssign": "error",
 				"noMultiStr": "error",
