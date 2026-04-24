@@ -1,0 +1,22 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"nursery": {
+				"noPlaywrightElementHandle": "error",
+				"noPlaywrightEval": "error",
+				"noPlaywrightForceOption": "error",
+				"noPlaywrightMissingAwait": "error",
+				"noPlaywrightNetworkidle": "error",
+				"noPlaywrightPagePause": "error",
+				"noPlaywrightUselessAwait": "error",
+				"noPlaywrightWaitForNavigation": "error",
+				"noPlaywrightWaitForSelector": "error",
+				"noPlaywrightWaitForTimeout": "error",
+				"usePlaywrightValidDescribeCallback": "error"
+			}
+		}
+	}
+}

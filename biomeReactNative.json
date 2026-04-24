@@ -1,0 +1,15 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"nursery": {
+				"noReactNativeDeepImports": "error",
+				"noReactNativeLiteralColors": "error",
+				"noReactNativeRawText": "error",
+				"useReactNativePlatformComponents": "error"
+			}
+		}
+	}
+}

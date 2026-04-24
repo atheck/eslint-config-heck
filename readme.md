@@ -90,14 +90,22 @@ If you are using Biome you can use the "nodeWithBiome" configuration:
 If you are using Biome you can also extend your Biome config with the following Biome configurations:
 
 - JavaScript/TypeScript: biomeJsTs
+- React-Native: biomeReactNative
 - CSS: biomeCss
 - JSON: biomeJson
+- Playwright: biomePlaywright
 
 To enable all Biome rules, you can use the following configuration:
 
 ~~~json
 {
     "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "extends": ["eslint-config-heck/biomeJsTs", "eslint-config-heck/biomeCss", "eslint-config-heck/biomeJson"],
+    "extends": [
+        "eslint-config-heck/biomeJsTs",
+        "eslint-config-heck/biomeReactNative",
+        "eslint-config-heck/biomeCss",
+        "eslint-config-heck/biomeJson",
+        "eslint-config-heck/biomePlaywright"
+    ]
 }
 ~~~
