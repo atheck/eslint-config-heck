@@ -8,11 +8,7 @@
     "./biomeJsTs": "./biomeJsTs.json",
     "./biomeCss": "./biomeCss.json",
     "./biomeJson": "./biomeJson.json",
-    "./node": "./node.js",
-    "./nodeWithBiome": "./nodeWithBiome.js",
-    "./complexity": "./complexity.js",
-    "./groupImports": "./groupImports.js",
-    "./reactNative": "./reactNative.js"
+    "./nodeWithBiome": "./nodeWithBiome.js"
   },
   "scripts": {
     "update": "npx -y npm-check-updates -i --cooldown 2 --install never && npx -y npm-check-updates -i --cooldown 2 --target minor --install never && npx -y npm-check-updates -i --cooldown 2 --target patch --install never && npm update --force",
@@ -20,6 +16,7 @@
     "semantic-release": "semantic-release"
   },
   "keywords": [
+    "Biome",
     "ESLint",
     "ES2015",
     "TypeScript",
@@ -36,7 +33,6 @@
     "eslint-plugin-jest": "29.15.2",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
-    "eslint-plugin-react-native": "5.0.0",
     "eslint-plugin-testing-library": "7.16.2",
     "eslint-plugin-unicorn": "64.0.0",
     "typescript": "6.0.3"

@@ -22,20 +22,6 @@ export default [
 ];
 ~~~
 
-### React Native Extension
-
-If you are using React Native, you can add React Native specific rules on top:
-
-~~~js
-import nodeWithBiome from "eslint-config-heck/nodeWithBiome";
-import reactNative from "eslint-config-heck/reactNative";
-
-export default [
-    ...nodeWithBiome,
-    ...reactNative,
-];
-~~~
-
 ## Biome Setup
 
 Create a `biome.jsonc` and extend the configurations you need:
