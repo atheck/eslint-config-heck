@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"extends": ["./biomeJsTs.json"],
+	"extends": ["./biomeJsTs.json", "./biomeComplexity.json"],
 	"linter": {
 		"rules": {
 			"nursery": {
