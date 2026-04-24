@@ -1,0 +1,48 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noExcessiveCognitiveComplexity": "warn",
+				"noExcessiveLinesPerFunction": {
+					"level": "error",
+					"options": {
+						"maxLines": 20,
+						"skipBlankLines": true
+					}
+				},
+				"useMaxParams": {
+					"level": "error",
+					"options": {
+						"max": 3
+					}
+				}
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": [
+				"**/*.spec.ts",
+				"**/*.spec.tsx",
+				"**/*.test.ts",
+				"**/*.test.tsx",
+				"**/*.spec.js",
+				"**/*.spec.jsx",
+				"**/*.test.js",
+				"**/*.test.jsx"
+			],
+			"linter": {
+				"rules": {
+					"complexity": {
+						"noExcessiveCognitiveComplexity": "off",
+						"noExcessiveLinesPerFunction": "off",
+						"useMaxParams": "off"
+					}
+				}
+			}
+		}
+	]
+}

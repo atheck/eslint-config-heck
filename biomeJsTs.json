@@ -48,7 +48,7 @@
 				"noBannedTypes": "error",
 				"noCommaOperator": "error",
 				"noEmptyTypeParameters": "error",
-				"noExcessiveCognitiveComplexity": "warn",
+				"noExcessiveCognitiveComplexity": "off",
 				"noExcessiveLinesPerFunction": "off",
 				"noExcessiveNestedTestSuites": "error",
 				"noExtraBooleanCast": "error",

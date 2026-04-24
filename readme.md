@@ -26,22 +26,6 @@ For a Node.js project use:
 
 ## Extensions
 
-### Complexity
-
-Optionally you can enable some complexity rules by using the **complexity** configuration in addition to the **node** configuration:
-
-~~~js
-{
-    import node from "eslint-config-heck/node";
-    import complexity from "eslint-config-heck/complexity";
-
-    export default {
-        ...node,
-        ...complexity,
-    };
-}
-~~~
-
 ### Group imports
 
 Optionally you can switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** configuration:
@@ -94,6 +78,7 @@ If you are using Biome you can also extend your Biome config with the following 
 - CSS: biomeCss
 - JSON: biomeJson
 - Playwright: biomePlaywright
+- Complexity: biomeComplexity
 
 To enable all Biome rules, you can use the following configuration:
 
@@ -105,7 +90,8 @@ To enable all Biome rules, you can use the following configuration:
         "eslint-config-heck/biomeReactNative",
         "eslint-config-heck/biomeCss",
         "eslint-config-heck/biomeJson",
-        "eslint-config-heck/biomePlaywright"
+        "eslint-config-heck/biomePlaywright",
+        "eslint-config-heck/biomeComplexity"
     ]
 }
 ~~~
