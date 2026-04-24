@@ -26,22 +26,6 @@ For a Node.js project use:
 
 ## Extensions
 
-### Group imports
-
-Optionally you can switch to another import sorting rule, which groups the imports by type and supports auto fixing. You can enable this rule by adding the **groupImports** configuration in addition to the **node** configuration:
-
-~~~js
-{
-    import node from "eslint-config-heck/node";
-    import groupImports from "eslint-config-heck/groupImports";
-
-    export default {
-        ...node,
-        ...groupImports,
-    };
-}
-~~~
-
 ### React Native
 
 If you are using react-native, you can enable react-native specific rules:
