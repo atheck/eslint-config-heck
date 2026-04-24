@@ -1,70 +1,44 @@
 # eslint-config-heck
 
-eslint-config-heck contains an ESLint configuration for ES2015+, TypeScript, and React.
+eslint-config-heck contains ESLint and Biome configurations for ES2015+, TypeScript, and React.
+
+**Both ESLint and Biome are required.** Biome handles formatting, import/export sorting, and a large set of linting rules. ESLint covers rules that Biome does not yet support. Using one without the other will leave significant gaps in your linting coverage.
 
 ## Installation
 
 ~~~sh
-npm install --save-dev eslint@9 eslint-config-heck
+npm install --save-dev eslint@9 @biomejs/biome eslint-config-heck
 ~~~
 
-## Usage
+## ESLint Setup
 
-To use one of the included configurations, create a `eslint.config.js` and import the configuration you want to use.
-
-For a Node.js project use:
+Create an `eslint.config.js` and import the `nodeWithBiome` configuration. This configuration only enables rules that Biome does not yet support, so it is intended to be used alongside Biome.
 
 ~~~js
-{
-    import node from "eslint-config-heck/node";
+import nodeWithBiome from "eslint-config-heck/nodeWithBiome";
 
-    export default {
-        ...node,
-    };
-}
+export default [
+    ...nodeWithBiome,
+];
 ~~~
 
-## Extensions
+### React Native Extension
 
-### React Native
-
-If you are using react-native, you can enable react-native specific rules:
+If you are using React Native, you can add React Native specific rules on top:
 
 ~~~js
-{
-    import node from "eslint-config-heck/node";
-    import reactNative from "eslint-config-heck/reactNative";
-    export default {
-        ...node,
-        ...reactNative,
-    };
-}
+import nodeWithBiome from "eslint-config-heck/nodeWithBiome";
+import reactNative from "eslint-config-heck/reactNative";
+
+export default [
+    ...nodeWithBiome,
+    ...reactNative,
+];
 ~~~
 
-### Rules with usage of Biome
+## Biome Setup
 
-If you are using Biome you can use the "nodeWithBiome" configuration:
-
-~~~js
-{
-    import nodeWithBiome from "eslint-config-heck/nodeWithBiome";
-
-    export default {
-        ...nodeWithBiome,
-    };
-}
-~~~
-
-If you are using Biome you can also extend your Biome config with the following Biome configurations:
-
-- JavaScript/TypeScript: biomeJsTs
-- React-Native: biomeReactNative
-- CSS: biomeCss
-- JSON: biomeJson
-- Playwright: biomePlaywright
-- Complexity: biomeComplexity
-
-To enable all Biome rules, you can use the following configuration:
+Create a `biome.jsonc` and extend the configurations you need:
 
 ~~~json
 {
@@ -79,3 +53,14 @@ To enable all Biome rules, you can use the following configuration:
     ]
 }
 ~~~
+
+### Available Biome Configurations
+
+| Configuration | Purpose |
+| --- | --- |
+| `biomeJsTs` | JavaScript and TypeScript rules, formatting, and import/export sorting |
+| `biomeReactNative` | React Native specific rules |
+| `biomeCss` | CSS specific rules |
+| `biomeJson` | JSON specific rules |
+| `biomePlaywright` | Playwright test rules |
+| `biomeComplexity` | Complexity rules |
