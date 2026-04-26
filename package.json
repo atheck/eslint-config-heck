@@ -5,9 +5,11 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    "./biomeJsTs": "./biomeJsTs.json",
     "./biomeCss": "./biomeCss.json",
     "./biomeJson": "./biomeJson.json",
+    "./biomeJsTs": "./biomeJsTs.json",
+    "./biomePlaywright": "./biomePlaywright.json",
+    "./biomeReactNative": "./biomeReactNative.json",
     "./nodeWithBiome": "./nodeWithBiome.js"
   },
   "scripts": {
