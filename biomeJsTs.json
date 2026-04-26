@@ -150,7 +150,7 @@
 			},
 			"nursery": {
 				"noAmbiguousAnchorText": "off",
-				"noComponentHookFactories": "error",
+				"noComponentHookFactories": "off",
 				"noConditionalExpect": "error",
 				"noContinue": "off",
 				"noDivRegex": "off",
