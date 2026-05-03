@@ -19,6 +19,14 @@
 						"max": 3
 					}
 				}
+			},
+			"nursery": {
+				"noExcessiveNestedCallbacks": {
+					"level": "warn",
+					"options": {
+						"max": 3
+					}
+				}
 			}
 		}
 	},

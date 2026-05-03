@@ -15,7 +15,8 @@
 				"noPlaywrightWaitForNavigation": "error",
 				"noPlaywrightWaitForSelector": "error",
 				"noPlaywrightWaitForTimeout": "error",
-				"usePlaywrightValidDescribeCallback": "error"
+				"usePlaywrightValidDescribeCallback": "error",
+				"useTestHooksOnTop": "error"
 			}
 		}
 	}

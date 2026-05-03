@@ -451,12 +451,7 @@ export default [
 			"react/no-redundant-should-component-update": "error",
 			"react/no-render-return-value": "off",
 			"react/no-set-state": "off",
-			"react/no-string-refs": [
-				"error",
-				{
-					noTemplateLiterals: true,
-				},
-			],
+			"react/no-string-refs": "off",
 			"react/no-this-in-sfc": "error",
 			"react/no-typos": "error",
 			"react/no-unescaped-entities": "error",
@@ -622,7 +617,7 @@ export default [
 			"unicorn/prefer-json-parse-buffer": "error",
 			"unicorn/prefer-keyboard-event-key": "error",
 			"unicorn/prefer-logical-operator-over-ternary": "error",
-			"unicorn/prefer-math-min-max": "error",
+			"unicorn/prefer-math-min-max": "off",
 			"unicorn/prefer-math-trunc": "error",
 			"unicorn/prefer-modern-dom-apis": "error",
 			"unicorn/prefer-modern-math-apis": "error",
@@ -830,12 +825,7 @@ export default [
 			"@typescript-eslint/no-this-alias": "off",
 			"@typescript-eslint/no-type-alias": "off",
 			"@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-			"@typescript-eslint/no-unnecessary-condition": [
-				"error",
-				{
-					checkTypePredicates: true,
-				},
-			],
+			"@typescript-eslint/no-unnecessary-condition": "off",
 			"@typescript-eslint/no-unnecessary-parameter-property-assignment":
 				"error",
 			"@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -1018,7 +1008,7 @@ export default [
 			"jest/prefer-expect-assertions": "off",
 			"jest/prefer-expect-resolves": "error",
 			"jest/prefer-hooks-in-order": "error",
-			"jest/prefer-hooks-on-top": "error",
+			"jest/prefer-hooks-on-top": "off",
 			"jest/prefer-importing-jest-globals": "off",
 			"jest/prefer-jest-mocked": "error",
 			"jest/prefer-lowercase-title": [
