@@ -150,6 +150,7 @@
 			},
 			"nursery": {
 				"noAmbiguousAnchorText": "off",
+				"noBaseToString": "error",
 				"noComponentHookFactories": "off",
 				"noConditionalExpect": "error",
 				"noContinue": "off",
@@ -237,7 +238,9 @@
 				"useSortedClasses": "off",
 				"useSpread": "error",
 				"useStringStartsEndsWith": "error",
+				"useTestHooksInOrder": "error",
 				"useTestHooksOnTop": "error",
+				"useThisInClassMethods": "error",
 				"useUnicodeRegex": "error",
 				"useVarsOnTop": "error"
 			},
