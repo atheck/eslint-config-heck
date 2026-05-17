@@ -1,7 +1,7 @@
 import stylistic from "@stylistic/eslint-plugin";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-import importPlugin, { flatConfigs } from "eslint-plugin-import";
+import importPlugin, { createNodeResolver, flatConfigs } from "eslint-plugin-import-x";
 import jest from "eslint-plugin-jest";
 import react from "eslint-plugin-react";
 import testingLibrary from "eslint-plugin-testing-library";
@@ -665,7 +665,6 @@ export default [
 			"unicorn/throw-new-error": "off",
 
 			// eslint-plugin-import
-			"importPlugin/enforce-node-protocol-usage": "off",
 			"importPlugin/export": "off",
 			"importPlugin/no-deprecated": "off",
 			"importPlugin/no-empty-named-blocks": "error",
@@ -712,14 +711,20 @@ export default [
 			"importPlugin/no-named-default": "off",
 			"importPlugin/no-named-export": "off",
 			"importPlugin/no-namespace": "off",
+			"importPlugin/no-rename-default": "off",
 			"importPlugin/no-unassigned-import": "off",
 			"importPlugin/order": "off",
 			"importPlugin/prefer-default-export": "off",
+			"importPlugin/prefer-namespace-import": "off",
 		},
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
 		...flatConfigs.typescript,
+		settings: {
+			...flatConfigs.typescript.settings,
+			"import-x/resolver-next": [createNodeResolver()],
+		},
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
