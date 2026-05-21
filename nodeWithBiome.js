@@ -1,7 +1,7 @@
 import stylistic from "@stylistic/eslint-plugin";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-import importPlugin, { createNodeResolver, flatConfigs } from "eslint-plugin-import-x";
+import importPlugin from "eslint-plugin-import-x";
 import jest from "eslint-plugin-jest";
 import react from "eslint-plugin-react";
 import testingLibrary from "eslint-plugin-testing-library";
@@ -720,11 +720,6 @@ export default [
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
-		...flatConfigs.typescript,
-		settings: {
-			...flatConfigs.typescript.settings,
-			"import-x/resolver-next": [createNodeResolver()],
-		},
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
