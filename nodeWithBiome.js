@@ -378,9 +378,12 @@ export default [
 			"react/no-direct-mutation-state": "error",
 			"react/no-duplicate-key": "error",
 			"react/no-forward-ref": "warn",
-			"react/no-implicit-children": "error",
-			"react/no-implicit-key": "error",
-			"react/no-implicit-ref": "error",
+			// Requires type information
+			"react/no-implicit-children": "off",
+			// Requires type information
+			"react/no-implicit-key": "off",
+			// Requires type information
+			"react/no-implicit-ref": "off",
 			"react/no-leaked-conditional-rendering": "off",
 			"react/no-missing-component-display-name": "warn",
 			"react/no-missing-context-display-name": "warn",
@@ -398,7 +401,8 @@ export default [
 			"react/no-unstable-context-value": "error",
 			"react/no-unstable-default-props": "error",
 			"react/no-unused-class-component-members": "error",
-			"react/no-unused-props": "error",
+			// Requires type information
+			"react/no-unused-props": "off",
 			"react/no-unused-state": "error",
 			"react/no-use-context": "warn",
 			"react/purity": "error",
@@ -664,9 +668,6 @@ export default [
 	},
 	{
 		files: ["**/*.ts", "**/*.tsx"],
-	},
-	{
-		files: ["**/*.ts", "**/*.tsx"],
 		plugins: {
 			"@typescript-eslint": typescriptEslint,
 		},
@@ -862,6 +863,13 @@ export default [
 			],
 			"@typescript-eslint/unified-signatures": "off",
 			"@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+
+			// @eslint-react/eslint-plugin
+			// X Rules
+			"react/no-implicit-children": "error",
+			"react/no-implicit-key": "error",
+			"react/no-implicit-ref": "error",
+			"react/no-unused-props": "error",
 
 			// Typescript handles itself
 			"consistent-return": "off",
