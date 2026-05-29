@@ -251,19 +251,7 @@ export default [
 			"operator-assignment": "off",
 			"prefer-arrow-callback": "off",
 			"prefer-const": "off",
-			"prefer-destructuring": [
-				"error",
-				{
-					VariableDeclarator: {
-						array: false,
-						object: true,
-					},
-					AssignmentExpression: {
-						array: false,
-						object: false,
-					},
-				},
-			],
+			"prefer-destructuring": "off",
 			"prefer-exponentiation-operator": "off",
 			"prefer-named-capture-group": "off",
 			"prefer-numeric-literals": "off",
@@ -809,20 +797,7 @@ export default [
 			"@typescript-eslint/only-throw-error": "off",
 			"@typescript-eslint/parameter-properties": "off",
 			"@typescript-eslint/prefer-as-const": "off",
-			"prefer-destructuring": "off",
-			"@typescript-eslint/prefer-destructuring": [
-				"error",
-				{
-					VariableDeclarator: {
-						array: false,
-						object: true,
-					},
-					AssignmentExpression: {
-						array: false,
-						object: false,
-					},
-				},
-			],
+			"@typescript-eslint/prefer-destructuring": "off",
 			"@typescript-eslint/prefer-enum-initializers": "off",
 			// unicorns prefer-array-find is more powerful
 			"@typescript-eslint/prefer-find": "off",

@@ -204,7 +204,19 @@
 						"withinDescribe": "it"
 					}
 				},
-				"useDestructuring": "off",
+				"useDestructuring": {
+					"level": "error",
+					"options": {
+						"assignmentExpression": {
+							"array": false,
+							"object": false
+						},
+						"variableDeclarator": {
+							"array": false,
+							"object": true
+						}
+					}
+				},
 				"useDisposables": "error",
 				"useDomNodeTextContent": "error",
 				"useDomQuerySelector": "error",
