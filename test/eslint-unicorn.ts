@@ -1,9 +1,6 @@
 // ESLint Unicorn Rules Test File
 // Each section contains code that triggers the corresponding rule
 
-// unicorn/better-regex
-const badRegex = /[0-9]/;
-
 // unicorn/catch-error-name
 try {
 	throw new Error("test");
@@ -248,7 +245,7 @@ const parent = document.createElement("div");
 const child = document.createElement("span");
 parent.appendChild(child);
 
-// unicorn/prefer-dom-node-dataset
+// unicorn/dom-node-dataset
 const element = document.createElement("div");
 element.setAttribute("data-value", "test");
 
@@ -374,7 +371,6 @@ const decoded = new TextDecoder("utf-8");
 process.exit(1);
 
 export {
-	badRegex,
 	obj,
 	prop1,
 	arr,
