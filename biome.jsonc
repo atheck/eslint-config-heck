@@ -3,15 +3,13 @@
 	"extends": ["./biomeJsTs.json", "./biomeComplexity.json"],
 	"linter": {
 		"rules": {
-			"nursery": {
-				"useRequiredScripts": "off"
-			},
 			"style": {
 				"useNamingConvention": "off",
 				"noCommonJs": "off"
 			},
 			"suspicious": {
-				"noRedundantUseStrict": "off"
+				"noRedundantUseStrict": "off",
+				"useRequiredScripts": "off"
 			}
 		}
 	},
