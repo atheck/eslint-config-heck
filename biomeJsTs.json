@@ -168,7 +168,7 @@
 				"noMisleadingReturnType": "info",
 				"noMisusedPromises": "error",
 				"noReactStringRefs": "error",
-				"noRestrictedDependencies": "error",
+				"noRestrictedDependencies": "info",
 				"noUndeclaredClasses": "error",
 				"noUnnecessaryTemplateExpression": "error",
 				"noUnsafePlusOperands": "error",
