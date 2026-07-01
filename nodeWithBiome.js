@@ -356,7 +356,7 @@ export default [
 			"react/no-children-map": "error",
 			"react/no-children-only": "error",
 			"react/no-children-to-array": "error",
-			"react/no-class-component": "warn",
+			"react/no-class-component": "off",
 			"react/no-clone-element": "error",
 			"react/no-component-will-mount": "warn",
 			"react/no-component-will-receive-props": "warn",
