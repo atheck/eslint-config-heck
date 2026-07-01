@@ -630,7 +630,7 @@ export default [
 			"unicorn/prefer-array-slice": "off",
 			"unicorn/prefer-array-some": "off",
 			"unicorn/prefer-at": "off",
-			"unicorn/prefer-await": "error",
+			"unicorn/prefer-await": "off",
 			"unicorn/prefer-bigint-literals": "error",
 			"unicorn/prefer-blob-reading-methods": "error",
 			"unicorn/prefer-boolean-return": "error",
