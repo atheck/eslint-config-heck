@@ -167,6 +167,7 @@
 				"noLoopFunc": "error",
 				"noMisleadingReturnType": "info",
 				"noMisusedPromises": "error",
+				"noNegationInEqualityCheck": "error",
 				"noReactStringRefs": "error",
 				"noRestrictedDependencies": "info",
 				"noUndeclaredClasses": "error",
