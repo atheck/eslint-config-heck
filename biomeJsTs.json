@@ -170,6 +170,7 @@
 				"noNegationInEqualityCheck": "error",
 				"noReactStringRefs": "error",
 				"noRestrictedDependencies": "info",
+				"noJsRestrictedProperties": "off",
 				"noUndeclaredClasses": "error",
 				"noUnnecessaryTemplateExpression": "error",
 				"noUnsafePlusOperands": "error",
