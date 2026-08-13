@@ -207,6 +207,7 @@
 				"useNamedCaptureGroup": "error",
 				"useNullishCoalescing": "error",
 				"useReactAsyncServerFunction": "warn",
+				"useReactCompiler": "error",
 				"useReactFunctionComponentDefinition": "error",
 				"useReduceTypeParameter": "error",
 				"useRegexpExec": "error",
