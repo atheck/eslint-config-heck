@@ -27,7 +27,8 @@
 			"nursery": {
 				"noDuplicateSelectors": "warn",
 				"noInvalidPropertyInitValue": "error",
-				"useBaseline": "warn"
+				"useBaseline": "warn",
+				"useNamedLayer": "warn"
 			},
 			"style": {
 				"noDescendingSpecificity": "error",

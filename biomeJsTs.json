@@ -177,6 +177,7 @@
 				"noUndeclaredClasses": "error",
 				"noUnnecessaryTemplateExpression": "error",
 				"noUnsafePlusOperands": "error",
+				"noUnsafeTypeAssertion": "error",
 				"noUselessTypeConversion": "error",
 				"useArraySome": "error",
 				"useAwaitThenable": "error",
@@ -187,6 +188,7 @@
 						"withinDescribe": "it"
 					}
 				},
+				"useControlLabel": "error",
 				"useDisposables": "error",
 				"useDomNodeTextContent": "error",
 				"useDomQuerySelector": "error",
@@ -214,6 +216,7 @@
 				"useRegexpTest": "error",
 				"useSortedClasses": "off",
 				"useStringStartsEndsWith": "error",
+				"useTailwindShorthandClasses": "info",
 				"useTestHooksInOrder": "error",
 				"useTestHooksOnTop": "error",
 				"useThisInClassMethods": "error",
