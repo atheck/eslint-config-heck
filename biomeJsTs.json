@@ -179,11 +179,14 @@
 				"noUndeclaredClasses": "error",
 				"noUnnecessaryTemplateExpression": "error",
 				"noUnmodifiedLoopCondition": "error",
+				"noUnsafeIframeSandbox": "error",
 				"noUnsafePlusOperands": "error",
 				"noUnsafeTypeAssertion": "error",
 				"noUselessTypeConversion": "error",
+				"noXorAsExponentiation": "error",
 				"useArraySome": "error",
 				"useAwaitThenable": "error",
+				"useBetterDomTraversing": "error",
 				"useConsistentTestIt": {
 					"level": "error",
 					"options": {

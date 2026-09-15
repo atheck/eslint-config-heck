@@ -442,7 +442,7 @@ export default [
 			"react/naming-convention-ref-name": "off",
 
 			// eslint-plugin-unicorn
-			"unicorn/better-dom-traversing": "error",
+			"unicorn/better-dom-traversing": "off",
 			"unicorn/catch-error-name": [
 				"error",
 				{
@@ -625,7 +625,7 @@ export default [
 			"unicorn/no-typeof-undefined": "error",
 			"unicorn/no-uncalled-method": "error",
 			"unicorn/no-undeclared-class-members": "error",
-			"unicorn/no-xor-as-exponentiation": "error",
+			"unicorn/no-xor-as-exponentiation": "off",
 			"unicorn/no-zero-fractions": "error",
 			"unicorn/numeric-separators-style": "off",
 			"unicorn/operator-assignment": "off",
@@ -909,6 +909,7 @@ export default [
 			"@typescript-eslint/no-extraneous-class": "error",
 			"@typescript-eslint/no-floating-promises": "off",
 			"@typescript-eslint/no-for-in-array": "off",
+			"@typescript-eslint/no-generated-empty-object-type": "error",
 			"@typescript-eslint/no-implied-eval": "off",
 			"@typescript-eslint/no-import-type-side-effects": "off",
 			"@typescript-eslint/no-inferrable-types": "off",
