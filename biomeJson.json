@@ -6,7 +6,9 @@
 		"rules": {
 			"nursery": {
 				"noEmptyObjectKeys": "warn",
-				"noTopLevelLiterals": "warn"
+				"noJsonUnsafeValues": "error",
+				"noTopLevelLiterals": "warn",
+				"useConsistentObjectKeys": "error"
 			},
 			"suspicious": {
 				"noBiomeFirstException": "error",

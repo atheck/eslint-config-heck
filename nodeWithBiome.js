@@ -134,13 +134,8 @@ export default [
 			eqeqeq: "off",
 			"func-name-matching": "off",
 			"func-names": "off",
-			"func-style": [
-				"error",
-				"declaration",
-				{
-					allowArrowFunctions: true,
-				},
-			],
+			// Biome: useConsistentFunctionStyle
+			"func-style": "off",
 			"grouped-accessor-pairs": "off",
 			"guard-for-in": "off",
 			"id-denylist": "off",
@@ -499,6 +494,7 @@ export default [
 			"unicorn/no-array-sort": "error",
 			"unicorn/no-array-sort-for-min-max": "error",
 			"unicorn/no-array-splice": "error",
+			"unicorn/no-async-iterator-callback": "error",
 			"unicorn/no-await-expression-member": "error",
 			"unicorn/no-async-promise-finally": "error",
 			"unicorn/no-await-in-promise-methods": "error",
@@ -515,8 +511,14 @@ export default [
 			"unicorn/no-console-spaces": "error",
 			"unicorn/no-constant-zero-expression": "error",
 			"unicorn/no-declarations-before-early-exit": "error",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-deprecated-css-features": "off",
 			"unicorn/no-document-cookie": "off",
 			"unicorn/no-double-comparison": "error",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-duplicate-css-selectors": "off",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-duplicate-font-family-names": "off",
 			"unicorn/no-duplicate-if-branches": "error",
 			"unicorn/no-duplicate-logical-operands": "error",
 			"unicorn/no-duplicate-loops": "error",
@@ -537,6 +539,8 @@ export default [
 			"unicorn/no-invalid-character-comparison": "error",
 			"unicorn/no-invalid-fetch-options": "error",
 			"unicorn/no-invalid-file-input-accept": "off",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-invalid-media-features": "off",
 			"unicorn/no-invalid-remove-event-listener": "error",
 			"unicorn/no-invalid-well-known-symbol-methods": "error",
 			"unicorn/no-keyword-prefix": "off",
@@ -556,6 +560,8 @@ export default [
 			"unicorn/no-negated-condition": "off",
 			"unicorn/no-negation-in-equality-check": "off",
 			"unicorn/no-nested-ternary": "off",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-nesting-with-mixed-specificity": "off",
 			"unicorn/no-new-array": "error",
 			"unicorn/no-new-buffer": "error",
 			"unicorn/no-non-function-verb-prefix": "off",
@@ -566,6 +572,8 @@ export default [
 			"unicorn/no-optional-chaining-on-undeclared-variable": "error",
 			"unicorn/no-process-exit": "error",
 			"unicorn/no-redundant-comparison": "error",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-redundant-nested-style-rules": "off",
 			"unicorn/no-return-array-push": "off",
 			"unicorn/no-selector-as-dom-name": "error",
 			"unicorn/no-shorthand-property-overrides": "off",
@@ -578,6 +586,10 @@ export default [
 			"unicorn/no-top-level-assignment-in-function": "error",
 			"unicorn/no-top-level-side-effects": "error",
 			"unicorn/no-transition-all": "off",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-unknown-css-annotations": "off",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-unknown-pseudo-selectors": "off",
 			"unicorn/no-unnecessary-array-flat-depth": "error",
 			"unicorn/no-unnecessary-array-splice-count": "error",
 			"unicorn/no-unnecessary-await": "error",
@@ -599,7 +611,10 @@ export default [
 			"unicorn/no-unsafe-property-key": "error",
 			"unicorn/no-unsafe-sqlite-interpolation": "error",
 			"unicorn/no-unsafe-string-replacement": "error",
-			"unicorn/no-unused-array-method-return": "error",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/no-unscoped-css-nesting-selector": "off",
+			"unicorn/no-unused-builtin-method-return": "error",
+			"unicorn/no-unused-iterator-helper": "error",
 			"unicorn/no-unused-properties": "error",
 			"unicorn/no-useless-boolean-cast": "off",
 			"unicorn/no-useless-coercion": "error",
@@ -618,10 +633,12 @@ export default [
 			"unicorn/no-useless-promise-resolve-reject": "error",
 			"unicorn/no-useless-re-export": "error",
 			"unicorn/no-useless-recursion": "error",
+			"unicorn/no-useless-set-construction": "error",
 			"unicorn/no-useless-spread": "error",
 			"unicorn/no-useless-switch-case": "off",
 			"unicorn/no-useless-template-literals": "off",
 			"unicorn/no-useless-undefined": "off",
+			"unicorn/no-using-resource-escape": "error",
 			"unicorn/no-typeof-undefined": "error",
 			"unicorn/no-uncalled-method": "error",
 			"unicorn/no-undeclared-class-members": "error",
@@ -654,6 +671,7 @@ export default [
 			"unicorn/prefer-class-fields": "error",
 			"unicorn/prefer-classlist-toggle": "error",
 			"unicorn/prefer-code-point": "error",
+			"unicorn/prefer-combined-guards": "error",
 			"unicorn/prefer-continue": "error",
 			"unicorn/prefer-date-now": "off",
 			"unicorn/prefer-default-parameters": "error",
@@ -687,6 +705,9 @@ export default [
 			"unicorn/prefer-iterator-helpers": "error",
 			"unicorn/prefer-iterator-to-array": "error",
 			"unicorn/prefer-iterator-to-array-at-end": "error",
+			// Off until Iterator.zip() is available in our target runtimes (not in Node 24.18)
+			"unicorn/prefer-iterator-zip": "off",
+			"unicorn/prefer-json-import": "error",
 			"unicorn/prefer-json-parse-buffer": "error",
 			"unicorn/prefer-keyboard-event-key": "error",
 			"unicorn/prefer-location-assign": "error",
@@ -696,6 +717,8 @@ export default [
 			"unicorn/prefer-math-constants": "error",
 			"unicorn/prefer-math-min-max": "off",
 			"unicorn/prefer-math-trunc": "error",
+			// Not applicable: this config does not lint CSS files
+			"unicorn/prefer-media-feature-range-syntax": "off",
 			"unicorn/prefer-minimal-ternary": "error",
 			"unicorn/prefer-modern-dom-apis": "error",
 			"unicorn/prefer-modern-math-apis": "off",
@@ -749,6 +772,8 @@ export default [
 			"unicorn/prefer-structured-clone": "error",
 			"unicorn/prefer-switch": "error",
 			"unicorn/prefer-temporal": "off",
+			// Off until the Temporal API is available in our target runtimes (not in Node 24.18)
+			"unicorn/prefer-temporal-conversion": "off",
 			// TODO: off until there is a solution to this: https://github.com/sindresorhus/eslint-plugin-unicorn/issues/1079
 			"unicorn/prefer-ternary": "off",
 			"unicorn/prefer-then-catch": "error",
@@ -757,6 +782,8 @@ export default [
 			"unicorn/prefer-type-error": "error",
 			"unicorn/prefer-type-literal-last": "off",
 			"unicorn/prefer-uint8array-base64": "error",
+			// Off until Uint8Array#toHex()/fromHex() is available in our target runtimes (not in Node 24.18)
+			"unicorn/prefer-uint8array-hex": "off",
 			"unicorn/prefer-unary-minus": "error",
 			"unicorn/prefer-unicode-code-point-escapes": "error",
 			"unicorn/prefer-url-can-parse": "error",
@@ -1146,7 +1173,8 @@ export default [
 			"jest/valid-expect-in-promise": "error",
 			"jest/valid-expect-with-promise": "error",
 			"jest/valid-mock-module-path": "error",
-			"jest/valid-title": "error",
+			// Biome: useValidTestTitle
+			"jest/valid-title": "off",
 
 			// plugin-testing-library
 			"testing-library/await-async-events": "error",

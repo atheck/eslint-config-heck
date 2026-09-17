@@ -172,8 +172,10 @@
 				"noMisusedPromises": "error",
 				"noNegationInEqualityCheck": "error",
 				"noNonScalableViewport": "error",
+				"noObsoleteTags": "error",
 				"noReactStringRefs": "error",
 				"noRestrictedDependencies": "info",
+				"noReturnInFinally": "error",
 				"noTailwindArbitraryValue": "error",
 				"noThisOutsideOfClass": "error",
 				"noUndeclaredClasses": "error",
@@ -187,6 +189,13 @@
 				"useArraySome": "error",
 				"useAwaitThenable": "error",
 				"useBetterDomTraversing": "error",
+				"useConsistentFunctionStyle": {
+					"level": "error",
+					"options": {
+						"style": "declaration",
+						"allowArrowFunctions": true
+					}
+				},
 				"useConsistentTestIt": {
 					"level": "error",
 					"options": {
@@ -230,6 +239,7 @@
 				"useTestHooksOnTop": "error",
 				"useThisInClassMethods": "error",
 				"useUnicodeRegex": "error",
+				"useValidTestTitle": "error",
 				"useVarsOnTop": "error"
 			},
 			"performance": {
