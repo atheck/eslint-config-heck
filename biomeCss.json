@@ -29,8 +29,9 @@
 				"noInvalidPropertyInitValue": "error",
 				"noUndeclaredCustomProperties": "error",
 				"useBaseline": "warn",
-				"useNamedLayer": "warn",
-				"useLayeredStyles": "warn"
+				"useLayeredStyles": "warn",
+				"useLogicalProperties": "warn",
+				"useNamedLayer": "warn"
 			},
 			"style": {
 				"noDescendingSpecificity": "error",
