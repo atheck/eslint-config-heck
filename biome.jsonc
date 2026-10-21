@@ -1,6 +1,10 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"extends": ["./biomeJsTs.json", "./biomeComplexity.json"],
+	"extends": [
+		"./biomeJsTs.json",
+		"./biomeComplexity.json",
+		"./biomeMarkdown.json"
+	],
 	"linter": {
 		"rules": {
 			"style": {

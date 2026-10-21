@@ -1,0 +1,28 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": false,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"nursery": {
+				"useConsistentHeadingLevel": "error",
+				"useFencedCodeLanguage": "error",
+				"useSingleTopLevelHeading": "error",
+				"useTopLevelHeading": "error"
+			}
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["**/CHANGELOG.md"],
+			"linter": {
+				"rules": {
+					"nursery": {
+						"useConsistentHeadingLevel": "off",
+						"useSingleTopLevelHeading": "off"
+					}
+				}
+			}
+		}
+	]
+}

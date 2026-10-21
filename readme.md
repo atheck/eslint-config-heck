@@ -34,6 +34,7 @@ Create a `biome.jsonc` and extend the configurations you need:
         "eslint-config-heck/biomeReactNative",
         "eslint-config-heck/biomeCss",
         "eslint-config-heck/biomeJson",
+        "eslint-config-heck/biomeMarkdown",
         "eslint-config-heck/biomePlaywright",
         "eslint-config-heck/biomeComplexity"
     ]
@@ -48,5 +49,6 @@ Create a `biome.jsonc` and extend the configurations you need:
 | `biomeReactNative` | React Native specific rules |
 | `biomeCss` | CSS specific rules |
 | `biomeJson` | JSON specific rules |
+| `biomeMarkdown` | Markdown specific rules |
 | `biomePlaywright` | Playwright test rules |
 | `biomeComplexity` | Complexity rules |

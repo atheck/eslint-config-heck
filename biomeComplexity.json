@@ -13,6 +13,12 @@
 						"skipBlankLines": true
 					}
 				},
+				"noExcessiveNestedCallbacks": {
+					"level": "warn",
+					"options": {
+						"max": 3
+					}
+				},
 				"useMaxParams": {
 					"level": "error",
 					"options": {
@@ -21,10 +27,10 @@
 				}
 			},
 			"nursery": {
-				"noExcessiveNestedCallbacks": {
+				"noExcessiveStatementsPerFunction": {
 					"level": "warn",
 					"options": {
-						"max": 3
+						"max": 15
 					}
 				}
 			}
@@ -48,6 +54,9 @@
 						"noExcessiveCognitiveComplexity": "off",
 						"noExcessiveLinesPerFunction": "off",
 						"useMaxParams": "off"
+					},
+					"nursery": {
+						"noExcessiveStatementsPerFunction": "off"
 					}
 				}
 			}

@@ -4,19 +4,25 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"nursery": {
+			"complexity": {
+				"noPlaywrightUselessAwait": "error"
+			},
+			"correctness": {
+				"noPlaywrightMissingAwait": "error",
+				"usePlaywrightValidDescribeCallback": "error"
+			},
+			"style": {
 				"noPlaywrightElementHandle": "error",
 				"noPlaywrightEval": "error",
+				"noPlaywrightWaitForSelector": "error",
+				"useTestHooksOnTop": "error"
+			},
+			"suspicious": {
 				"noPlaywrightForceOption": "error",
-				"noPlaywrightMissingAwait": "error",
 				"noPlaywrightNetworkidle": "error",
 				"noPlaywrightPagePause": "error",
-				"noPlaywrightUselessAwait": "error",
 				"noPlaywrightWaitForNavigation": "error",
-				"noPlaywrightWaitForSelector": "error",
-				"noPlaywrightWaitForTimeout": "error",
-				"usePlaywrightValidDescribeCallback": "error",
-				"useTestHooksOnTop": "error"
+				"noPlaywrightWaitForTimeout": "error"
 			}
 		}
 	}

@@ -84,7 +84,8 @@ export default [
 			"no-new-native-nonconstructor": "off",
 			"no-new-symbol": "off",
 			"no-obj-calls": "off",
-			"no-promise-executor-return": "error",
+			// Biome: noPromiseExecutorReturn
+			"no-promise-executor-return": "off",
 			"no-prototype-builtins": "off",
 			"no-self-assign": "off",
 			"no-self-compare": "off",
@@ -103,7 +104,8 @@ export default [
 			"no-unused-private-class-members": "off",
 			"no-unused-vars": "off",
 			"no-use-before-define": "off",
-			"no-useless-assignment": "error",
+			// Biome: noUselessAssignment
+			"no-useless-assignment": "off",
 			"no-useless-backreference": "off",
 			"require-atomic-updates": "error",
 			"use-isnan": "off",
@@ -156,11 +158,13 @@ export default [
 			"max-params": "off",
 			"max-statements": "off",
 			"multiline-comment-style": "off",
-			"new-cap": "error",
+			// Biome: useCapitalizedConstructors
+			"new-cap": "off",
 			"no-alert": "off",
 			"no-array-constructor": "off",
 			"no-bitwise": "off",
-			"no-caller": "error",
+			// Biome: noArgumentsCallerOrCallee
+			"no-caller": "off",
 			"no-case-declarations": "off",
 			"no-console": "off",
 			"no-continue": "off",
@@ -181,7 +185,8 @@ export default [
 			"no-implicit-globals": "off",
 			"no-implied-eval": "off",
 			"no-inline-comments": "error",
-			"no-invalid-this": "error",
+			// Biome: noInvalidThis
+			"no-invalid-this": "off",
 			"no-iterator": "error",
 			"no-label-var": "off",
 			"no-labels": "error",
@@ -197,7 +202,8 @@ export default [
 			"no-new-func": "error",
 			"no-new-wrappers": "off",
 			"no-nonoctal-decimal-escape": "off",
-			"no-object-constructor": "error",
+			// Biome: noObjectConstructor
+			"no-object-constructor": "off",
 			"no-octal": "off",
 			"no-octal-escape": "off",
 			"no-param-reassign": "off",
@@ -228,7 +234,8 @@ export default [
 			"no-unneeded-ternary": "off",
 			"no-unused-expressions": "off",
 			"no-unused-labels": "off",
-			"no-useless-call": "error",
+			// Biome: noUselessCall
+			"no-useless-call": "off",
 			"no-useless-catch": "off",
 			"no-useless-computed-key": "off",
 			"no-useless-concat": "off",
@@ -459,7 +466,8 @@ export default [
 			"unicorn/consistent-class-member-order": "error",
 			"unicorn/consistent-compound-words": "warn",
 			"unicorn/consistent-conditional-object-spread": "error",
-			"unicorn/consistent-date-clone": "error",
+			// Biome: noUselessDateGetTime
+			"unicorn/consistent-date-clone": "off",
 			"unicorn/consistent-destructuring": "error",
 			"unicorn/consistent-empty-array-spread": "error",
 			"unicorn/consistent-existence-index-check": "error",
@@ -500,7 +508,8 @@ export default [
 			"unicorn/new-for-builtins": "off",
 			"unicorn/no-abusive-eslint-disable": "error",
 			"unicorn/no-accessor-recursion": "error",
-			"unicorn/no-accidental-bitwise-operator": "error",
+			// Biome: noAccidentalBitwiseOperators
+			"unicorn/no-accidental-bitwise-operator": "off",
 			"unicorn/no-anonymous-default-export": "error",
 			"unicorn/no-array-callback-reference": "off",
 			"unicorn/no-array-concat-in-loop": "error",
@@ -535,7 +544,8 @@ export default [
 			"unicorn/no-constant-zero-expression": "error",
 			"unicorn/no-declarations-before-early-exit": "error",
 			"unicorn/no-document-cookie": "off",
-			"unicorn/no-double-comparison": "error",
+			// Biome: noDoubleComparison
+			"unicorn/no-double-comparison": "off",
 			"unicorn/no-duplicate-if-branches": "error",
 			"unicorn/no-duplicate-logical-operands": "error",
 			"unicorn/no-duplicate-loops": "error",
@@ -602,7 +612,8 @@ export default [
 			"unicorn/no-object-methods-with-collections": "error",
 			"unicorn/no-optional-chaining-on-undeclared-variable": "error",
 			"unicorn/no-prevent-default-in-passive-listener": "error",
-			"unicorn/no-process-exit": "error",
+			// Biome: noProcessExit
+			"unicorn/no-process-exit": "off",
 			"unicorn/no-redundant-comparison": "error",
 			"unicorn/no-repeated-call-wrappers": "error",
 			"unicorn/no-return-array-push": "off",
@@ -674,7 +685,8 @@ export default [
 			"unicorn/no-useless-undefined": "off",
 			"unicorn/no-using-resource-escape": "error",
 			"unicorn/no-xor-as-exponentiation": "off",
-			"unicorn/no-zero-fractions": "error",
+			// Biome: noZeroFractions
+			"unicorn/no-zero-fractions": "off",
 			// Conflicts with the Biome formatter, which lowercases hex digits
 			"unicorn/number-literal-case": "off",
 			"unicorn/numeric-separators-style": "off",
@@ -697,10 +709,12 @@ export default [
 			"unicorn/prefer-array-some": "off",
 			"unicorn/prefer-at": "off",
 			"unicorn/prefer-await": "off",
-			"unicorn/prefer-bigint-literals": "error",
+			// Biome: useBigintLiterals
+			"unicorn/prefer-bigint-literals": "off",
 			"unicorn/prefer-blob-reading-methods": "error",
 			"unicorn/prefer-block-statement-over-iife": "error",
-			"unicorn/prefer-boolean-return": "error",
+			// Biome: useSimplifiedBooleanReturn
+			"unicorn/prefer-boolean-return": "off",
 			"unicorn/prefer-class-fields": "error",
 			"unicorn/prefer-classlist-toggle": "error",
 			"unicorn/prefer-code-point": "error",
@@ -817,7 +831,8 @@ export default [
 			"unicorn/prefer-uint8array-base64": "error",
 			// Off until Uint8Array#toHex()/fromHex() is available in our target runtimes (not in Node 24.18)
 			"unicorn/prefer-uint8array-hex": "off",
-			"unicorn/prefer-unary-minus": "error",
+			// Biome: useUnaryMinus
+			"unicorn/prefer-unary-minus": "off",
 			"unicorn/prefer-unicode-code-point-escapes": "error",
 			"unicorn/prefer-url-can-parse": "error",
 			"unicorn/prefer-url-href": "error",
@@ -977,7 +992,8 @@ export default [
 			"@typescript-eslint/no-import-type-side-effects": "off",
 			"@typescript-eslint/no-inferrable-types": "off",
 			"no-invalid-this": "off",
-			"@typescript-eslint/no-invalid-this": "error",
+			// Biome: noInvalidThis
+			"@typescript-eslint/no-invalid-this": "off",
 			"@typescript-eslint/no-invalid-void-type": "off",
 			"no-loop-func": "off",
 			"@typescript-eslint/no-loop-func": "off",
@@ -1022,7 +1038,8 @@ export default [
 			"@typescript-eslint/no-unsafe-member-access": "error",
 			"@typescript-eslint/no-unsafe-return": "error",
 			"@typescript-eslint/no-unsafe-type-assertion": "off",
-			"@typescript-eslint/no-unsafe-unary-minus": "error",
+			// Biome: noUnsafeUnaryMinus
+			"@typescript-eslint/no-unsafe-unary-minus": "off",
 			"no-unused-expressions": "off",
 			"@typescript-eslint/no-unused-expressions": "off",
 			"no-unused-private-class-members": "off",

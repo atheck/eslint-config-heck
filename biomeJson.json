@@ -5,15 +5,17 @@
 		"enabled": true,
 		"rules": {
 			"nursery": {
-				"noEmptyObjectKeys": "warn",
 				"noJsonUnsafeValues": "error",
-				"noTopLevelLiterals": "warn",
 				"useConsistentObjectKeys": "error"
+			},
+			"style": {
+				"noTopLevelLiterals": "warn"
 			},
 			"suspicious": {
 				"noBiomeFirstException": "error",
 				"noDuplicateDependencies": "error",
 				"noDuplicateObjectKeys": "error",
+				"noEmptyObjectKeys": "warn",
 				"noEmptySource": "error",
 				"noQuickfixBiome": "error",
 				"useBiomeIgnoreFolder": "error"

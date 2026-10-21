@@ -25,10 +25,8 @@
 				"noUnmatchableAnbSelector": "error"
 			},
 			"nursery": {
-				"noDuplicateSelectors": "warn",
 				"noInvalidPropertyInitValue": "error",
 				"noUndeclaredCustomProperties": "error",
-				"useBaseline": "warn",
 				"useLayeredStyles": "warn",
 				"useLogicalProperties": "warn",
 				"useNamedLayer": "warn"
@@ -42,6 +40,7 @@
 				"noDuplicateCustomProperties": "error",
 				"noDuplicateFontNames": "error",
 				"noDuplicateProperties": "error",
+				"noDuplicateSelectors": "warn",
 				"noDuplicateSelectorsKeyframeBlock": "error",
 				"noEmptyBlock": "error",
 				"noEmptySource": "error",
@@ -49,7 +48,8 @@
 				"noIrregularWhitespace": "error",
 				"noShorthandPropertyOverrides": "error",
 				"noUnknownAtRules": "error",
-				"noUselessEscapeInString": "error"
+				"noUselessEscapeInString": "error",
+				"useBaseline": "warn"
 			}
 		}
 	}

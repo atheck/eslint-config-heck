@@ -60,6 +60,7 @@
 				"noRedundantDefaultExport": "error",
 				"noStaticOnlyClass": "error",
 				"noThisInStatic": "error",
+				"noUnnecessaryTemplateExpression": "error",
 				"noUselessCatch": "error",
 				"noUselessCatchBinding": "error",
 				"noUselessConstructor": "error",
@@ -81,21 +82,25 @@
 				"noUselessUndefinedInitialization": "error",
 				"noVoid": "error",
 				"useArrayFind": "off",
+				"useArraySome": "error",
 				"useArrowFunction": "error",
 				"useDateNow": "error",
 				"useFlatMap": "error",
 				"useIndexOf": "error",
 				"useLiteralKeys": "error",
+				"useMathMinMax": "error",
 				"useMaxParams": "off",
 				"useNumericLiterals": "error",
 				"useOptionalChain": "error",
 				"useRegexLiterals": "error",
+				"useRegexpTest": "error",
 				"useSimpleNumberKeys": "error",
 				"useSimplifiedLogicExpression": "off",
 				"useWhile": "error"
 			},
 			"correctness": {
 				"noChildrenProp": "error",
+				"noComponentHookFactories": "off",
 				"noConstAssign": "error",
 				"noConstantCondition": "error",
 				"noConstantMathMinMaxClamp": "error",
@@ -108,6 +113,7 @@
 				"noInvalidBuiltinInstantiation": "error",
 				"noInvalidConstructorSuper": "error",
 				"noInvalidUseBeforeDeclaration": "error",
+				"noJsxNamespace": "error",
 				"noNestedComponentDefinitions": "error",
 				"noNodejsModules": "off",
 				"noNonoctalDecimalEscape": "error",
@@ -148,6 +154,7 @@
 				"useJsonImportAttributes": "error",
 				"useJsxKeyInIterable": "error",
 				"useParseIntRadix": "error",
+				"useReactAsyncServerFunction": "warn",
 				"useSingleJsDocAsterisk": "error",
 				"useUniqueElementIds": "error",
 				"useValidForDirection": "error",
@@ -155,45 +162,54 @@
 				"useYield": "error"
 			},
 			"nursery": {
+				"noAccidentalBitwiseOperators": "error",
+				"noArgumentsCallerOrCallee": "error",
 				"noBaseToString": "error",
-				"noComponentHookFactories": "off",
-				"noConditionalExpect": "error",
+				"noDoubleComparison": "error",
 				"noExtendNative": "error",
 				"noFloatingPromises": "error",
-				"noIdenticalTestTitle": "error",
 				"noImpliedEval": "error",
-				"noInlineStyles": "warn",
 				"noInvalidFileInputAccept": "error",
+				"noInvalidThis": "error",
 				"noJsRestrictedProperties": "off",
-				"noJsxLeakedDollar": "warn",
-				"noJsxNamespace": "error",
-				"noLoopFunc": "error",
 				"noMeaninglessVoidOperator": "off",
 				"noMisleadingReturnType": "info",
 				"noMisplacedListElements": "error",
 				"noMisusedPromises": "error",
 				"noNegationInEqualityCheck": "error",
+				"noNestedSwitch": "error",
+				"noNestedTemplateLiterals": "warn",
 				"noNonScalableViewport": "error",
+				"noObjectConstructor": "error",
 				"noObsoleteTags": "error",
+				"noOctal": "error",
+				"noProcessExit": "error",
+				"noPromiseExecutorReturn": "error",
 				"noReactObjectTypeAsDefaultProp": "error",
-				"noReactStringRefs": "error",
 				"noRestrictedDependencies": "info",
 				"noReturnInFinally": "error",
 				"noSelfImport": "error",
 				"noTailwindArbitraryValue": "error",
+				"noTailwindLegacyUtilities": "warn",
 				"noTailwindRawColors": "warn",
+				"noTailwindRestyledComponents": "off",
 				"noThisOutsideOfClass": "error",
 				"noUndeclaredClasses": "error",
-				"noUnnecessaryTemplateExpression": "error",
 				"noUnmodifiedLoopCondition": "error",
 				"noUnsafeIframeSandbox": "error",
 				"noUnsafePlusOperands": "error",
 				"noUnsafeTypeAssertion": "error",
+				"noUnsafeUnaryMinus": "error",
+				"noUselessAssignment": "error",
+				"noUselessCall": "error",
+				"noUselessDateGetTime": "error",
 				"noUselessTypeConversion": "error",
 				"noXorAsExponentiation": "error",
-				"useArraySome": "error",
+				"noZeroFractions": "error",
 				"useAwaitThenable": "error",
 				"useBetterDomTraversing": "error",
+				"useBigintLiterals": "error",
+				"useCapitalizedConstructors": "error",
 				"useConsistentFunctionStyle": {
 					"level": "error",
 					"options": {
@@ -201,19 +217,10 @@
 						"allowArrowFunctions": true
 					}
 				},
-				"useConsistentTestIt": {
-					"level": "error",
-					"options": {
-						"function": "it",
-						"withinDescribe": "it"
-					}
-				},
+				"useConsistentJsonFileRead": "off",
 				"useControlLabel": "error",
 				"useDisposables": "error",
-				"useDomNodeTextContent": "error",
-				"useDomQuerySelector": "error",
 				"useExhaustiveSwitchCases": "error",
-				"useExpect": "error",
 				"useExplicitReturnType": {
 					"level": "off",
 					"options": {
@@ -223,31 +230,25 @@
 				},
 				"useExplicitType": "off",
 				"useFlatMathMinMax": "error",
-				"useIframeSandbox": "error",
-				"useImportsFirst": "error",
 				"useIncludes": "error",
-				"useMathMinMax": "error",
+				"useLowercaseTestTitle": "off",
+				"useMatchingFunctionName": "off",
 				"useModernMathApis": "error",
-				"useNamedCaptureGroup": "error",
+				"useNamedFunction": "off",
 				"useNullishCoalescing": "error",
 				"usePromiseRejectErrors": "error",
-				"useReactAsyncServerFunction": "warn",
 				"useReactCompiler": "error",
 				"useReactFunctionComponentDefinition": "error",
 				"useReactNamingConvention": "warn",
-				"useReduceTypeParameter": "error",
 				"useRegexpExec": "error",
-				"useRegexpTest": "error",
-				"useSortedClasses": "off",
+				"useSimplifiedBooleanReturn": "error",
 				"useStrictBooleanExpressions": "off",
 				"useStringStartsEndsWith": "error",
 				"useTailwindShorthandClasses": "info",
-				"useTestHooksInOrder": "error",
-				"useTestHooksOnTop": "error",
-				"useThisInClassMethods": "error",
-				"useUnicodeRegex": "error",
-				"useValidTestTitle": "error",
-				"useVarsOnTop": "error"
+				"useTailwindSortedClasses": "off",
+				"useTailwindStaticClassStrings": "error",
+				"useUnaryMinus": "error",
+				"useValidTestTitle": "error"
 			},
 			"performance": {
 				"noAccumulatingSpread": "error",
@@ -260,6 +261,7 @@
 				"noReExportAll": "error",
 				"noSyncScripts": "error",
 				"noUnwantedPolyfillio": "off",
+				"useDomNodeTextContent": "error",
 				"useGoogleFontPreconnect": "error",
 				"useTopLevelRegex": "error"
 			},
@@ -269,7 +271,8 @@
 				"noDangerouslySetInnerHtmlWithChildren": "error",
 				"noGlobalEval": "error",
 				"noScriptUrl": "error",
-				"noSecrets": "off"
+				"noSecrets": "off",
+				"useIframeSandbox": "error"
 			},
 			"style": {
 				"noCommonJs": "error",
@@ -283,6 +286,7 @@
 				"noImplicitBoolean": "off",
 				"noIncrementDecrement": "off",
 				"noInferrableTypes": "error",
+				"noInlineStyles": "warn",
 				"noJsxLiterals": "error",
 				"noMagicNumbers": "off",
 				"noMultiAssign": "error",
@@ -328,6 +332,13 @@
 						"syntax": "shorthand"
 					}
 				},
+				"useConsistentTestIt": {
+					"level": "error",
+					"options": {
+						"function": "it",
+						"withinDescribe": "it"
+					}
+				},
 				"useConsistentTypeDefinitions": "error",
 				"useConst": "error",
 				"useDefaultParameterLast": "error",
@@ -345,6 +356,7 @@
 						}
 					}
 				},
+				"useDomQuerySelector": "error",
 				"useEnumInitializers": "error",
 				"useErrorCause": {
 					"level": "error",
@@ -364,10 +376,7 @@
 				"useFilenamingConvention": {
 					"level": "error",
 					"options": {
-						"filenameCases": [
-							"camelCase",
-							"PascalCase"
-						],
+						"filenameCases": ["camelCase", "PascalCase"],
 						"strictCase": true
 					}
 				},
@@ -376,15 +385,15 @@
 				"useGlobalThis": "off",
 				"useGroupedAccessorPairs": "error",
 				"useImportType": "error",
+				"useImportsFirst": "error",
 				"useLiteralEnumMembers": "error",
+				"useNamedCaptureGroup": "error",
 				"useNamingConvention": {
 					"level": "error",
 					"options": {
 						"conventions": [
 							{
-								"formats": [
-									"PascalCase"
-								],
+								"formats": ["PascalCase"],
 								"match": "T(.+)",
 								"selector": {
 									"kind": "typeParameter"
@@ -402,6 +411,7 @@
 				"useObjectSpread": "error",
 				"useReactFunctionComponents": "warn",
 				"useReadonlyClassProperties": "error",
+				"useReduceTypeParameter": "error",
 				"useSelfClosingElements": "error",
 				"useShorthandAssign": "error",
 				"useShorthandFunctionType": "error",
@@ -409,10 +419,15 @@
 				"useSpreadOverApply": "error",
 				"useSymbolDescription": "error",
 				"useTemplate": "error",
+				"useTestHooksInOrder": "error",
+				"useTestHooksOnTop": "error",
+				"useThisInClassMethods": "error",
 				"useThrowNewError": "error",
 				"useThrowOnlyError": "error",
 				"useTrimStartEnd": "error",
-				"useUnifiedTypeSignatures": "error"
+				"useUnicodeRegex": "error",
+				"useUnifiedTypeSignatures": "error",
+				"useVarsOnTop": "error"
 			},
 			"suspicious": {
 				"noAlert": "error",
@@ -425,6 +440,7 @@
 				"noClassAssign": "error",
 				"noCommentText": "error",
 				"noCompareNegZero": "error",
+				"noConditionalExpect": "error",
 				"noConfusingLabels": "error",
 				"noConfusingVoidType": "error",
 				"noConsole": "error",
@@ -458,12 +474,15 @@
 				"noGlobalAssign": "error",
 				"noGlobalIsFinite": "error",
 				"noGlobalIsNan": "error",
+				"noIdenticalTestTitle": "error",
 				"noImplicitAnyLet": "error",
 				"noImportAssign": "error",
 				"noImportCycles": "error",
 				"noIrregularWhitespace": "error",
+				"noJsxLeakedDollar": "warn",
 				"noLabelVar": "error",
 				"noLeakedRender": "error",
+				"noLoopFunc": "error",
 				"noMisleadingCharacterClass": "error",
 				"noMisleadingInstantiator": "error",
 				"noMisplacedAssertion": "error",
@@ -475,6 +494,7 @@
 				"noProto": "error",
 				"noPrototypeBuiltins": "error",
 				"noReactForwardRef": "error",
+				"noReactStringRefs": "error",
 				"noRedeclare": "error",
 				"noRedundantUseStrict": "error",
 				"noReturnAssign": "error",
@@ -504,6 +524,7 @@
 				"useDefaultSwitchClauseLast": "error",
 				"useDeprecatedDate": "warn",
 				"useErrorMessage": "error",
+				"useExpect": "error",
 				"useGetterReturn": "error",
 				"useGoogleFontDisplay": "error",
 				"useGuardForIn": "error",
@@ -523,10 +544,7 @@
 	},
 	"overrides": [
 		{
-			"includes": [
-				"**/*.ts",
-				"**/*.tsx"
-			],
+			"includes": ["**/*.ts", "**/*.tsx"],
 			"linter": {
 				"rules": {
 					"suspicious": {

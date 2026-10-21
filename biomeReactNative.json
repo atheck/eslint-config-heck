@@ -4,11 +4,15 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"nursery": {
-				"noReactNativeDeepImports": "error",
-				"noReactNativeLiteralColors": "error",
+			"correctness": {
 				"noReactNativeRawText": "error",
 				"useReactNativePlatformComponents": "error"
+			},
+			"style": {
+				"noReactNativeLiteralColors": "error"
+			},
+			"suspicious": {
+				"noReactNativeDeepImports": "error"
 			}
 		}
 	}
