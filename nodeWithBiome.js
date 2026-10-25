@@ -279,7 +279,8 @@ export default [
 
 			// Layout & Formatting
 			"line-comment-position": "off",
-			"unicode-bom": "error",
+			// Biome: useConsistentUnicodeBom
+			"unicode-bom": "off",
 
 			// @stylistic
 			"@stylistic/jsx-child-element-spacing": "error",
@@ -520,7 +521,8 @@ export default [
 			"unicorn/no-array-reduce": "off",
 			"unicorn/no-array-reverse": "error",
 			"unicorn/no-array-sort": "error",
-			"unicorn/no-array-sort-for-min-max": "error",
+			// Biome: noArraySortForMinMax
+			"unicorn/no-array-sort-for-min-max": "off",
 			"unicorn/no-array-splice": "error",
 			// Conflicts with the standard JSDoc " * " line prefix
 			"unicorn/no-asterisk-prefix-in-documentation-comments": "off",
@@ -531,7 +533,8 @@ export default [
 			// Biome: noBarrelFile
 			"unicorn/no-barrel-files": "off",
 			"unicorn/no-blob-to-file": "error",
-			"unicorn/no-boolean-sort-comparator": "error",
+			// Biome: noBooleanSortComparator
+			"unicorn/no-boolean-sort-comparator": "off",
 			"unicorn/no-break-in-nested-loop": "error",
 			"unicorn/no-canvas-to-image": "error",
 			"unicorn/no-chained-comparison": "error",
@@ -548,7 +551,8 @@ export default [
 			"unicorn/no-double-comparison": "off",
 			"unicorn/no-duplicate-if-branches": "error",
 			"unicorn/no-duplicate-logical-operands": "error",
-			"unicorn/no-duplicate-loops": "error",
+			// Biome: noEagerArrayMethodsInLoops
+			"unicorn/no-duplicate-loops": "off",
 			"unicorn/no-duplicate-set-values": "error",
 			"unicorn/no-empty-file": "error",
 			// Not applicable: this config does not lint Markdown files
@@ -643,10 +647,12 @@ export default [
 			"unicorn/no-unnecessary-parameters": "error",
 			"unicorn/no-unnecessary-polyfills": "error",
 			"unicorn/no-unnecessary-slice-end": "error",
-			"unicorn/no-unnecessary-splice": "error",
+			// Biome: noUselessSplice
+			"unicorn/no-unnecessary-splice": "off",
 			"unicorn/no-unnecessary-string-trim": "off",
 			"unicorn/no-unreadable-array-destructuring": "error",
-			"unicorn/no-unreadable-for-of-expression": "error",
+			// Biome: noUnreadableForOfExpression
+			"unicorn/no-unreadable-for-of-expression": "off",
 			"unicorn/no-unreadable-iife": "error",
 			"unicorn/no-unreadable-new-expression": "off",
 			"unicorn/no-unreadable-object-destructuring": "error",
@@ -712,7 +718,8 @@ export default [
 			// Biome: useBigintLiterals
 			"unicorn/prefer-bigint-literals": "off",
 			"unicorn/prefer-blob-reading-methods": "error",
-			"unicorn/prefer-block-statement-over-iife": "error",
+			// Biome: useBlockStatementOverIife
+			"unicorn/prefer-block-statement-over-iife": "off",
 			// Biome: useSimplifiedBooleanReturn
 			"unicorn/prefer-boolean-return": "off",
 			"unicorn/prefer-class-fields": "error",
@@ -760,10 +767,12 @@ export default [
 			"unicorn/prefer-location-assign": "error",
 			"unicorn/prefer-logical-operator-over-ternary": "error",
 			"unicorn/prefer-map-from-entries": "error",
-			"unicorn/prefer-math-abs": "error",
+			// Biome: useMathAbs
+			"unicorn/prefer-math-abs": "off",
 			"unicorn/prefer-math-constants": "error",
 			"unicorn/prefer-math-min-max": "off",
-			"unicorn/prefer-math-trunc": "error",
+			// Biome: useMathTrunc
+			"unicorn/prefer-math-trunc": "off",
 			"unicorn/prefer-minimal-ternary": "error",
 			"unicorn/prefer-modern-dom-apis": "error",
 			"unicorn/prefer-modern-math-apis": "off",
@@ -1212,7 +1221,8 @@ export default [
 			"jest/prefer-spy-on": "error",
 			"jest/prefer-strict-equal": "error",
 			"jest/prefer-to-be": "error",
-			"jest/prefer-to-contain": "error",
+			// Biome: useExpectToContain
+			"jest/prefer-to-contain": "off",
 			"jest/prefer-to-have-been-called": "off",
 			"jest/prefer-to-have-been-called-times": "error",
 			"jest/prefer-to-have-length": "error",

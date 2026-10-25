@@ -8,6 +8,9 @@
 				"noReactNativeRawText": "error",
 				"useReactNativePlatformComponents": "error"
 			},
+			"nursery": {
+				"useReactNativeValidPlatformColors": "error"
+			},
 			"style": {
 				"noReactNativeLiteralColors": "error"
 			},

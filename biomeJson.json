@@ -6,7 +6,9 @@
 		"rules": {
 			"nursery": {
 				"noJsonUnsafeValues": "error",
-				"useConsistentObjectKeys": "error"
+				"useConsistentObjectKeys": "error",
+				"usePackageJsonValidCpu": "error",
+				"usePackageJsonValidEngines": "error"
 			},
 			"style": {
 				"noTopLevelLiterals": "warn"

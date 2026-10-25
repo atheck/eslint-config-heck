@@ -11,6 +11,9 @@
 				"noPlaywrightMissingAwait": "error",
 				"usePlaywrightValidDescribeCallback": "error"
 			},
+			"nursery": {
+				"noPlaywrightNthMethods": "warn"
+			},
 			"style": {
 				"noPlaywrightElementHandle": "error",
 				"noPlaywrightEval": "error",

@@ -26,7 +26,10 @@
 			},
 			"nursery": {
 				"noInvalidPropertyInitValue": "error",
+				"noSelfNestedLayer": "error",
 				"noUndeclaredCustomProperties": "error",
+				"noZeroLengthUnit": "error",
+				"useConsistentLightnessNotation": "error",
 				"useLayeredStyles": "warn",
 				"useLogicalProperties": "warn",
 				"useNamedLayer": "warn"
