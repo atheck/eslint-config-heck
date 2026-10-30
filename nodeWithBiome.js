@@ -543,7 +543,8 @@ export default [
 			"unicorn/no-conflicting-constraints": "error",
 			"unicorn/no-confusing-array-splice": "error",
 			"unicorn/no-confusing-array-with": "error",
-			"unicorn/no-console-spaces": "error",
+			// Biome: noConsoleSpaces
+			"unicorn/no-console-spaces": "off",
 			"unicorn/no-constant-zero-expression": "error",
 			"unicorn/no-declarations-before-early-exit": "error",
 			"unicorn/no-document-cookie": "off",
@@ -595,7 +596,8 @@ export default [
 			"unicorn/no-loop-iterable-mutation": "error",
 			// Not applicable: this config does not lint CSS or JSON files
 			"unicorn/no-loss-of-precision": "off",
-			"unicorn/no-magic-array-flat-depth": "error",
+			// Biome: noMagicArrayFlatDepth
+			"unicorn/no-magic-array-flat-depth": "off",
 			"unicorn/no-manually-wrapped-comments": "error",
 			"unicorn/no-mismatched-map-key": "error",
 			"unicorn/no-misrefactored-assignment": "error",
@@ -653,7 +655,8 @@ export default [
 			"unicorn/no-unreadable-array-destructuring": "error",
 			// Biome: noUnreadableForOfExpression
 			"unicorn/no-unreadable-for-of-expression": "off",
-			"unicorn/no-unreadable-iife": "error",
+			// Biome: noUnreadableIife
+			"unicorn/no-unreadable-iife": "off",
 			"unicorn/no-unreadable-new-expression": "off",
 			"unicorn/no-unreadable-object-destructuring": "error",
 			"unicorn/no-unsafe-buffer-conversion": "error",
@@ -683,7 +686,8 @@ export default [
 			"unicorn/no-useless-override": "error",
 			"unicorn/no-useless-promise-resolve-reject": "error",
 			"unicorn/no-useless-re-export": "error",
-			"unicorn/no-useless-recursion": "error",
+			// Biome: noUselessRecursion
+			"unicorn/no-useless-recursion": "off",
 			"unicorn/no-useless-set-construction": "error",
 			"unicorn/no-useless-spread": "error",
 			"unicorn/no-useless-switch-case": "off",
@@ -846,7 +850,8 @@ export default [
 			"unicorn/prefer-url-can-parse": "error",
 			"unicorn/prefer-url-href": "error",
 			"unicorn/prefer-url-search-parameters": "error",
-			"unicorn/prefer-while-loop-condition": "error",
+			// Biome: useWhileLoopCondition
+			"unicorn/prefer-while-loop-condition": "off",
 			"unicorn/relative-url-style": "error",
 			"unicorn/require-array-join-separator": "error",
 			"unicorn/require-array-sort-compare": "off",
