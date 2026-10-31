@@ -209,7 +209,7 @@
 				"noUnreadableIife": "error",
 				"noUnsafeIframeSandbox": "error",
 				"noUnsafePlusOperands": "error",
-				"noUnsafeReturn": "warn",
+				"noUnsafeReturn": "error",
 				"noUnsafeTypeAssertion": "error",
 				"noUnsafeUnaryMinus": "error",
 				"noUselessAssignment": "error",
@@ -396,7 +396,10 @@
 				"useFilenamingConvention": {
 					"level": "error",
 					"options": {
-						"filenameCases": ["camelCase", "PascalCase"],
+						"filenameCases": [
+							"camelCase",
+							"PascalCase"
+						],
 						"strictCase": true
 					}
 				},
@@ -413,7 +416,9 @@
 					"options": {
 						"conventions": [
 							{
-								"formats": ["PascalCase"],
+								"formats": [
+									"PascalCase"
+								],
 								"match": "T(.+)",
 								"selector": {
 									"kind": "typeParameter"
@@ -564,7 +569,10 @@
 	},
 	"overrides": [
 		{
-			"includes": ["**/*.ts", "**/*.tsx"],
+			"includes": [
+				"**/*.ts",
+				"**/*.tsx"
+			],
 			"linter": {
 				"rules": {
 					"suspicious": {
