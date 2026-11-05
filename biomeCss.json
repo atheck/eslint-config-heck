@@ -26,6 +26,8 @@
 			},
 			"nursery": {
 				"noInvalidPropertyInitValue": "error",
+				"noMissingScssInterpolation": "error",
+				"noPseudoElementInFunctionalPseudoClass": "error",
 				"noSelfNestedLayer": "error",
 				"noUndeclaredCustomProperties": "error",
 				"noZeroLengthUnit": "error",

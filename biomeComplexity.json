@@ -27,6 +27,12 @@
 				}
 			},
 			"nursery": {
+				"noExcessiveNestedBlocks": {
+					"level": "warn",
+					"options": {
+						"max": 4
+					}
+				},
 				"noExcessiveStatementsPerFunction": {
 					"level": "warn",
 					"options": {
@@ -56,6 +62,7 @@
 						"useMaxParams": "off"
 					},
 					"nursery": {
+						"noExcessiveNestedBlocks": "off",
 						"noExcessiveStatementsPerFunction": "off"
 					}
 				}

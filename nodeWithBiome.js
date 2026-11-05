@@ -112,14 +112,8 @@ export default [
 			"valid-typeof": "off",
 
 			// Suggestions
-			"accessor-pairs": [
-				"error",
-				{
-					getWithoutSet: false,
-					setWithoutGet: true,
-					enforceForClassMembers: true,
-				},
-			],
+			// Biome: useAccessorPairs
+			"accessor-pairs": "off",
 			"arrow-body-style": "off",
 			"block-scoped-var": "error",
 			camelcase: "off",
@@ -151,6 +145,7 @@ export default [
 			"init-declarations": "off",
 			"logical-assignment-operators": "error",
 			"max-classes-per-file": "off",
+			// Biome: noExcessiveNestedBlocks
 			"max-depth": "off",
 			"max-lines": "off",
 			"max-lines-per-function": "off",
@@ -529,7 +524,8 @@ export default [
 			"unicorn/no-async-iterator-callback": "error",
 			"unicorn/no-async-promise-finally": "error",
 			"unicorn/no-await-expression-member": "error",
-			"unicorn/no-await-in-promise-methods": "error",
+			// Biome: noAwaitInPromiseMethods
+			"unicorn/no-await-in-promise-methods": "off",
 			// Biome: noBarrelFile
 			"unicorn/no-barrel-files": "off",
 			"unicorn/no-blob-to-file": "error",
@@ -579,7 +575,8 @@ export default [
 			"unicorn/no-invalid-integrity": "error",
 			"unicorn/no-invalid-intl-options": "error",
 			"unicorn/no-invalid-property-descriptor": "error",
-			"unicorn/no-invalid-remove-event-listener": "error",
+			// Biome: noInvalidRemoveEventListener
+			"unicorn/no-invalid-remove-event-listener": "off",
 			"unicorn/no-invalid-response-options": "error",
 			"unicorn/no-invalid-style-set-property": "error",
 			"unicorn/no-invalid-temporal-arithmetic": "error",
@@ -625,7 +622,8 @@ export default [
 			"unicorn/no-return-array-push": "off",
 			"unicorn/no-selector-as-dom-name": "error",
 			"unicorn/no-shorthand-property-overrides": "off",
-			"unicorn/no-single-promise-in-promise-methods": "error",
+			// Biome: noSinglePromiseInPromiseMethods
+			"unicorn/no-single-promise-in-promise-methods": "off",
 			"unicorn/no-static-only-class": "off",
 			"unicorn/no-subtraction-comparison": "error",
 			"unicorn/no-thenable": "off",
@@ -640,7 +638,8 @@ export default [
 			"unicorn/no-unnecessary-array-flat-depth": "error",
 			"unicorn/no-unnecessary-array-flat-map": "error",
 			"unicorn/no-unnecessary-array-splice-count": "error",
-			"unicorn/no-unnecessary-await": "error",
+			// Biome: noUselessAwait
+			"unicorn/no-unnecessary-await": "off",
 			"unicorn/no-unnecessary-boolean-comparison": "error",
 			"unicorn/no-unnecessary-default-arguments": "error",
 			"unicorn/no-unnecessary-fetch-options": "error",
@@ -681,7 +680,8 @@ export default [
 			"unicorn/no-useless-error-capture-stack-trace": "error",
 			"unicorn/no-useless-fallback-in-spread": "error",
 			"unicorn/no-useless-iterator-to-array": "error",
-			"unicorn/no-useless-length-check": "error",
+			// Biome: noUselessLengthCheck
+			"unicorn/no-useless-length-check": "off",
 			"unicorn/no-useless-logical-operand": "error",
 			"unicorn/no-useless-override": "error",
 			"unicorn/no-useless-promise-resolve-reject": "error",
@@ -789,7 +789,8 @@ export default [
 			"unicorn/prefer-number-properties": "off",
 			"unicorn/prefer-object-define-properties": "error",
 			"unicorn/prefer-object-destructuring-defaults": "error",
-			"unicorn/prefer-object-from-entries": "error",
+			// Biome: useObjectFromEntries
+			"unicorn/prefer-object-from-entries": "off",
 			"unicorn/prefer-object-iterable-methods": "error",
 			"unicorn/prefer-observer-apis": "error",
 			"unicorn/prefer-optional-catch-binding": "off",
@@ -808,7 +809,8 @@ export default [
 			"unicorn/prefer-scoped-selector": "error",
 			"unicorn/prefer-set-has": "error",
 			"unicorn/prefer-set-methods": "error",
-			"unicorn/prefer-set-size": "error",
+			// Biome: useSetSize
+			"unicorn/prefer-set-size": "off",
 			"unicorn/prefer-short-arrow-method": "off",
 			"unicorn/prefer-short-escape-sequences": "error",
 			"unicorn/prefer-simple-condition-first": "warn",
@@ -991,7 +993,8 @@ export default [
 			"@typescript-eslint/no-dupe-class-members": "off",
 			"@typescript-eslint/no-duplicate-enum-values": "error",
 			"@typescript-eslint/no-duplicate-type-constituents": "error",
-			"@typescript-eslint/no-dynamic-delete": "error",
+			// Biome: noDynamicDelete
+			"@typescript-eslint/no-dynamic-delete": "off",
 			"no-empty-function": "off",
 			"@typescript-eslint/no-empty-function": "off",
 			"@typescript-eslint/no-empty-interface": "off",
@@ -1038,7 +1041,8 @@ export default [
 			"@typescript-eslint/no-unnecessary-qualifier": "error",
 			"@typescript-eslint/no-unnecessary-template-expression": "off",
 			"@typescript-eslint/no-unnecessary-type-arguments": "error",
-			"@typescript-eslint/no-unnecessary-type-assertion": "error",
+			// Biome: noUselessTypeAssertion
+			"@typescript-eslint/no-unnecessary-type-assertion": "off",
 			"@typescript-eslint/no-unnecessary-type-constraint": "off",
 			"@typescript-eslint/no-unnecessary-type-conversion": "off",
 			"@typescript-eslint/no-unnecessary-type-parameters": "error",

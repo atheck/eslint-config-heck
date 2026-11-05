@@ -12,7 +12,8 @@
 				"usePlaywrightValidDescribeCallback": "error"
 			},
 			"nursery": {
-				"noPlaywrightNthMethods": "warn"
+				"noPlaywrightNthMethods": "warn",
+				"noPlaywrightUnsafeReferences": "error"
 			},
 			"style": {
 				"noPlaywrightElementHandle": "error",
