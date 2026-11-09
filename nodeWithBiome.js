@@ -541,7 +541,8 @@ export default [
 			"unicorn/no-confusing-array-with": "error",
 			// Biome: noConsoleSpaces
 			"unicorn/no-console-spaces": "off",
-			"unicorn/no-constant-zero-expression": "error",
+			// Biome: noErasingOperation
+			"unicorn/no-constant-zero-expression": "off",
 			"unicorn/no-declarations-before-early-exit": "error",
 			"unicorn/no-document-cookie": "off",
 			// Biome: noDoubleComparison
@@ -601,7 +602,8 @@ export default [
 			"unicorn/no-missing-local-resource": "off",
 			"unicorn/no-multiple-promise-resolver-calls": "error",
 			"unicorn/no-named-default": "error",
-			"unicorn/no-negated-array-predicate": "error",
+			// Biome: noNegatedArrayPredicate
+			"unicorn/no-negated-array-predicate": "off",
 			"unicorn/no-negated-comparison": "error",
 			"unicorn/no-negated-condition": "off",
 			"unicorn/no-negation-in-equality-check": "off",
@@ -625,7 +627,8 @@ export default [
 			// Biome: noSinglePromiseInPromiseMethods
 			"unicorn/no-single-promise-in-promise-methods": "off",
 			"unicorn/no-static-only-class": "off",
-			"unicorn/no-subtraction-comparison": "error",
+			// Biome: noSubtractionComparison
+			"unicorn/no-subtraction-comparison": "off",
 			"unicorn/no-thenable": "off",
 			"unicorn/no-this-assignment": "error",
 			"unicorn/no-this-outside-of-class": "off",
@@ -752,7 +755,8 @@ export default [
 			"unicorn/prefer-global-this": "off",
 			"unicorn/prefer-group-by": "error",
 			"unicorn/prefer-has-check": "error",
-			"unicorn/prefer-hoisting-branch-code": "error",
+			// Biome: noSharedBranchCode
+			"unicorn/prefer-hoisting-branch-code": "off",
 			"unicorn/prefer-https": "error",
 			"unicorn/prefer-identifier-import-export-specifiers": "error",
 			"unicorn/prefer-import-meta-properties": "error",

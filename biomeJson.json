@@ -7,6 +7,8 @@
 			"nursery": {
 				"noJsonUnsafeValues": "error",
 				"useConsistentObjectKeys": "error",
+				"usePackageJsonCpu": "off",
+				"usePackageJsonEngines": "warn",
 				"usePackageJsonValidCpu": "error",
 				"usePackageJsonValidEngines": "error"
 			},
