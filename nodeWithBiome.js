@@ -107,7 +107,8 @@ export default [
 			// Biome: noUselessAssignment
 			"no-useless-assignment": "off",
 			"no-useless-backreference": "off",
-			"require-atomic-updates": "error",
+			// Biome: useAtomicUpdates
+			"require-atomic-updates": "off",
 			"use-isnan": "off",
 			"valid-typeof": "off",
 
@@ -443,13 +444,8 @@ export default [
 
 			// eslint-plugin-unicorn
 			"unicorn/better-dom-traversing": "off",
-			"unicorn/catch-error-name": [
-				"error",
-				{
-					name: "ex",
-					ignore: ["^ex([A-Z0-9].*)?$"],
-				},
-			],
+			// Biome: useCatchErrorName
+			"unicorn/catch-error-name": "off",
 			// Biome: noThisInStatic
 			"unicorn/class-reference-in-static-methods": "off",
 			// Not applicable: this config does not lint JSON files
@@ -458,7 +454,8 @@ export default [
 			// Biome: useConsistentArrowReturn
 			"unicorn/consistent-arrow-return-style": "off",
 			"unicorn/consistent-assert": "error",
-			"unicorn/consistent-boolean-name": "warn",
+			// Biome: useConsistentBooleanName
+			"unicorn/consistent-boolean-name": "off",
 			"unicorn/consistent-class-member-order": "error",
 			"unicorn/consistent-compound-words": "warn",
 			"unicorn/consistent-conditional-object-spread": "error",
@@ -479,7 +476,8 @@ export default [
 			"unicorn/consistent-json-file-read": "error",
 			"unicorn/consistent-optional-chaining": "error",
 			"unicorn/consistent-template-literal-escape": "error",
-			"unicorn/consistent-tuple-labels": "error",
+			// Biome: useConsistentTupleLabels
+			"unicorn/consistent-tuple-labels": "off",
 			"unicorn/custom-error-definition": "off",
 			"unicorn/default-export-style": "error",
 			"unicorn/dom-node-dataset": "error",
@@ -522,7 +520,8 @@ export default [
 			// Conflicts with the standard JSDoc " * " line prefix
 			"unicorn/no-asterisk-prefix-in-documentation-comments": "off",
 			"unicorn/no-async-iterator-callback": "error",
-			"unicorn/no-async-promise-finally": "error",
+			// Biome: noAsyncPromiseFinally
+			"unicorn/no-async-promise-finally": "off",
 			"unicorn/no-await-expression-member": "error",
 			// Biome: noAwaitInPromiseMethods
 			"unicorn/no-await-in-promise-methods": "off",
@@ -569,9 +568,11 @@ export default [
 			"unicorn/no-instanceof-builtins": "error",
 			"unicorn/no-invalid-argument-count": "error",
 			"unicorn/no-invalid-boolean-attribute-value": "error",
-			"unicorn/no-invalid-character-comparison": "error",
+			// Biome: useValidCharacterComparison
+			"unicorn/no-invalid-character-comparison": "off",
 			"unicorn/no-invalid-dom-token": "error",
-			"unicorn/no-invalid-fetch-options": "error",
+			// Biome: noInvalidFetchOptions
+			"unicorn/no-invalid-fetch-options": "off",
 			"unicorn/no-invalid-file-input-accept": "off",
 			"unicorn/no-invalid-integrity": "error",
 			"unicorn/no-invalid-intl-options": "error",
@@ -608,7 +609,8 @@ export default [
 			"unicorn/no-negated-condition": "off",
 			"unicorn/no-negation-in-equality-check": "off",
 			"unicorn/no-nested-ternary": "off",
-			"unicorn/no-new-array": "error",
+			// Biome: noNewArray
+			"unicorn/no-new-array": "off",
 			"unicorn/no-new-buffer": "error",
 			"unicorn/no-non-function-verb-prefix": "off",
 			"unicorn/no-nonstandard-builtin-properties": "error",
@@ -681,7 +683,8 @@ export default [
 			"unicorn/no-useless-delete-check": "error",
 			"unicorn/no-useless-else": "off",
 			"unicorn/no-useless-error-capture-stack-trace": "error",
-			"unicorn/no-useless-fallback-in-spread": "error",
+			// Biome: noUselessFallbackInSpread
+			"unicorn/no-useless-fallback-in-spread": "off",
 			"unicorn/no-useless-iterator-to-array": "error",
 			// Biome: noUselessLengthCheck
 			"unicorn/no-useless-length-check": "off",
@@ -692,7 +695,8 @@ export default [
 			// Biome: noUselessRecursion
 			"unicorn/no-useless-recursion": "off",
 			"unicorn/no-useless-set-construction": "error",
-			"unicorn/no-useless-spread": "error",
+			// Biome: noUselessSpread
+			"unicorn/no-useless-spread": "off",
 			"unicorn/no-useless-switch-case": "off",
 			"unicorn/no-useless-template-literals": "off",
 			"unicorn/no-useless-undefined": "off",
@@ -996,7 +1000,8 @@ export default [
 			"no-dupe-class-members": "off",
 			"@typescript-eslint/no-dupe-class-members": "off",
 			"@typescript-eslint/no-duplicate-enum-values": "error",
-			"@typescript-eslint/no-duplicate-type-constituents": "error",
+			// Biome: noDuplicateTypeConstituents
+			"@typescript-eslint/no-duplicate-type-constituents": "off",
 			// Biome: noDynamicDelete
 			"@typescript-eslint/no-dynamic-delete": "off",
 			"no-empty-function": "off",
@@ -1031,7 +1036,8 @@ export default [
 			"@typescript-eslint/no-non-null-assertion": "off",
 			"no-redeclare": "off",
 			"@typescript-eslint/no-redeclare": "off",
-			"@typescript-eslint/no-redundant-type-constituents": "error",
+			// Biome: noRedundantTypeConstituents
+			"@typescript-eslint/no-redundant-type-constituents": "off",
 			"@typescript-eslint/no-require-imports": "off",
 			"@typescript-eslint/no-restricted-types": "off",
 			"no-shadow": "off",
@@ -1040,9 +1046,10 @@ export default [
 			"@typescript-eslint/no-type-alias": "off",
 			"@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
 			"@typescript-eslint/no-unnecessary-condition": "off",
-			"@typescript-eslint/no-unnecessary-parameter-property-assignment":
-				"error",
-			"@typescript-eslint/no-unnecessary-qualifier": "error",
+			// Biome: noUselessParameterPropertyAssignment
+			"@typescript-eslint/no-unnecessary-parameter-property-assignment": "off",
+			// Biome: noUselessQualifier
+			"@typescript-eslint/no-unnecessary-qualifier": "off",
 			"@typescript-eslint/no-unnecessary-template-expression": "off",
 			"@typescript-eslint/no-unnecessary-type-arguments": "error",
 			// Biome: noUselessTypeAssertion

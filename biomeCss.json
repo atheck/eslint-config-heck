@@ -25,12 +25,15 @@
 				"noUnmatchableAnbSelector": "error"
 			},
 			"nursery": {
+				"noExcessiveSelectorComplexity": "off",
 				"noInvalidPropertyInitValue": "error",
 				"noMissingScssInterpolation": "error",
 				"noPseudoElementInFunctionalPseudoClass": "error",
+				"noScssNullComparison": "error",
 				"noSelfNestedLayer": "error",
 				"noUndeclaredCustomProperties": "error",
 				"noZeroLengthUnit": "error",
+				"useConsistentFontWeightNotation": "error",
 				"useConsistentLightnessNotation": "error",
 				"useLayeredStyles": "warn",
 				"useLogicalProperties": "warn",
