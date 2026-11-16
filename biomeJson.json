@@ -10,7 +10,8 @@
 				"usePackageJsonCpu": "off",
 				"usePackageJsonEngines": "warn",
 				"usePackageJsonValidCpu": "error",
-				"usePackageJsonValidEngines": "error"
+				"usePackageJsonValidEngines": "error",
+				"usePackageJsonValidLicense": "error"
 			},
 			"style": {
 				"noTopLevelLiterals": "warn"
