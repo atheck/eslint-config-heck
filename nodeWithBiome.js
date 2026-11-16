@@ -536,7 +536,8 @@ export default [
 			"unicorn/no-collection-bracket-access": "error",
 			"unicorn/no-computed-property-existence-check": "error",
 			"unicorn/no-conflicting-constraints": "error",
-			"unicorn/no-confusing-array-splice": "error",
+			// Biome: noConfusingArraySplice
+			"unicorn/no-confusing-array-splice": "off",
 			"unicorn/no-confusing-array-with": "error",
 			// Biome: noConsoleSpaces
 			"unicorn/no-console-spaces": "off",
@@ -611,7 +612,8 @@ export default [
 			"unicorn/no-nested-ternary": "off",
 			// Biome: noNewArray
 			"unicorn/no-new-array": "off",
-			"unicorn/no-new-buffer": "error",
+			// Biome: noBufferConstructor
+			"unicorn/no-new-buffer": "off",
 			"unicorn/no-non-function-verb-prefix": "off",
 			"unicorn/no-nonstandard-builtin-properties": "error",
 			"unicorn/no-null": "off",
@@ -902,6 +904,7 @@ export default [
 			"importPlugin/namespace": "off",
 			"importPlugin/no-absolute-path": "error",
 			"importPlugin/no-cycle": "off",
+			// Biome: noDynamicRequire
 			"importPlugin/no-dynamic-require": "off",
 			"importPlugin/no-internal-modules": "off",
 			"importPlugin/no-relative-packages": "off",
@@ -1028,7 +1031,8 @@ export default [
 			"@typescript-eslint/no-meaningless-void-operator": "off",
 			"@typescript-eslint/no-misused-new": "off",
 			"@typescript-eslint/no-misused-promises": "off",
-			"@typescript-eslint/no-misused-spread": "error",
+			// Biome: noMisusedSpread
+			"@typescript-eslint/no-misused-spread": "off",
 			"@typescript-eslint/no-mixed-enums": "off",
 			"@typescript-eslint/no-namespace": "off",
 			"@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
@@ -1119,7 +1123,8 @@ export default [
 			"@typescript-eslint/strict-boolean-expressions": "off",
 			"@typescript-eslint/strict-void-return": "off",
 			"@typescript-eslint/switch-exhaustiveness-check": "off",
-			"@typescript-eslint/triple-slash-reference": "error",
+			// Biome: noTripleSlashReference
+			"@typescript-eslint/triple-slash-reference": "off",
 			"@typescript-eslint/typedef": "off",
 			"@typescript-eslint/unbound-method": [
 				"error",
@@ -1218,7 +1223,8 @@ export default [
 			"jest/padding-around-expect-groups": "off",
 			"jest/padding-around-describe-blocks": "error",
 			"jest/padding-around-test-blocks": "error",
-			"jest/prefer-called-with": "error",
+			// Biome: useCalledWith
+			"jest/prefer-called-with": "off",
 			"jest/prefer-comparison-matcher": "error",
 			"jest/prefer-each": "error",
 			"jest/prefer-ending-with-an-expect": "error",
@@ -1238,13 +1244,16 @@ export default [
 			"jest/prefer-mock-promise-shorthand": "error",
 			"jest/prefer-mock-return-shorthand": "error",
 			"jest/prefer-snapshot-hint": "error",
-			"jest/prefer-spy-on": "error",
+			// Biome: useSpyOn
+			"jest/prefer-spy-on": "off",
 			"jest/prefer-strict-equal": "error",
 			"jest/prefer-to-be": "error",
 			// Biome: useExpectToContain
 			"jest/prefer-to-contain": "off",
+			// Biome: useExpectToHaveBeenCalled
 			"jest/prefer-to-have-been-called": "off",
-			"jest/prefer-to-have-been-called-times": "error",
+			// Biome: useExpectToHaveBeenCalledTimes
+			"jest/prefer-to-have-been-called-times": "off",
 			"jest/prefer-to-have-length": "error",
 			"jest/prefer-todo": "warn",
 			"jest/require-hook": "error",
