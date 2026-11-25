@@ -173,7 +173,8 @@ export default [
 			"no-eq-null": "off",
 			"no-eval": "off",
 			"no-extend-native": "off",
-			"no-extra-bind": "error",
+			// Biome: noUselessBind
+			"no-extra-bind": "off",
 			"no-extra-boolean-cast": "off",
 			"no-extra-label": "off",
 			"no-global-assign": "off",
@@ -532,7 +533,8 @@ export default [
 			// Biome: noBooleanSortComparator
 			"unicorn/no-boolean-sort-comparator": "off",
 			"unicorn/no-break-in-nested-loop": "error",
-			"unicorn/no-canvas-to-image": "error",
+			// Biome: noCanvasToImage
+			"unicorn/no-canvas-to-image": "off",
 			"unicorn/no-chained-comparison": "error",
 			"unicorn/no-collection-bracket-access": "error",
 			"unicorn/no-computed-property-existence-check": "error",
@@ -561,7 +563,8 @@ export default [
 			"unicorn/no-for-each": "off",
 			"unicorn/no-for-loop": "off",
 			"unicorn/no-global-object-property-assignment": "error",
-			"unicorn/no-immediate-mutation": "error",
+			// Biome: noImmediateMutation
+			"unicorn/no-immediate-mutation": "off",
 			"unicorn/no-impossible-length-comparison": "error",
 			"unicorn/no-incomplete-accessor-override": "error",
 			"unicorn/no-incorrect-query-selector": "error",
@@ -652,6 +655,7 @@ export default [
 			"unicorn/no-unnecessary-default-arguments": "error",
 			"unicorn/no-unnecessary-fetch-options": "error",
 			"unicorn/no-unnecessary-global-this": "error",
+			// Biome: noUselessNestedTernary
 			"unicorn/no-unnecessary-nested-ternary": "off",
 			"unicorn/no-unnecessary-parameters": "error",
 			"unicorn/no-unnecessary-polyfills": "error",
@@ -697,7 +701,8 @@ export default [
 			"unicorn/no-useless-re-export": "error",
 			// Biome: noUselessRecursion
 			"unicorn/no-useless-recursion": "off",
-			"unicorn/no-useless-set-construction": "error",
+			// Biome: noUselessSetConstruction
+			"unicorn/no-useless-set-construction": "off",
 			// Biome: noUselessSpread
 			"unicorn/no-useless-spread": "off",
 			"unicorn/no-useless-switch-case": "off",
@@ -740,7 +745,8 @@ export default [
 			"unicorn/prefer-classlist-toggle": "error",
 			"unicorn/prefer-code-point": "error",
 			"unicorn/prefer-combined-guards": "off",
-			"unicorn/prefer-continue": "error",
+			// Biome: useEarlyContinue
+			"unicorn/prefer-continue": "off",
 			"unicorn/prefer-date-now": "off",
 			"unicorn/prefer-default-parameters": "error",
 			"unicorn/prefer-direct-iteration": "error",
@@ -966,12 +972,12 @@ export default [
 			"@typescript-eslint/await-thenable": "error",
 			"@typescript-eslint/ban-ts-comment": "off",
 			"@typescript-eslint/ban-tslint-comment": "error",
-			"@typescript-eslint/ban-types": "off",
 			"@typescript-eslint/class-literal-property-style": "error",
 			"class-methods-use-this": "off",
 			"@typescript-eslint/class-methods-use-this": "off",
 			"@typescript-eslint/consistent-generic-constructors": "error",
-			"@typescript-eslint/consistent-indexed-object-style": "error",
+			// Biome: useConsistentIndexedObjectStyle
+			"@typescript-eslint/consistent-indexed-object-style": "off",
 			"@typescript-eslint/consistent-type-assertions": "error",
 			"@typescript-eslint/consistent-type-definitions": "off",
 			"@typescript-eslint/consistent-type-exports": "off",
@@ -1069,6 +1075,7 @@ export default [
 			"@typescript-eslint/no-unsafe-argument": "error",
 			"@typescript-eslint/no-unsafe-assignment": "error",
 			"@typescript-eslint/no-unsafe-call": "error",
+			"@typescript-eslint/no-unsafe-class-instance-assignment": "error",
 			"@typescript-eslint/no-unsafe-declaration-merging": "off",
 			"@typescript-eslint/no-unsafe-enum-assignment": "error",
 			"@typescript-eslint/no-unsafe-enum-comparison": "error",
@@ -1088,7 +1095,8 @@ export default [
 			"@typescript-eslint/no-use-before-define": "off",
 			"no-useless-constructor": "off",
 			"@typescript-eslint/no-useless-constructor": "off",
-			"@typescript-eslint/no-useless-default-assignment": "error",
+			// Biome: noUselessDefaultAssignment
+			"@typescript-eslint/no-useless-default-assignment": "off",
 			"@typescript-eslint/no-useless-empty-export": "off",
 			"@typescript-eslint/no-var-requires": "off",
 			"@typescript-eslint/no-wrapper-object-types": "off",
@@ -1209,14 +1217,16 @@ export default [
 			"jest/no-hooks": "off",
 			"jest/no-identical-title": "off",
 			"jest/no-interpolation-in-snapshots": "error",
-			"jest/no-jasmine-globals": "error",
+			// Biome: noJasmineGlobals
+			"jest/no-jasmine-globals": "off",
 			"jest/no-large-snapshots": "off",
 			"jest/no-mocks-import": "error",
 			"jest/no-restricted-jest-methods": "off",
 			"jest/no-restricted-matchers": "off",
 			"jest/no-standalone-expect": "off",
 			"jest/no-test-prefixes": "error",
-			"jest/no-test-return-statement": "error",
+			// Biome: noReturnInTest
+			"jest/no-test-return-statement": "off",
 			"jest/no-unnecessary-assertion": "error",
 			"jest/no-unneeded-async-expect-function": "error",
 			// This rule is only active if using typescript - see down below
@@ -1233,7 +1243,8 @@ export default [
 			"jest/prefer-comparison-matcher": "error",
 			"jest/prefer-each": "error",
 			"jest/prefer-ending-with-an-expect": "error",
-			"jest/prefer-equality-matcher": "error",
+			// Biome: useExpectEqualityMatcher
+			"jest/prefer-equality-matcher": "off",
 			"jest/prefer-expect-assertions": "off",
 			"jest/prefer-expect-resolves": "error",
 			"jest/prefer-hooks-in-order": "off",
@@ -1251,7 +1262,8 @@ export default [
 			"jest/prefer-snapshot-hint": "error",
 			// Biome: useSpyOn
 			"jest/prefer-spy-on": "off",
-			"jest/prefer-strict-equal": "error",
+			// Biome: useExpectToStrictEqual
+			"jest/prefer-strict-equal": "off",
 			"jest/prefer-to-be": "error",
 			// Biome: useExpectToContain
 			"jest/prefer-to-contain": "off",
@@ -1259,11 +1271,13 @@ export default [
 			"jest/prefer-to-have-been-called": "off",
 			// Biome: useExpectToHaveBeenCalledTimes
 			"jest/prefer-to-have-been-called-times": "off",
-			"jest/prefer-to-have-length": "error",
+			// Biome: useExpectToHaveLength
+			"jest/prefer-to-have-length": "off",
 			"jest/prefer-todo": "warn",
 			"jest/require-hook": "error",
 			"jest/require-to-throw-message": "error",
-			"jest/require-top-level-describe": "error",
+			// Biome: useTopLevelDescribe
+			"jest/require-top-level-describe": "off",
 			"@typescript-eslint/unbound-method": "off",
 			"jest/unbound-method": "error",
 			"jest/valid-describe-callback": "error",

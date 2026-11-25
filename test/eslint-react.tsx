@@ -168,10 +168,10 @@ class DirectMutation extends React.Component<{}, { value: number }> {
 	}
 }
 
-// react/no-find-dom-node
+// react/dom-no-find-dom-node
 class FindDomNode extends React.Component {
 	componentDidMount(): void {
-		// eslint-disable-next-line react/no-find-dom-node
+		// eslint-disable-next-line react/dom-no-find-dom-node
 		const node = React.findDOMNode(this);
 
 		console.log(node);
